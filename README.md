@@ -1,5 +1,5 @@
 # Generic Diagnostic  
-![bannertransparent](https://github.com/user-attachments/assets/6dad26e9-37bd-4ad4-a4cc-c1cd86a6851a)  
+![image](https://github.com/user-attachments/assets/c2c94054-0082-4866-aff5-ec79414ba573)  
 Generic PassThru J2534 Diagnostic Software
 
 ***
