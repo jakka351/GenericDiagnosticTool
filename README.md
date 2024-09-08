@@ -20,3 +20,6 @@ General purpose diagnostic software that allows you to control individual diagno
 - CAN Sniffer
 - PID Lookup tool via service 0x22
 
+## J2534 Interface
+This implementation currently only works with an OBDXPro FT J2534 interface(https://obdxpro.com). Hoping to troubleshoot it such that it is compliant with all J2534 interfaces, ie VCM2, VCM3, Tactrix Openport, Mongoose Pro. Feel free to fork and modify it to work with your devices.
+
