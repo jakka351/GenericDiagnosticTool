@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c2c94054-0082-4866-aff5-ec79414ba573)  
+![image](https://github.com/user-attachments/assets/0283746b-6880-4dab-a376-7861bda1d027)
 *** 
 Generic PassThru J2534 Diagnostic Software
 
