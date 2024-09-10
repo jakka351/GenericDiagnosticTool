@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassThru));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -59,11 +60,60 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBoxLog = new System.Windows.Forms.TextBox();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.buttonSendPassThruMsg = new System.Windows.Forms.Button();
+            this.textBoxLog = new System.Windows.Forms.TextBox();
             this.buttonAddMsg = new System.Windows.Forms.Button();
             this.textBoxPassThruMsg = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.textBoxPidName = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.listBoxObd = new System.Windows.Forms.ListBox();
+            this.listBoxDtc = new System.Windows.Forms.ListBox();
+            this.textBoxPid = new System.Windows.Forms.TextBox();
+            this.textBoxCalId = new System.Windows.Forms.TextBox();
+            this.textBoxVin = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.comboBoxPids = new System.Windows.Forms.ComboBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.startReadAllPassThruMsgsButton = new System.Windows.Forms.Button();
+            this.textBoxCAN = new System.Windows.Forms.TextBox();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,6 +142,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBoxCanBus = new System.Windows.Forms.ComboBox();
             this.comboBoxJ2534Devices = new System.Windows.Forms.ComboBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.hex2DecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.DSC.SuspendLayout();
@@ -100,6 +152,11 @@
             this.tabPage3.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -524,11 +581,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBoxLog);
-            this.groupBox2.Controls.Add(this.buttonSendPassThruMsg);
-            this.groupBox2.Controls.Add(this.buttonAddMsg);
-            this.groupBox2.Controls.Add(this.textBoxPassThruMsg);
-            this.groupBox2.Controls.Add(this.listBox1);
+            this.groupBox2.Controls.Add(this.tabControl2);
             this.groupBox2.Location = new System.Drawing.Point(375, 113);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(998, 325);
@@ -537,19 +590,45 @@
             this.groupBox2.Text = "PassThru Comms";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // textBoxLog
+            // tabControl2
             // 
-            this.textBoxLog.Location = new System.Drawing.Point(250, 19);
-            this.textBoxLog.Multiline = true;
-            this.textBoxLog.Name = "textBoxLog";
-            this.textBoxLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxLog.Size = new System.Drawing.Size(729, 239);
-            this.textBoxLog.TabIndex = 0;
-            this.textBoxLog.TextChanged += new System.EventHandler(this.textBoxLog_TextChanged);
+            this.tabControl2.Controls.Add(this.tabPage4);
+            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Controls.Add(this.tabPage8);
+            this.tabControl2.Location = new System.Drawing.Point(7, 1);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(991, 324);
+            this.tabControl2.TabIndex = 11;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.listBox1);
+            this.tabPage4.Controls.Add(this.buttonSendPassThruMsg);
+            this.tabPage4.Controls.Add(this.textBoxLog);
+            this.tabPage4.Controls.Add(this.buttonAddMsg);
+            this.tabPage4.Controls.Add(this.textBoxPassThruMsg);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(983, 298);
+            this.tabPage4.TabIndex = 0;
+            this.tabPage4.Text = "PassThru Comms";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(3, 0);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(238, 238);
+            this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // buttonSendPassThruMsg
             // 
-            this.buttonSendPassThruMsg.Location = new System.Drawing.Point(6, 291);
+            this.buttonSendPassThruMsg.Location = new System.Drawing.Point(4, 270);
             this.buttonSendPassThruMsg.Name = "buttonSendPassThruMsg";
             this.buttonSendPassThruMsg.Size = new System.Drawing.Size(238, 23);
             this.buttonSendPassThruMsg.TabIndex = 10;
@@ -557,9 +636,19 @@
             this.buttonSendPassThruMsg.UseVisualStyleBackColor = true;
             this.buttonSendPassThruMsg.Click += new System.EventHandler(this.buttonSendPassThruMsg_Click);
             // 
+            // textBoxLog
+            // 
+            this.textBoxLog.Location = new System.Drawing.Point(258, 2);
+            this.textBoxLog.Multiline = true;
+            this.textBoxLog.Name = "textBoxLog";
+            this.textBoxLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxLog.Size = new System.Drawing.Size(729, 239);
+            this.textBoxLog.TabIndex = 0;
+            this.textBoxLog.TextChanged += new System.EventHandler(this.textBoxLog_TextChanged);
+            // 
             // buttonAddMsg
             // 
-            this.buttonAddMsg.Location = new System.Drawing.Point(175, 262);
+            this.buttonAddMsg.Location = new System.Drawing.Point(173, 244);
             this.buttonAddMsg.Name = "buttonAddMsg";
             this.buttonAddMsg.Size = new System.Drawing.Size(69, 23);
             this.buttonAddMsg.TabIndex = 2;
@@ -569,19 +658,680 @@
             // 
             // textBoxPassThruMsg
             // 
-            this.textBoxPassThruMsg.Location = new System.Drawing.Point(6, 264);
+            this.textBoxPassThruMsg.Location = new System.Drawing.Point(4, 246);
             this.textBoxPassThruMsg.Name = "textBoxPassThruMsg";
             this.textBoxPassThruMsg.Size = new System.Drawing.Size(163, 20);
             this.textBoxPassThruMsg.TabIndex = 1;
             // 
-            // listBox1
+            // tabPage5
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 20);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(238, 238);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.tabPage5.Controls.Add(this.textBoxPidName);
+            this.tabPage5.Controls.Add(this.label16);
+            this.tabPage5.Controls.Add(this.listBoxObd);
+            this.tabPage5.Controls.Add(this.listBoxDtc);
+            this.tabPage5.Controls.Add(this.textBoxPid);
+            this.tabPage5.Controls.Add(this.textBoxCalId);
+            this.tabPage5.Controls.Add(this.textBoxVin);
+            this.tabPage5.Controls.Add(this.label15);
+            this.tabPage5.Controls.Add(this.label14);
+            this.tabPage5.Controls.Add(this.label13);
+            this.tabPage5.Controls.Add(this.label12);
+            this.tabPage5.Controls.Add(this.button17);
+            this.tabPage5.Controls.Add(this.button15);
+            this.tabPage5.Controls.Add(this.button16);
+            this.tabPage5.Controls.Add(this.button13);
+            this.tabPage5.Controls.Add(this.button14);
+            this.tabPage5.Controls.Add(this.button12);
+            this.tabPage5.Controls.Add(this.button11);
+            this.tabPage5.Controls.Add(this.comboBoxPids);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(983, 298);
+            this.tabPage5.TabIndex = 1;
+            this.tabPage5.Text = "On Board Diagnostics";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // textBoxPidName
+            // 
+            this.textBoxPidName.Location = new System.Drawing.Point(739, 196);
+            this.textBoxPidName.Name = "textBoxPidName";
+            this.textBoxPidName.Size = new System.Drawing.Size(184, 20);
+            this.textBoxPidName.TabIndex = 24;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(20, 26);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(301, 24);
+            this.label16.TabIndex = 23;
+            this.label16.Text = "On Board Diagnostic II Protocol";
+            // 
+            // listBoxObd
+            // 
+            this.listBoxObd.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.listBoxObd.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.listBoxObd.FormattingEnabled = true;
+            this.listBoxObd.Items.AddRange(new object[] {
+            "Service/Mode $01 Live Sensor Data",
+            "Service/Mode $02 Freeze Frame Data",
+            "Service/Mode $03 Stored Fault Codes",
+            "Service/Mode $04 Clear Stored Codes",
+            "Service/Mode $05 Oxygen Sensor Monitor",
+            "Service/Mode $06 Monitoring Results",
+            "Service/Mode $07 Pending Fault Codes",
+            "Service/Mode $08 Test Device Control",
+            "Service/Mode $09 Vehicle Information",
+            "Service/Mode $0A Permanent Fault Codes"});
+            this.listBoxObd.Location = new System.Drawing.Point(23, 80);
+            this.listBoxObd.Name = "listBoxObd";
+            this.listBoxObd.Size = new System.Drawing.Size(219, 147);
+            this.listBoxObd.TabIndex = 22;
+            this.listBoxObd.SelectedIndexChanged += new System.EventHandler(this.listBoxObd_SelectedIndexChanged);
+            // 
+            // listBoxDtc
+            // 
+            this.listBoxDtc.FormattingEnabled = true;
+            this.listBoxDtc.Location = new System.Drawing.Point(739, 135);
+            this.listBoxDtc.Name = "listBoxDtc";
+            this.listBoxDtc.Size = new System.Drawing.Size(184, 56);
+            this.listBoxDtc.TabIndex = 21;
+            // 
+            // textBoxPid
+            // 
+            this.textBoxPid.Location = new System.Drawing.Point(831, 222);
+            this.textBoxPid.Name = "textBoxPid";
+            this.textBoxPid.Size = new System.Drawing.Size(92, 20);
+            this.textBoxPid.TabIndex = 20;
+            // 
+            // textBoxCalId
+            // 
+            this.textBoxCalId.Location = new System.Drawing.Point(739, 107);
+            this.textBoxCalId.Name = "textBoxCalId";
+            this.textBoxCalId.Size = new System.Drawing.Size(184, 20);
+            this.textBoxCalId.TabIndex = 18;
+            // 
+            // textBoxVin
+            // 
+            this.textBoxVin.Location = new System.Drawing.Point(739, 78);
+            this.textBoxVin.Name = "textBoxVin";
+            this.textBoxVin.Size = new System.Drawing.Size(184, 20);
+            this.textBoxVin.TabIndex = 17;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(563, 199);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(86, 13);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "ODBII PID Data:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(562, 140);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(126, 13);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Trouble Codes Detected:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(562, 110);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(125, 13);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "ECU Calibration/Strategy";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(562, 81);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(148, 13);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Vehicle Identification Number:";
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(263, 80);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(262, 23);
+            this.button17.TabIndex = 7;
+            this.button17.Text = "Mode $09 Request Vehicle Info";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(397, 109);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(128, 23);
+            this.button15.TabIndex = 6;
+            this.button15.Text = "Clear OBDII DTC";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(263, 109);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(128, 23);
+            this.button16.TabIndex = 5;
+            this.button16.Text = "Read OBDII DTC";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(397, 139);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(128, 23);
+            this.button13.TabIndex = 4;
+            this.button13.Text = "Permanent DTC";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(263, 139);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(128, 23);
+            this.button14.TabIndex = 3;
+            this.button14.Text = "Pending DTC";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(397, 168);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(128, 23);
+            this.button12.TabIndex = 2;
+            this.button12.Text = "Mode $02 PID";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(263, 168);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(128, 23);
+            this.button11.TabIndex = 1;
+            this.button11.Text = "Mode $01 PID";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // comboBoxPids
+            // 
+            this.comboBoxPids.FormattingEnabled = true;
+            this.comboBoxPids.Items.AddRange(new object[] {
+            "00 PIDs supported [$01 - $20]",
+            "01 Monitor status since DTCs cleared. (Includes malfunction indicator lamp (MIL)," +
+                " status and number of DTCs, components tests, DTC readiness checks)",
+            "02 DTC that caused freeze frame to be stored.",
+            "03 Fuel system status",
+            "04 Calculated engine load",
+            "05 Engine coolant temperature",
+            "06 Short term fuel trim (STFT)—Bank 1",
+            "07 Long term fuel trim (LTFT)—Bank 1",
+            "08 Short term fuel trim (STFT)—Bank 2",
+            "09 Long term fuel trim (LTFT)—Bank 2",
+            "0A Fuel pressure (gauge pressure)",
+            "0B Intake manifold absolute pressure",
+            "0C Engine speed",
+            "0D Vehicle speed",
+            "0E Timing advance",
+            "0F Intake air temperature",
+            "10 Mass air flow sensor (MAF) air flow rate",
+            "11 Throttle position",
+            "12 Commanded secondary air status",
+            "13 Oxygen sensors present (in 2 banks)",
+            "14 Oxygen Sensor 1 A: Voltage B: Short term fuel trim",
+            "15 Oxygen Sensor 2 A: Voltage B: Short term fuel trim",
+            "16 Oxygen Sensor 3 A: Voltage B: Short term fuel trim",
+            "17 Oxygen Sensor 4 A: Voltage B: Short term fuel trim",
+            "18 Oxygen Sensor 5 A: Voltage B: Short term fuel trim",
+            "19 Oxygen Sensor 6 A: Voltage B: Short term fuel trim",
+            "1A Oxygen Sensor 7 A: Voltage B: Short term fuel trim",
+            "1B Oxygen Sensor 8 A: Voltage B: Short term fuel trim",
+            "1C OBD standards this vehicle conforms to",
+            "1D Oxygen sensors present (in 4 banks)",
+            "1E Auxiliary input status",
+            "1F Run time since engine start",
+            "20 PIDs supported [$21 - $40]",
+            "21 Distance traveled with malfunction indicator lamp (MIL) on",
+            "22 Fuel Rail Pressure (relative to manifold vacuum)",
+            "23 Fuel Rail Gauge Pressure (diesel, or gasoline direct injection)",
+            "24 Oxygen Sensor 1 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Voltage",
+            "25 Oxygen Sensor 2 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Voltage",
+            "26 Oxygen Sensor 3 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Voltage",
+            "27 Oxygen Sensor 4 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Voltage",
+            "28 Oxygen Sensor 5 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Voltage",
+            "29 Oxygen Sensor 6 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Voltage",
+            "2A Oxygen Sensor 7 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Voltage",
+            "2B Oxygen Sensor 8 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Voltage",
+            "2C Commanded EGR",
+            "2D EGR Error",
+            "2E Commanded evaporative purge",
+            "2F Fuel Tank Level Input",
+            "30 Warm-ups since codes cleared",
+            "31 Distance traveled since codes cleared",
+            "32 Evap. System Vapor Pressure",
+            "33 Absolute Barometric Pressure",
+            "34 Oxygen Sensor 1 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Current",
+            "35 Oxygen Sensor 2 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Current",
+            "36 Oxygen Sensor 3 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Current",
+            "37 Oxygen Sensor 4 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Current",
+            "38 Oxygen Sensor 5 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Current",
+            "39 Oxygen Sensor 6 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Current",
+            "3A Oxygen Sensor 7 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Current",
+            "3B Oxygen Sensor 8 AB: Air-Fuel Equivalence Ratio (lambda,λ) CD: Current",
+            "3C Catalyst Temperature: Bank 1, Sensor 1",
+            "3D Catalyst Temperature: Bank 2, Sensor 1",
+            "3E Catalyst Temperature: Bank 1, Sensor 2",
+            "3F Catalyst Temperature: Bank 2, Sensor 2",
+            "40 PIDs supported [$41 - $60]",
+            "41 Monitor status this drive cycle",
+            "42 Control module voltage",
+            "43 Absolute load value",
+            "44 Commanded Air-Fuel Equivalence Ratio (lambda,λ)",
+            "45 Relative throttle position",
+            "46 Ambient air temperature",
+            "47 Absolute throttle position B",
+            "48 Absolute throttle position C",
+            "49 Accelerator pedal position D",
+            "4A Accelerator pedal position E",
+            "4B Accelerator pedal position F",
+            "4C Commanded throttle actuator",
+            "4D Time run with MIL on",
+            "4E Time since trouble codes cleared",
+            "4F Maximum value for Fuel–Air equivalence ratio, oxygen sensor voltage, oxygen se" +
+                "nsor current, and intake manifold absolute pressure",
+            "50 Maximum value for air flow rate from mass air flow sensor",
+            "51 Fuel Type",
+            "52 Ethanol fuel %",
+            "53 Absolute Evap system Vapor Pressure",
+            "54 Evap system vapor pressure",
+            "55 Short term secondary oxygen sensor trim, A: bank 1, B: bank 3",
+            "56 Long term secondary oxygen sensor trim, A: bank 1, B: bank 3",
+            "57 Short term secondary oxygen sensor trim, A: bank 2, B: bank 4",
+            "58 Long term secondary oxygen sensor trim, A: bank 2, B: bank 4",
+            "59 Fuel rail absolute pressure",
+            "5A Relative accelerator pedal position",
+            "5B Hybrid battery pack remaining life",
+            "5C Engine oil temperature",
+            "5D Fuel injection timing",
+            "5E Engine fuel rate",
+            "5F Emission requirements to which vehicle is designed",
+            "60 PIDs supported [$61 - $80]",
+            "61 Driver\'s demand engine - percent torque",
+            "62 Actual engine - percent torque",
+            "63 Engine reference torque",
+            "64 Engine percent torque data",
+            "65 Auxiliary input / output supported",
+            "66 Mass air flow sensor",
+            "67 Engine coolant temperature",
+            "68 Intake air temperature sensor",
+            "69 Actual EGR, Commanded EGR, and EGR Error",
+            "6A Commanded Diesel intake air flow control and relative intake air flow position" +
+                "",
+            "6B Exhaust gas recirculation temperature",
+            "6C Commanded throttle actuator control and relative throttle position",
+            "6D Fuel pressure control system",
+            "6E Injection pressure control system",
+            "6F Turbocharger compressor inlet pressure",
+            "70 Boost pressure control",
+            "71 Variable Geometry turbo (VGT) control",
+            "72 Wastegate control",
+            "73 Exhaust pressure",
+            "74 Turbocharger RPM",
+            "75 Turbocharger temperature",
+            "76 Turbocharger temperature",
+            "77 Charge air cooler temperature (CACT)",
+            "78 Exhaust Gas temperature (EGT) Bank 1",
+            "79 Exhaust Gas temperature (EGT) Bank 2",
+            "7A Diesel particulate filter (DPF) differential pressure",
+            "7B Diesel particulate filter (DPF)",
+            "7C Diesel Particulate filter (DPF) temperature",
+            "7D NOx NTE (Not-To-Exceed) control area status",
+            "7E PM NTE (Not-To-Exceed) control area status",
+            "7F Engine run time [b]",
+            "80 PIDs supported [$81 - $A0]",
+            "81 Engine run time for Auxiliary Emissions Control Device(AECD)",
+            "82 Engine run time for Auxiliary Emissions Control Device(AECD)",
+            "83 NOx sensor",
+            "84 Manifold surface temperature",
+            "85 NOx reagent system",
+            "86 Particulate matter (PM) sensor",
+            "87 Intake manifold absolute pressure",
+            "88 SCR Induce System",
+            "89 Run Time for AECD #11-#15",
+            "8A Run Time for AECD #16-#20",
+            "8B Diesel Aftertreatment",
+            "8C O2 Sensor (Wide Range)",
+            "8D Throttle Position G",
+            "8E Engine Friction - Percent Torque",
+            "8F PM Sensor Bank 1 & 2",
+            "90 WWH-OBD Vehicle OBD System Information",
+            "91 WWH-OBD Vehicle OBD System Information",
+            "92 Fuel System Control",
+            "93 WWH-OBD Vehicle OBD Counters support",
+            "94 NOx Warning And Inducement System",
+            "98 Exhaust Gas Temperature Sensor",
+            "99 Exhaust Gas Temperature Sensor",
+            "9A Hybrid/EV Vehicle System Data, Battery, Voltage",
+            "9B Diesel Exhaust Fluid Sensor Data",
+            "9C O2 Sensor Data",
+            "9D Engine Fuel Rate",
+            "9E Engine Exhaust Flow Rate",
+            "9F Fuel System Percentage Use",
+            "A0 PIDs supported [$A1 - $C0]",
+            "A1 NOx Sensor Corrected Data",
+            "A2 Cylinder Fuel Rate",
+            "A3 Evap System Vapor Pressure",
+            "A4 Transmission Actual Gear",
+            "A5 Commanded Diesel Exhaust Fluid Dosing",
+            "A6 Odometer [c]",
+            "A7 NOx Sensor Concentration Sensors 3 and 4",
+            "A8 NOx Sensor Corrected Concentration Sensors 3 and 4",
+            "A9 ABS Disable Switch State",
+            "C0 PIDs supported [$C1 - $E0]",
+            "C3 Fuel Level Input A/B",
+            "C4 Exhaust Particulate Control System Diagnostic Time/Count",
+            "C5 Fuel Pressure A and B",
+            resources.GetString("comboBoxPids.Items"),
+            "C7 Distance Since Reflash or Module Replacement",
+            "C8 NOx Control Diagnostic (NCD) and Particulate Control Diagnostic (PCD) Warning " +
+                "Lamp status"});
+            this.comboBoxPids.Location = new System.Drawing.Point(263, 203);
+            this.comboBoxPids.Name = "comboBoxPids";
+            this.comboBoxPids.Size = new System.Drawing.Size(262, 21);
+            this.comboBoxPids.TabIndex = 0;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.button18);
+            this.tabPage7.Controls.Add(this.button19);
+            this.tabPage7.Controls.Add(this.label17);
+            this.tabPage7.Controls.Add(this.button9);
+            this.tabPage7.Controls.Add(this.startReadAllPassThruMsgsButton);
+            this.tabPage7.Controls.Add(this.textBoxCAN);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(983, 298);
+            this.tabPage7.TabIndex = 2;
+            this.tabPage7.Text = "CAN Sniffer";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(25, 159);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(172, 23);
+            this.button18.TabIndex = 26;
+            this.button18.Text = "Clear Message Screen";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(25, 130);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(172, 23);
+            this.button19.TabIndex = 25;
+            this.button19.Text = "Save CAN Log";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(21, 15);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(118, 24);
+            this.label17.TabIndex = 24;
+            this.label17.Text = "CAN Sniffer";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(25, 101);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(172, 23);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "Stop CAN Sniffer";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // startReadAllPassThruMsgsButton
+            // 
+            this.startReadAllPassThruMsgsButton.Location = new System.Drawing.Point(25, 72);
+            this.startReadAllPassThruMsgsButton.Name = "startReadAllPassThruMsgsButton";
+            this.startReadAllPassThruMsgsButton.Size = new System.Drawing.Size(172, 23);
+            this.startReadAllPassThruMsgsButton.TabIndex = 2;
+            this.startReadAllPassThruMsgsButton.Text = "Start CAN Sniffer";
+            this.startReadAllPassThruMsgsButton.UseVisualStyleBackColor = true;
+            this.startReadAllPassThruMsgsButton.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // textBoxCAN
+            // 
+            this.textBoxCAN.Location = new System.Drawing.Point(227, 26);
+            this.textBoxCAN.Multiline = true;
+            this.textBoxCAN.Name = "textBoxCAN";
+            this.textBoxCAN.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxCAN.Size = new System.Drawing.Size(729, 239);
+            this.textBoxCAN.TabIndex = 1;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.button10);
+            this.tabPage8.Controls.Add(this.label11);
+            this.tabPage8.Controls.Add(this.textBox18);
+            this.tabPage8.Controls.Add(this.textBox10);
+            this.tabPage8.Controls.Add(this.textBox11);
+            this.tabPage8.Controls.Add(this.textBox12);
+            this.tabPage8.Controls.Add(this.textBox13);
+            this.tabPage8.Controls.Add(this.textBox14);
+            this.tabPage8.Controls.Add(this.textBox15);
+            this.tabPage8.Controls.Add(this.textBox16);
+            this.tabPage8.Controls.Add(this.textBox17);
+            this.tabPage8.Controls.Add(this.textBox6);
+            this.tabPage8.Controls.Add(this.textBox7);
+            this.tabPage8.Controls.Add(this.textBox8);
+            this.tabPage8.Controls.Add(this.textBox9);
+            this.tabPage8.Controls.Add(this.textBox3);
+            this.tabPage8.Controls.Add(this.textBox5);
+            this.tabPage8.Controls.Add(this.textBox4);
+            this.tabPage8.Controls.Add(this.textBox2);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(983, 298);
+            this.tabPage8.TabIndex = 3;
+            this.tabPage8.Text = "VIN Decoder";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(332, 128);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(325, 28);
+            this.button10.TabIndex = 13;
+            this.button10.Text = "GET VEHICLE IDENTIFICATION NUMBER";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(107, 80);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(50, 24);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "VIN:";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox18.Location = new System.Drawing.Point(768, 77);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(21, 29);
+            this.textBox18.TabIndex = 17;
+            this.textBox18.Text = "1";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(730, 77);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(21, 29);
+            this.textBox10.TabIndex = 16;
+            this.textBox10.Text = "0";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(693, 77);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(21, 29);
+            this.textBox11.TabIndex = 15;
+            this.textBox11.Text = "1";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(659, 77);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(21, 29);
+            this.textBox12.TabIndex = 14;
+            this.textBox12.Text = "6";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(622, 77);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(21, 29);
+            this.textBox13.TabIndex = 13;
+            this.textBox13.Text = "8";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(585, 77);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(21, 29);
+            this.textBox14.TabIndex = 12;
+            this.textBox14.Text = "E";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(548, 77);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(21, 29);
+            this.textBox15.TabIndex = 11;
+            this.textBox15.Text = "9";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox16.Location = new System.Drawing.Point(514, 77);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(21, 29);
+            this.textBox16.TabIndex = 10;
+            this.textBox16.Text = "W";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox17.Location = new System.Drawing.Point(477, 77);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(21, 29);
+            this.textBox17.TabIndex = 9;
+            this.textBox17.Text = "S";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(440, 77);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(21, 29);
+            this.textBox6.TabIndex = 8;
+            this.textBox6.Text = "G";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(403, 77);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(21, 29);
+            this.textBox7.TabIndex = 7;
+            this.textBox7.Text = "J";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(369, 77);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(21, 29);
+            this.textBox8.TabIndex = 6;
+            this.textBox8.Text = "A";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(332, 77);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(21, 29);
+            this.textBox9.TabIndex = 5;
+            this.textBox9.Text = "A";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(295, 77);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(21, 29);
+            this.textBox3.TabIndex = 4;
+            this.textBox3.Text = "A";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(258, 77);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(21, 29);
+            this.textBox5.TabIndex = 3;
+            this.textBox5.Text = "P";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(224, 77);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(21, 29);
+            this.textBox4.TabIndex = 2;
+            this.textBox4.Text = "F";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(187, 77);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(21, 29);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.Text = "6";
             // 
             // menuStrip1
             // 
@@ -677,7 +1427,8 @@
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bruteforceSecurityAccessToolStripMenuItem,
-            this.oBD2ToolStripMenuItem});
+            this.oBD2ToolStripMenuItem,
+            this.hex2DecToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
@@ -687,6 +1438,7 @@
             this.bruteforceSecurityAccessToolStripMenuItem.Name = "bruteforceSecurityAccessToolStripMenuItem";
             this.bruteforceSecurityAccessToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.bruteforceSecurityAccessToolStripMenuItem.Text = "Bruteforce Security Access";
+            this.bruteforceSecurityAccessToolStripMenuItem.Click += new System.EventHandler(this.bruteforceSecurityAccessToolStripMenuItem_Click);
             // 
             // oBD2ToolStripMenuItem
             // 
@@ -701,20 +1453,23 @@
             // readOBDDTCToolStripMenuItem
             // 
             this.readOBDDTCToolStripMenuItem.Name = "readOBDDTCToolStripMenuItem";
-            this.readOBDDTCToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.readOBDDTCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.readOBDDTCToolStripMenuItem.Text = "Read OBD2 DTC";
+            this.readOBDDTCToolStripMenuItem.Click += new System.EventHandler(this.readOBDDTCToolStripMenuItem_Click);
             // 
             // clearOBD2DTCToolStripMenuItem
             // 
             this.clearOBD2DTCToolStripMenuItem.Name = "clearOBD2DTCToolStripMenuItem";
-            this.clearOBD2DTCToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.clearOBD2DTCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clearOBD2DTCToolStripMenuItem.Text = "Clear OBD2 DTC";
+            this.clearOBD2DTCToolStripMenuItem.Click += new System.EventHandler(this.clearOBD2DTCToolStripMenuItem_Click);
             // 
             // requestVehicleVINToolStripMenuItem
             // 
             this.requestVehicleVINToolStripMenuItem.Name = "requestVehicleVINToolStripMenuItem";
-            this.requestVehicleVINToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.requestVehicleVINToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.requestVehicleVINToolStripMenuItem.Text = "Request Vehicle VIN";
+            this.requestVehicleVINToolStripMenuItem.Click += new System.EventHandler(this.requestVehicleVINToolStripMenuItem_Click);
             // 
             // groupBox3
             // 
@@ -783,7 +1538,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(933, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(933, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(416, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -824,6 +1579,17 @@
             this.comboBoxJ2534Devices.Size = new System.Drawing.Size(198, 21);
             this.comboBoxJ2534Devices.TabIndex = 1;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // hex2DecToolStripMenuItem
+            // 
+            this.hex2DecToolStripMenuItem.Name = "hex2DecToolStripMenuItem";
+            this.hex2DecToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.hex2DecToolStripMenuItem.Text = "Hex2Dec";
+            // 
             // PassThru
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -850,7 +1616,15 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -926,5 +1700,56 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button startReadAllPassThruMsgsButton;
+        private System.Windows.Forms.TextBox textBoxCAN;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboBoxPids;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.TextBox textBoxPid;
+        private System.Windows.Forms.TextBox textBoxCalId;
+        private System.Windows.Forms.TextBox textBoxVin;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ListBox listBoxDtc;
+        private System.Windows.Forms.ListBox listBoxObd;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBoxPidName;
+        private System.Windows.Forms.ToolStripMenuItem hex2DecToolStripMenuItem;
     }
 }

@@ -1,21 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿// /////////////////////////////////////////////////////////////////////////////
+//   ________                           .__                          
+//  /  _____/  ____   ____   ___________|__| ____                    
+// /   \  ____/ __ \ /    \_/ __ \_  __ \  |/ ___\                   
+// \    \_\  \  ___/|   |  \  ___/|  | \/  \  \___                   
+//  \______  /\___  >___|  /\___  >__|  |__|\___  >                  
+//         \/     \/     \/     \/              \/                   
+// ________  .__                                      __  .__        
+// \______ \ |__|____     ____   ____   ____  _______/  |_|__| ____  
+//  |    |  \|  \__  \   / ___\ /    \ /  _ \/  ___/\   __\  |/ ___\ 
+//  |    `   \  |/ __ \_/ /_/  >   |  (  <_> )___ \  |  | |  \  \___ 
+// /_______  /__(____  /\___  /|___|  /\____/____  > |__| |__|\___  >
+//         \/        \//_____/      \/           \/               \/  //Version 1.0.0
+// 
+using System;
+using System.IO;
 using System.Data;
-using System.Drawing;
 using System.Text;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Runtime.InteropServices;
-using static System.Net.Mime.MediaTypeNames;
+using System.Linq;
+using System.Drawing;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Reflection;
 using System.Reflection.Emit;
 using System.Collections;
-using System.Globalization;
-using System.Runtime.ConstrainedExecution;
+using System.Collections.Generic;
 using System.Diagnostics;
-using System.Reflection;
+using System.Globalization;
+using System.Windows.Forms;
+using System.ComponentModel;
+using System.Runtime.InteropServices;
+using System.Runtime.ConstrainedExecution;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using J2534;
-using System.Linq;
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 namespace PassThruJ2534
 {
@@ -47,6 +64,28 @@ namespace PassThruJ2534
                 }
             }
         }
+        // //////////////////////////////////
+        // Write CAN messages to textBoxCAN
+        public void addTxtCAN(string m)
+        {
+            if (textBoxCAN.InvokeRequired)
+            {
+                textBoxCAN.Invoke(new Action<string>(addTxtCAN), m);
+            }
+            else
+
+            {
+                textBoxCAN.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture) + " " + m);
+                if (textBoxCAN.Focused)
+                {
+                    textBoxCAN.SelectionStart = textBoxCAN.Text.Length;
+                    textBoxCAN.SelectionLength = 0;
+                    textBoxCAN.ScrollToCaret();
+                }
+            }
+        }
+        // /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //       ____.________   .________________     _____  
         //      |    |\_____  \  |   ____/\_____  \   /  |  | 
@@ -105,6 +144,8 @@ namespace PassThruJ2534
             }
         }
         // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        private Thread thread;
+        private bool stopThread;
         bool connectFlag = false;
         bool highSpeedCan;
         byte ecuId;
@@ -487,7 +528,7 @@ namespace PassThruJ2534
         {
             //DIAG SESS CONTROL BTN
             int sessionType = comboBoxDiagSessControl.SelectedIndex;
-            switch(sessionType)
+            switch(sessionType) 
             {
                 case 0x00:
                     startDiagnosticSession(0x81);
@@ -557,5 +598,380 @@ namespace PassThruJ2534
                     break;
             }
         }
+
+        private void tabPage8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            mode07();
+        }
+
+        private void textBox21_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            mode09();
+        }
+        // /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		void mode01()
+		{
+			// service $01 PIDS 0x00-0xC8
+			textBoxPid.Text = "";
+			textBoxPidName.Text = "";
+			string selectedPid = comboBoxPids.SelectedItem.ToString();
+			textBoxPidName.Text += selectedPid;
+			var selectedPidHex = selectedPid.Substring(0, 2);
+			byte pid = Convert.ToByte(selectedPidHex, 16);
+			byte[] mode01 = new byte[] { 0, 0, 0x7, 0xDF, 0x01, pid };
+			string pidDataRaw = sendPassThruMsg(mode01);
+			// 00  00  07  E8  41  01  00  07  61  61  
+			string pidDataInter = pidDataRaw.Replace(" ", "");
+			//string pidData = pidDataInter.Substring(12, 8);
+			textBoxPid.Text += pidDataInter;
+			
+		}
+		void mode02()
+		{
+			// service $02 PIDS 0x00-0xC8
+			textBoxPid.Text = "";
+			textBoxPidName.Text = "";
+			string selectedPid = comboBoxPids.SelectedItem.ToString();
+			textBoxPidName.Text += selectedPid;
+			var selectedPidHex = selectedPid.Substring(0, 2);
+			byte pid = Convert.ToByte(selectedPidHex, 16);
+			byte[] mode01 = new byte[] { 0, 0, 0x7, 0xDF, 0x02, pid };
+			string pidDataRaw = sendPassThruMsg(mode01);
+			// 00  00  07  E8  41  01  00  07  61  61  
+			string pidDataInter = pidDataRaw.Replace(" ", "");
+			//string pidData = pidDataInter.Substring(12, 8);
+			textBoxPid.Text += pidDataInter;
+		}
+		void mode03()
+		{
+			// service $03 Read DTC
+			listBoxDtc.Items.Remove(1);
+			byte[] mode03 = new byte[] { 0, 0, 0x7, 0xDF, 0x03 };
+			string dtcMsg = sendPassThruMsg(mode03);
+			string dtcMsgInter = dtcMsg.Replace(" ", "");
+			string dtcMsgInter2 = dtcMsgInter.Substring(10, 2);
+			int dtc = int.Parse(dtcMsgInter2);
+			if (dtc == 0)
+			{
+				listBoxDtc.Items.Add("No Fault Codes");
+			}
+
+		}
+		void mode04()
+		{
+			// service $04 clear DTC
+			listBoxDtc.Items.Remove(1);
+			byte[] mode04 = new byte[] { 0, 0, 0x7, 0xDF, 0x04 };
+			sendPassThruMsg(mode04);
+			listBoxDtc.Items.Add("Faults Cleared");
+		}
+		void mode05()
+		{
+			// service $05  Test results, oxygen sensor monitoring PIDS 0x0100-0x210
+			byte[] mode05 = new byte[] { 0, 0, 0x7, 0xDF, 0x05, 0x01, 0x00 };
+			sendPassThruMsg(mode05);
+
+		}
+		void mode06()
+		{
+			byte[] mode06 = new byte[] { 0, 0, 0x7, 0xDF, 0x06 };
+			sendPassThruMsg(mode06);
+		}
+		void mode07()
+		{
+			byte[] mode07 = new byte[] { 0, 0, 0x7, 0xDF, 0x07 };
+			sendPassThruMsg(mode07);
+		}
+		void mode08()
+		{
+			byte[] mode08 = new byte[] { 0, 0, 0x7, 0xDF, 0x08 };
+			sendPassThruMsg(mode08);
+		}
+		void mode09()
+		{
+			textBoxVin.Text = "";
+			textBoxCalId.Text = "";
+			//textBoxEcuName.Text = "";
+			//service $09 Request Vehicle Information PIDS 0x00-0x0B
+			// 00	4	Service 9 supported PIDs ($01 to $20)				Bit encoded. [A7..D0] = [PID $01..PID $20] See below
+			// 01	1	VIN Message Count in PID 02. Only for ISO 9141-2, ISO 14230-4 and SAE J1850.				
+			// 02	17	Vehicle Identification Number (VIN)				17-char VIN, ASCII-encoded and left-padded with null chars (0x00) if needed to.
+			byte[] mode0902 = new byte[] { 0, 0, 0x7, 0xDF, 0x09, 0x02 };
+			string vehicleIdentificationNumberMsg = sendPassThruMsg(mode0902);
+			//string test = "00 00 07 E8 49 02 01 36 46 50 41 41 41 4A 47 53 57 36 4A 38 30 35 30 31";
+			string interVin = vehicleIdentificationNumberMsg.Replace(" ", "");
+			string interVin2 = interVin.Substring(14);
+			string finalVin = HexToASCII(interVin2);
+			textBoxVin.Text += finalVin;
+			// 03	1	Calibration ID message count for PID 04. Only for ISO 9141-2, ISO 14230-4 and SAE J1850.			
+			// 04	16,32,48,64..	Calibration ID				Up to 16 ASCII chars. Data bytes not used will be reported as null bytes (0x00). Several CALID can be outputed (16 bytes each)
+			byte[] mode0904 = new byte[] { 0, 0, 0x7, 0xDF, 0x09, 0x04 };
+			string calibrationIdMsg = sendPassThruMsg(mode0904);
+			// string 00  00  07  E8  49  04  01  20  20  20  48  41  43  43  4B  47  41  2E  48  45  58  00  00 
+			string interCalId = calibrationIdMsg.Replace(" ", "");
+			string interCalId2 = interCalId.Substring(20);
+			string finalCalId = HexToASCII(interCalId2);
+			textBoxCalId.Text += finalCalId;
+			// 05	1	Calibration verification numbers (CVN) message count for PID 06. Only for ISO 9141-2, ISO 14230-4 and SAE J1850.				
+			// 06	4,8,12,16	Calibration Verification Numbers (CVN) Several CVN can be output (4 bytes each) the number of CVN and CALID must match			
+			byte[] mode0906 = new byte[] { 0, 0, 0x7, 0xDF, 0x09, 0x06 };
+			string calibrationVerificationMsg = sendPassThruMsg(mode0906);
+			// 07	1	In-use performance tracking message count for PID 08 and 0B. Only for ISO 9141-2, ISO 14230-4 and SAE J1850.	
+			// 08	4	In-use performance tracking for spark ignition vehicles				
+			// 09	1	ECU name message count for PID 0A				
+			// 0A	20	ECU name				ASCII-coded. Right-padded with null chars (0x00).
+			byte[] mode090A = new byte[] { 0, 0, 0x7, 0xDF, 0x09, 0x0A };
+			string ecuNameMsg = sendPassThruMsg(mode090A);
+			// 0B	4	In-use performance tracking for compression ignition vehicles				
+		}
+		void mode0A()
+		{
+			byte[] mode0A = new byte[] { 0, 0, 0x7, 0xDF, 0x0A };
+			sendPassThruMsg(mode0A);
+		}
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            mode03();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            mode04();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            mode0A();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            mode01();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            mode02();
+        }
+        private void listBoxObd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Service / Mode $01 Live Sensor Data
+            //Service / Mode $02 Freeze Frame Data
+            //Service / Mode $03 Stored Fault Codes
+            //Service / Mode $04 Clear Stored Codes
+            //Service / Mode $05 Oxygen Sensor Monitor
+            //Service / Mode $06 Monitoring Results
+            //Service / Mode $07 Pending Fault Codes
+            //Service / Mode $08 Test Device Control
+            //Service / Mode $09 Vehicle Information
+            //Service / Mode $0A Permanent Fault Codes
+            switch (listBoxObd.SelectedIndex)
+            {
+                case 0x00:
+                    Log("Mode $01 Live Sensor Data\r\n");
+                    mode01();
+                    break;
+                case 0x01:
+                    Log("Mode $02 Freeze Frame Data\r\n");
+                    mode02();
+                    break;
+                case 0x02:
+                    Log("Mode $03 Stored Fault Codes\r\n");
+                    mode03();
+                    break;
+                case 0x03:
+                    Log("Clear Stored Codes\r\n");
+                    mode04();
+                    break;
+                case 0x04:
+                    Log("Mode $05 Oxygen Sensor Monitor\r\n");
+                    mode05();
+                    break;
+                case 0x05:
+                    Log("Mode $06 Monitoring Results\r\n");
+                    mode06();
+                    break;
+                case 0x06:
+                    Log("Mode $07 Pending Fault Codes\r\n");
+                    mode07();
+                    break;
+                case 0x07:
+                    Log("Mode $08 Test Device Control\r\n");
+                    mode08();
+                    break;
+                case 0x08:
+                    Log("Mode $09 Vehicle Information\r\n");
+                    mode09();
+                    break;
+                case 0x09:
+                    Log("Mode $0A Permanent Fault Codes\r\n");
+                    mode0A();
+                    break;
+            }
+        }
+        // //////////////////////////////////
+        static string HexToASCII(string hexString)
+        {
+            byte[] bytes = new byte[hexString.Length / 2];
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                bytes[i] = Convert.ToByte(hexString.Substring(i * 2, 2), 16);
+            }
+            return Encoding.ASCII.GetString(bytes);
+        }
+
+        private void bruteforceSecurityAccessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bruteforce();
+        }
+
+        private void readOBDDTCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mode03();
+        }
+
+        private void clearOBD2DTCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mode04();
+        }
+
+        private void requestVehicleVINToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mode09();
+        }
+        // /////////////////////////////////////////////////////////////////////////////
+        // Read All PassThru Messages 
+        public void readAllMsgs()
+        {
+
+            List<J2534.J2534Device> MyListOfJ2534Devices = J2534DeviceFinder.FindInstalledJ2534DLLs();
+            for (int i = 0; i < MyListOfJ2534Devices.Count; i++)
+            {
+                string J2534ToolsName = MyListOfJ2534Devices[i].Name;
+                //comboBoxJ2534Devices.Items.Add(J2534ToolsName);
+                //addTxtLog("Found Installed Device: " + J2534ToolsName.ToString() + "\r\n");
+            }
+			//A flow filter is whats required for ending multi line messages. Pass is for sending just individual messages.
+            PassThruMsg maskMsg1 = new PassThruMsg(ProtocolID.ISO15765, TxFlag.NONE, new byte[] { 0, 0, 0x00, 0x00 }); //Set mask of 7FF (Only accept the exact PATTERN
+            PassThruMsg patternMsg1 = new PassThruMsg(ProtocolID.ISO15765, TxFlag.NONE, new byte[] { 0, 0, 07, 0xFF }); //Search for 7E8
+            PassThruMsg flowMsg1 = new PassThruMsg(ProtocolID.ISO15765, TxFlag.NONE, new byte[] { 0, 0, 07, 0xE0 }); //Use the flow message of 7E0
+            IntPtr maskPtr1 = maskMsg1.ToIntPtr();
+            IntPtr PatternPtr1 = patternMsg1.ToIntPtr();
+            IntPtr FlowPtr1 = IntPtr.Zero;
+            var ErrorResult = J2534Port.Functions.PassThruStartMsgFilter((int)ChannelID, FilterType.PASS_FILTER, maskPtr1, PatternPtr1, FlowPtr1, ref FilterID);
+            if (ErrorResult != J2534Err.STATUS_NOERROR)
+            {
+                Log(ErrorResult.ToString() + "\r\n");
+                Log("Failed to set filters ERROR");
+            }
+            else
+            {
+                Log("PassThru Start Message Filter Success \r\n");
+            }
+            //ALWAYS do this after all commands that use a INTPTR so that it releases any used memory/ram by that variable.
+            Marshal.FreeHGlobal(maskPtr1);
+            Marshal.FreeHGlobal(PatternPtr1);
+            Marshal.FreeHGlobal(FlowPtr1);
+
+            // ///////////////////////////////////////////////////////////////
+            // PassThruReadMsgs(int channelId, IntPtr msgs, ref int numMsgs, int timeout);
+            //8) Read Respnse
+            int timeout = 60;
+            while (stopThread == false)
+            {
+                int NumReadMsgs = 1;
+                IntPtr MyRXMsg = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(PassThruMsg)) * NumReadMsgs);
+                ErrorResult = J2534Port.Functions.PassThruReadMsgs((int)ChannelID, MyRXMsg, ref NumReadMsgs, timeout);
+                if (ErrorResult != J2534Err.STATUS_NOERROR)
+                {
+                    Log(ErrorResult.ToString() + "\r\n");
+                    Log("Failed to read PassThru Message \r\n");
+                    //Shits fucked, fauled reading!!!
+                    break;
+                }
+                else
+                {
+                    Log("PassThru Read Message Success \r\n");
+                }
+                //Convert the memory pointer back to a PassThruMsg Object
+                PassThruMsg FoundFrame = MyRXMsg.AsMsgList(1).Last();
+                if (((int)FoundFrame.RxStatus == ((int)J2534.RxStatus.TX_INDICATION_SUCCESS ^ (int)J2534.RxStatus.TX_MSG_TYPE)) ||
+                    ((int)FoundFrame.RxStatus == ((int)J2534.RxStatus.TX_INDICATION_SUCCESS ^ (int)J2534.RxStatus.TX_MSG_TYPE ^ (int)J2534.RxStatus.ISO15765_ADDR_TYPE)) ||
+                    ((int)FoundFrame.RxStatus == ((int)J2534.RxStatus.START_OF_MESSAGE))
+                    )
+                {
+                    //We dont want any of this, continue!
+                    Marshal.FreeHGlobal(MyRXMsg);
+                    continue;
+                }
+                Marshal.FreeHGlobal(MyRXMsg);
+                //This should have our bytes!
+                byte[] MyRXDBytes = FoundFrame.GetBytes();
+                string DataToString = "";
+                for (int i = 0; i < MyRXDBytes.Length; i++)
+                {
+                    DataToString += MyRXDBytes[i].ToString("X2") + "  ";
+                    //addTxtLog("PassThru Msg Rx: " + DataToString + "\r\n");
+                }
+                addTxtCAN("PassThru Msg Rx: " + DataToString + "\r\n");
+                string JustForBreakpoint = "";
+            }
+            return;
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            startReadAllPassThruMsgsButton.Enabled = false;
+            stopThread = false;
+            thread = new Thread(readAllMsgs);
+            thread.Start();
+            //readAllMsgs();
+            return;
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            using (var saveFileDialog1 = new SaveFileDialog())
+            {
+                saveFileDialog1.Filter = "log files (*.log)|*.log";
+                saveFileDialog1.FilterIndex = 2;
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    File.WriteAllText(saveFileDialog1.FileName, textBoxCAN.Text);
+                }
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            stopThread = true;
+            startReadAllPassThruMsgsButton.Enabled = true;
+        }
+        // /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     }
 }

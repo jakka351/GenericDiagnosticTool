@@ -48,9 +48,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="J2534.cs" />
-    <Compile Include="J2534DeviceFinder.cs" />
-    <Compile Include="J2534Devices.cs" />
+    <Compile Include="lib\Interface\J2534.cs" />
+    <Compile Include="lib\Interface\J2534DeviceFinder.cs" />
+    <Compile Include="lib\Interface\J2534Devices.cs" />
     <Compile Include="lib\Algorithms\SecurityAlgorithms.cs" />
     <Compile Include="lib\Algorithms\SecurityKeys.cs" />
     <Compile Include="lib\Services\CONRTOL_DTC_SETTING.cs">
@@ -111,6 +111,8 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="lib\Media\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
