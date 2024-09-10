@@ -34,12 +34,14 @@
             this.DSC = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxDiagSessControl = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBoxEcuReset = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.button6 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -50,7 +52,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button8 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBoxControlDtc = new System.Windows.Forms.ComboBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -81,17 +83,15 @@
             this.clearOBD2DTCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.requestVehicleVINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBoxEcuTx = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBoxEcuRx = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBoxCanBus = new System.Windows.Forms.ComboBox();
             this.comboBoxJ2534Devices = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxEcuRx = new System.Windows.Forms.TextBox();
-            this.textBoxEcuTx = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.DSC.SuspendLayout();
@@ -137,7 +137,7 @@
             // 
             this.DSC.Controls.Add(this.button3);
             this.DSC.Controls.Add(this.label3);
-            this.DSC.Controls.Add(this.comboBox3);
+            this.DSC.Controls.Add(this.comboBoxDiagSessControl);
             this.DSC.Location = new System.Drawing.Point(4, 4);
             this.DSC.Name = "DSC";
             this.DSC.Padding = new System.Windows.Forms.Padding(3);
@@ -155,6 +155,7 @@
             this.button3.TabIndex = 6;
             this.button3.Text = "Start Diagnostic Session";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
@@ -165,10 +166,10 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Diagnostic Session Type:";
             // 
-            // comboBox3
+            // comboBoxDiagSessControl
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBoxDiagSessControl.FormattingEnabled = true;
+            this.comboBoxDiagSessControl.Items.AddRange(new object[] {
             "0x81 standardDiagnostic",
             "0x85 ecuProgramming",
             "0x87 ecuAdjustment",
@@ -177,16 +178,16 @@
             "0x01 standardDiagnosticUDS",
             "0x02 ecuProgrammingUDS",
             "0x03 extendedDiagnosticUDS"});
-            this.comboBox3.Location = new System.Drawing.Point(29, 44);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(251, 21);
-            this.comboBox3.TabIndex = 4;
+            this.comboBoxDiagSessControl.Location = new System.Drawing.Point(29, 44);
+            this.comboBoxDiagSessControl.Name = "comboBoxDiagSessControl";
+            this.comboBoxDiagSessControl.Size = new System.Drawing.Size(251, 21);
+            this.comboBoxDiagSessControl.TabIndex = 4;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.comboBox5);
+            this.tabPage2.Controls.Add(this.comboBoxEcuReset);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -203,6 +204,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "Send Ecu Reset Signal";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label5
             // 
@@ -213,19 +215,19 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Reset Type:";
             // 
-            // comboBox5
+            // comboBoxEcuReset
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.comboBoxEcuReset.FormattingEnabled = true;
+            this.comboBoxEcuReset.Items.AddRange(new object[] {
             "0x01 hardReset",
             "0x02 keyOffOnReset",
             "0x03 softReset",
             "0x04 enableRapidPowerShutDown",
             "0x05 disableRapidPowerShutDown"});
-            this.comboBox5.Location = new System.Drawing.Point(32, 49);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(251, 21);
-            this.comboBox5.TabIndex = 7;
+            this.comboBoxEcuReset.Location = new System.Drawing.Point(32, 49);
+            this.comboBoxEcuReset.Name = "comboBoxEcuReset";
+            this.comboBoxEcuReset.Size = new System.Drawing.Size(251, 21);
+            this.comboBoxEcuReset.TabIndex = 7;
             // 
             // tabPage1
             // 
@@ -247,15 +249,112 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(25, 89);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(62, 13);
+            this.label10.TabIndex = 188;
+            this.label10.Text = "Secret Key:";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "JAMES",
+            "Bosch",
+            "Flash",
+            "Bosch",
+            "FAITH",
+            "TAMER",
+            "REMAT",
+            "DIODE",
+            "Rowan",
+            "LAURA",
+            "JaMes",
+            "AISIN",
+            "SAMMY",
+            "DIODE",
+            "conti",
+            "conti",
+            "Lupin",
+            "BOSEX",
+            "DIODE",
+            "nowaR",
+            "nowaR",
+            "PANDA",
+            "Jesus",
+            "Rowan",
+            "Flash",
+            "JAMES",
+            "GANES",
+            "SAMMY",
+            "Janis",
+            "COLIN",
+            "BOSCH",
+            "DIODE",
+            "Rowan",
+            "Rowan",
+            "ARIAN",
+            "ARIAN",
+            "DRIFT",
+            "BroWn",
+            "JaMes",
+            "DRIFT",
+            "Flash",
+            "Bosch",
+            "Rowan",
+            "nowaR",
+            "DIODE",
+            "DIODE",
+            "DIODE",
+            "JaMes",
+            "conti",
+            "Rowan",
+            "MACOM",
+            "JAMES",
+            "MACOM",
+            "MACOM",
+            "conti",
+            "Rowan",
+            "DIODE",
+            "BOSCH",
+            "JAMES",
+            "GANES",
+            "SKAND",
+            "FAITH",
+            "DIODE",
+            "slIor",
+            "-MErM",
+            "Orion Audio Interface Module",
+            "Orion Audio Control Module",
+            "Orion Bluetooth Phone Module",
+            "Orion Body Electronic Module",
+            "Orion Front Display Interface Module",
+            "Orion Front Display Interface Module II",
+            "Orion Instrument Cluster",
+            "Orion Instrument Cluster II 1",
+            "Orion Instrument Cluster II 2",
+            "Orion Instrument Cluster II 3",
+            "Orion Restraints Control Module",
+            "Orion Powertrain Control Module",
+            "Orion Transmission Control Module"});
+            this.comboBox7.Location = new System.Drawing.Point(25, 105);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(251, 21);
+            this.comboBox7.TabIndex = 187;
+            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
+            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Crimson;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(28, 198);
+            this.button6.Location = new System.Drawing.Point(28, 184);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(251, 33);
+            this.button6.Size = new System.Drawing.Size(251, 24);
             this.button6.TabIndex = 186;
             this.button6.Text = "Bruteforce";
             this.button6.UseVisualStyleBackColor = false;
@@ -264,7 +363,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(39, 146);
+            this.checkBox2.Location = new System.Drawing.Point(34, 132);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(53, 17);
             this.checkBox2.TabIndex = 10;
@@ -273,7 +372,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(28, 169);
+            this.button5.Location = new System.Drawing.Point(28, 155);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(251, 23);
             this.button5.TabIndex = 9;
@@ -318,7 +417,8 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Ford 2003-2011 Security Algorithim"});
+            "Ford CAN Generic Diagnostic Specification",
+            "Ford Global Generic Diagnostic Specification"});
             this.comboBox1.Location = new System.Drawing.Point(25, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(251, 21);
@@ -328,7 +428,7 @@
             // 
             this.tabPage3.Controls.Add(this.button8);
             this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Controls.Add(this.comboBox6);
+            this.tabPage3.Controls.Add(this.comboBoxControlDtc);
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -345,6 +445,7 @@
             this.button8.TabIndex = 12;
             this.button8.Text = "Send ControlDTCSetting";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label6
             // 
@@ -355,16 +456,16 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Setting Control";
             // 
-            // comboBox6
+            // comboBoxControlDtc
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.comboBoxControlDtc.FormattingEnabled = true;
+            this.comboBoxControlDtc.Items.AddRange(new object[] {
             "0x01 DTC Setting On",
             "0x02 DTC Setting Off"});
-            this.comboBox6.Location = new System.Drawing.Point(33, 44);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(251, 21);
-            this.comboBox6.TabIndex = 10;
+            this.comboBoxControlDtc.Location = new System.Drawing.Point(33, 44);
+            this.comboBoxControlDtc.Name = "comboBoxControlDtc";
+            this.comboBoxControlDtc.Size = new System.Drawing.Size(251, 21);
+            this.comboBoxControlDtc.TabIndex = 10;
             // 
             // tabPage6
             // 
@@ -454,6 +555,7 @@
             this.buttonSendPassThruMsg.TabIndex = 10;
             this.buttonSendPassThruMsg.Text = "Send PassThru Msg";
             this.buttonSendPassThruMsg.UseVisualStyleBackColor = true;
+            this.buttonSendPassThruMsg.Click += new System.EventHandler(this.buttonSendPassThruMsg_Click);
             // 
             // buttonAddMsg
             // 
@@ -633,6 +735,42 @@
             this.groupBox3.Text = "PassThru Connection";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
+            // textBoxEcuTx
+            // 
+            this.textBoxEcuTx.Location = new System.Drawing.Point(583, 31);
+            this.textBoxEcuTx.Name = "textBoxEcuTx";
+            this.textBoxEcuTx.Size = new System.Drawing.Size(33, 20);
+            this.textBoxEcuTx.TabIndex = 188;
+            this.textBoxEcuTx.Text = "7E8";
+            this.textBoxEcuTx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(535, 34);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 189;
+            this.label9.Text = "ECU TX:";
+            // 
+            // textBoxEcuRx
+            // 
+            this.textBoxEcuRx.Location = new System.Drawing.Point(497, 31);
+            this.textBoxEcuRx.Name = "textBoxEcuRx";
+            this.textBoxEcuRx.Size = new System.Drawing.Size(33, 20);
+            this.textBoxEcuRx.TabIndex = 11;
+            this.textBoxEcuRx.Text = "7E0";
+            this.textBoxEcuRx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(448, 34);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 13);
+            this.label8.TabIndex = 187;
+            this.label8.Text = "ECU RX:";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -655,12 +793,15 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(656, 29);
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(633, 29);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Connect PassThru";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Connect";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.buttonConnect);
             // 
             // comboBoxCanBus
@@ -682,125 +823,6 @@
             this.comboBoxJ2534Devices.Name = "comboBoxJ2534Devices";
             this.comboBoxJ2534Devices.Size = new System.Drawing.Size(198, 21);
             this.comboBoxJ2534Devices.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(448, 34);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 13);
-            this.label8.TabIndex = 187;
-            this.label8.Text = "ECU RX:";
-            // 
-            // textBoxEcuRx
-            // 
-            this.textBoxEcuRx.Location = new System.Drawing.Point(504, 31);
-            this.textBoxEcuRx.Name = "textBoxEcuRx";
-            this.textBoxEcuRx.Size = new System.Drawing.Size(33, 20);
-            this.textBoxEcuRx.TabIndex = 11;
-            this.textBoxEcuRx.Text = "7E0";
-            this.textBoxEcuRx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBoxEcuTx
-            // 
-            this.textBoxEcuTx.Location = new System.Drawing.Point(600, 31);
-            this.textBoxEcuTx.Name = "textBoxEcuTx";
-            this.textBoxEcuTx.Size = new System.Drawing.Size(33, 20);
-            this.textBoxEcuTx.TabIndex = 188;
-            this.textBoxEcuTx.Text = "7E8";
-            this.textBoxEcuTx.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(545, 34);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 13);
-            this.label9.TabIndex = 189;
-            this.label9.Text = "ECU TX:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(25, 89);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 13);
-            this.label10.TabIndex = 188;
-            this.label10.Text = "Secret Key:";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "JAMES",
-            "Bosch",
-            "Flash",
-            "Bosch",
-            "FAITH",
-            "TAMER",
-            "REMAT",
-            "DIODE",
-            "Rowan",
-            "LAURA",
-            "JaMes",
-            "AISIN",
-            "SAMMY",
-            "DIODE",
-            "conti",
-            "conti",
-            "Lupin",
-            "BOSEX",
-            "DIODE",
-            "nowaR",
-            "nowaR",
-            "PANDA",
-            "Jesus",
-            "Rowan",
-            "Flash",
-            "JAMES",
-            "GANES",
-            "SAMMY",
-            "Janis",
-            "COLIN",
-            "BOSCH",
-            "DIODE",
-            "Rowan",
-            "Rowan",
-            "ARIAN",
-            "ARIAN",
-            "DRIFT",
-            "BroWn",
-            "JaMes",
-            "DRIFT",
-            "Flash",
-            "Bosch",
-            "Rowan",
-            "nowaR",
-            "DIODE",
-            "DIODE",
-            "DIODE",
-            "JaMes",
-            "conti",
-            "Rowan",
-            "MACOM",
-            "JAMES",
-            "MACOM",
-            "MACOM",
-            "conti",
-            "Rowan",
-            "DIODE",
-            "BOSCH",
-            "JAMES",
-            "GANES",
-            "SKAND",
-            "FAITH",
-            "DIODE",
-            "slIor",
-            "-MErM"});
-            this.comboBox7.Location = new System.Drawing.Point(25, 105);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(251, 21);
-            this.comboBox7.TabIndex = 187;
             // 
             // PassThru
             // 
@@ -860,7 +882,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBoxDiagSessControl;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button2;
@@ -869,14 +891,14 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBoxEcuReset;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button buttonAddMsg;
         private System.Windows.Forms.TextBox textBoxPassThruMsg;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBoxControlDtc;
         private System.Windows.Forms.Button buttonSendPassThruMsg;
         private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;

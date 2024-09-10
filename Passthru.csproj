@@ -53,8 +53,23 @@
     <Compile Include="J2534Devices.cs" />
     <Compile Include="lib\Algorithms\SecurityAlgorithms.cs" />
     <Compile Include="lib\Algorithms\SecurityKeys.cs" />
+    <Compile Include="lib\Services\CONRTOL_DTC_SETTING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Services\DIAGNOSTIC_SESSION_CONTROL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Services\ECU_RESET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Services\NEGATIVE_RESPONSE_CODES.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="lib\Services\Protocol.cs" />
-    <Compile Include="lib\Services\SecurityAccess.cs">
+    <Compile Include="lib\Services\SECURITY_ACCESS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Services\TESTER_PRESENT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PassThru.cs">

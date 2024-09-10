@@ -29,7 +29,7 @@ namespace PassThruJ2534
             InitializeComponent();
         }
         // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        public void Log(string m)
+        private void Log(string m)
         {
             // Invoke required to marshal the call back to the UI thread
             if (textBoxLog.InvokeRequired)
@@ -116,8 +116,7 @@ namespace PassThruJ2534
         {
             if (button1.Text == "Connect")
             {
-                if(comboBoxCanBus.SelectedIndex == 0) {highSpeedCan = true;}
-                else { highSpeedCan = false; }
+                if(comboBoxCanBus.SelectedIndex == 0) {highSpeedCan = true;} else { highSpeedCan = false; }
                 string hexString1 = textBoxEcuRx.Text;
                 // Convert the hex string to an integer
                 int intValue1 = Convert.ToInt32(hexString1, 16);
@@ -192,7 +191,7 @@ namespace PassThruJ2534
                 //4) Start our OBD2 connection 
                 //Use ProtocolID.ISO15765_PS if needing to connect to MS CAN. Have to pass the pins 3/11 to tell it to go to those.
                 ushort psValue = 0x60E;
-                if (highSpeed == true)
+                if (highSpeedCan == true)
                 {
                     ErrorResult = J2534Port.Functions.PassThruConnect(DeviceID, ProtocolID.ISO15765, ConnectFlag.NONE, BaudRate.CAN_500000, ref ChannelID);
                     if (ErrorResult != J2534Err.STATUS_NOERROR)
@@ -340,7 +339,6 @@ namespace PassThruJ2534
             {
                 // Add the text from the TextBox to the ListBox
                 listBox1.Items.Add(textBoxPassThruMsg.Text);
-
                 // Optionally clear the TextBox after adding
                 textBoxPassThruMsg.Clear();
             }
@@ -382,7 +380,7 @@ namespace PassThruJ2534
         //  \________|\_______ \/______  //______  /\____   |  Send PassThru Message
         //                    \/       \/        \/      |__| 
         // ///////////////////////////////////////////////////
-        string sendPassThruMsg(byte[] frame)
+        private string sendPassThruMsg(byte[] frame)
         {
             // ///////////////////////////////////////
             // ///////////////////////////////////////////////////////////////////
@@ -445,6 +443,119 @@ namespace PassThruJ2534
             }
             string noData = "No Data";
             return noData;
+        }
+
+        public static byte[] StringToByteArray(string input)
+        {
+            // Ensure even number of characters by padding if necessary
+            if (input.Length % 2 != 0)
+            {
+                input = "0" + input;
+            }
+            // Prepare the byte array
+            byte[] byteArray = new byte[input.Length / 2];
+            for (int i = 0; i < input.Length; i += 2)
+            {
+                // Take two characters at a time and convert them to a byte
+                string hexPair = input.Substring(i, 2);
+                byteArray[i / 2] = Convert.ToByte(hexPair, 16);
+            }
+            return byteArray;
+        }
+
+        public void buttonSendPassThruMsg_Click(object sender, EventArgs e)
+        {
+            string message = listBox1.SelectedItem.ToString();
+            message = message.Replace(" ", "");
+            byte[] byteMsg = StringToByteArray(message);  // Your byte array from the string
+            byte[] byteEcuId = new byte[] { 0, 0, ecuId, ecuId2 };  // Your ECU ID byte arra
+            // Create a new byte array with enough space to hold both arrays
+            byte[] combinedArray = new byte[byteMsg.Length + byteEcuId.Length];
+            // Copy byteMsg into the new array
+            Array.Copy(byteMsg, 0, combinedArray, 0, byteMsg.Length);
+            // Copy byteEcuId into the new array, starting right after the byteMsg
+            Array.Copy(byteEcuId, 0, combinedArray, byteMsg.Length, byteEcuId.Length);
+            sendPassThruMsg(combinedArray);
+        }
+
+        private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //DIAG SESS CONTROL BTN
+            int sessionType = comboBoxDiagSessControl.SelectedIndex;
+            switch(sessionType)
+            {
+                case 0x00:
+                    startDiagnosticSession(0x81);
+                    break;
+                case 0x01:
+                    startDiagnosticSession(0x85);
+                    break;
+                case 0x02:
+                    startDiagnosticSession(0x87);
+                    break;
+                case 0x03:
+                    startDiagnosticSession(0xFE);
+                    break;
+                case 0x04:
+                    startDiagnosticSession(0xFA);
+                    break;
+                case 0x05:
+                    startDiagnosticSession(0x81);
+                    break;
+                case 0x06:
+                    startDiagnosticSession(0x02);
+                    break;
+                case 0x07:
+                    startDiagnosticSession(0x03);
+                    break;
+                case 0x08:
+                    startDiagnosticSession(0x04);
+                    break;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //ECU RESET BTN
+            int resetType = comboBoxEcuReset.SelectedIndex;
+            switch(resetType)
+            {
+                case 0x00:
+                    ecuReset(0x01);
+                    break;
+                case 0x01:
+                    ecuReset(0x02);
+                    break;
+                case 0x02:
+                    ecuReset(0x03);
+                    break;
+                case 0x03:
+                    ecuReset(0x04);
+                    break;
+                case 0x04:
+                    ecuReset(0x05);
+                    break;
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            //CONTROL DTC BTN
+            int onOff = comboBoxControlDtc.SelectedIndex;
+            switch(onOff)
+            {
+                case 0x00:
+                    controlDtcSetting(0x01);
+                    break;
+                case 0x01:
+                    controlDtcSetting(0x02);
+                    break;
+            }
         }
     }
 }
