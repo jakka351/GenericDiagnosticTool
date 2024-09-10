@@ -9,7 +9,7 @@ General purpose diagnostic software that allows you to control individual diagno
 ![image](https://github.com/user-attachments/assets/3f2eaa98-8e04-45a7-8b6a-b19dd6c526fd)
 ![image](https://github.com/user-attachments/assets/c43cbd55-5c05-4653-8ea9-c111af294497)
 
-## Current Functionality 
+## Current Functionality (using KWP2000, UDS)
 - Diagnostic Session Control
 - ECU Reset
 - Tester Present
