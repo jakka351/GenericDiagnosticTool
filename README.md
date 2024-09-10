@@ -31,12 +31,17 @@ General purpose diagnostic software that allows you to control individual diagno
 - CAN Sniffer
 - PID Lookup tool via service 0x22
 
+
+<img align="right" src="https://testerpresent.com.au/wp-content/uploads/2024/03/EDR@2x-1.png" height="25%" width="25%"/>
+
 ## J2534 Interface
 This implementation currently only works with an OBDXPro FT J2534 interface(https://obdxpro.com). Hoping to troubleshoot it such that it is compliant with all J2534 interfaces, ie VCM2, VCM3, Tactrix Openport, Mongoose Pro. Feel free to fork and modify it to work with your devices.
 ![image](https://github.com/user-attachments/assets/8112c327-3668-4628-8e44-b5f34cd35316)
 
 ## Executable Download
 https://mega.nz/file/IOtFTRra#fx2Hv2PqSp8vAag8wl4Iwv1nZYgpZof4Q94DAbdECOc
+![image](https://github.com/user-attachments/assets/5d286541-9565-4ab7-8677-83823695f371)
+
 
 
       
