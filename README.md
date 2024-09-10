@@ -7,6 +7,14 @@
 ## Generic PassThru Diagnostic Software
 General purpose diagnostic software that allows you to control individual diagnostic services. Have not seen any open source generic diagnostic software for J2534 devices so I thought I would make some. Currently for use on vehicles with ECUs on a typical High Speed CAN and Medium Speed CAN, aiming for it to work with Ford, Mazda, JLR, Volvo and anything OBD2 compliant. Allows you to set the ECU RX & TX Address (ie 7E0, 7E8 for a Powertrain Control Module) and connect to that ECU, and perform basic diagnostic functions using both KWP2000 protocol or UDS protocol. This is a work in progress... 
 
+## Current Functionality (using KWP2000, UDS)
+- Diagnostic Session Control
+- ECU Reset
+- Tester Present
+- Security Access
+- Control DTC Setting
+- Bruteforce Security Access
+- OBD2 Implementation
 
     
 
@@ -18,14 +26,6 @@ General purpose diagnostic software that allows you to control individual diagno
 
 
 
-## Current Functionality (using KWP2000, UDS)
-- Diagnostic Session Control
-- ECU Reset
-- Tester Present
-- Security Access
-- Control DTC Setting
-- Bruteforce Security Access
-- OBD2 Implementation
 
 ## Planned Functionality 
 
