@@ -15,6 +15,7 @@ General purpose diagnostic software that allows you to control individual diagno
 - Control DTC Setting
 - Bruteforce Security Access
 - OBD2 Implementation
+- CAN Sniffer
 
     
 
@@ -32,7 +33,6 @@ General purpose diagnostic software that allows you to control individual diagno
 - Read and Clear Diagnostic Trouble Codes
 - Enumerate all online ECUs
 - VIN Decoder
-- CAN Sniffer
 - PID Lookup tool via service 0x22
 
 
