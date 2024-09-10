@@ -1,5 +1,9 @@
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 ![image](https://github.com/user-attachments/assets/0283746b-6880-4dab-a376-7861bda1d027)
 *** 
+
+<a href="https://testerpresent.com.au/"><img src="https://img.shields.io/badge/Tester Present -Specialist Automotive Solutions-blue" /></a>
+
 ## Generic PassThru Diagnostic Software
 General purpose diagnostic software that allows you to control individual diagnostic services. Have not seen any open source generic diagnostic software for J2534 devices so I thought I would make some. Currently for use on vehicles with ECUs on a typical High Speed CAN and Medium Speed CAN, aiming for it to work with Ford, Mazda, JLR, Volvo and anything OBD2 compliant. Allows you to set the ECU RX & TX Address (ie 7E0, 7E8 for a Powertrain Control Module) and connect to that ECU, amd perform basic diagnostic functions using both KWP2000 type protocol or UDS protocol. This is a work in progress... 
 
@@ -33,3 +37,4 @@ This implementation currently only works with an OBDXPro FT J2534 interface(http
 
 ## Executable Download
 https://mega.nz/file/IOtFTRra#fx2Hv2PqSp8vAag8wl4Iwv1nZYgpZof4Q94DAbdECOc
+![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
