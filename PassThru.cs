@@ -32,7 +32,14 @@ using System.Runtime.InteropServices;
 using System.Runtime.ConstrainedExecution;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+ 
+using System.IO.Ports;
+using System.Net;
+using System.Runtime.Serialization.Formatters;
+using System.Runtime.Serialization.Formatters.Binary;
+
 using J2534;
+using System.IO.Pipes;
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 namespace PassThruJ2534
 {
@@ -972,6 +979,248 @@ namespace PassThruJ2534
             stopThread = true;
             startReadAllPassThruMsgsButton.Enabled = true;
         }
+        //GET VIN NUMBER BTN
+        private void button10_Click(object sender, EventArgs e)
+        {
+            //textBoxInterVin.Text = "";
+            //byte[] mode0902 = new byte[] { 0, 0, 0x7, 0xDF, 0x09, 0x02 };
+            //string vehicleIdentificationNumberMsg = sendPassThruMsg(mode0902);
+            //string test = "00 00 07 E8 49 02 01 36 46 50 41 41 41 4A 47 53 57 36 4A 38 30 35 30 31";
+            //string interVin = vehicleIdentificationNumberMsg.Replace(" ", "");
+            //string interVin2 = interVin.Substring(14);
+            //string finalVin = HexToASCII(interVin2);
+            //textBoxInterVin.Text += finalVin;
+            string finalVin = textBoxInterVin.Text; // FOR TESTING THE VIN NUMEBR DISPLAY I HAVE DISABLED THE REQUEST VIN MESSAGE AND LOGIC
+            t0.Text = finalVin.Substring(0, 1);
+            t1.Text = finalVin.Substring(1, 1);
+            t2.Text = finalVin.Substring(2, 1);
+            t3.Text = finalVin.Substring(3, 1);
+            t4.Text = finalVin.Substring(4, 1);
+            t5.Text = finalVin.Substring(5, 1);
+            t6.Text = finalVin.Substring(6, 1);
+            t7.Text = finalVin.Substring(7, 1);
+            t8.Text = finalVin.Substring(8, 1);
+            t9.Text = finalVin.Substring(9, 1);
+            t10.Text = finalVin.Substring(10, 1);
+            t11.Text = finalVin.Substring(11, 1);
+            t12.Text = finalVin.Substring(12, 1);
+            t13.Text = finalVin.Substring(13, 1);
+            t14.Text = finalVin.Substring(14, 1);
+            t15.Text = finalVin.Substring(15, 1);
+            t16.Text = finalVin.Substring(16, 1);
+
+
+
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            string vin = textBoxInterVin.Text.ToUpper();
+            //string vin = txtVIN.Text.ToUpper();
+            if (vin.Length != 17)
+            {
+                MessageBox.Show("VIN must be 17 characters long.");
+                return;
+            }
+            // Decoding each section of the VIN
+            labelWmi.Text = PassThruJ2534.lib.Decoder.VIN_DECODER.DecodeWMI(vin.Substring(0, 3));     // World Manufacturer Identifier
+            labelVd.Text = PassThruJ2534.lib.Decoder.VIN_DECODER.DecodeVDS(vin.Substring(3, 6));     // Vehicle Descriptor Section
+            labelSn.Text = PassThruJ2534.lib.Decoder.VIN_DECODER.DecodeVIS(vin.Substring(9, 8));     // Vehicle Identifier Section
+
+        }
+
+        private void textBoxInterVin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click_2(object sender, EventArgs e)
+        {
+            string vin = textBoxInterVin.Text.ToUpper();
+            //string vin = txtVIN.Text.ToUpper();
+            if (vin.Length != 17)
+            {
+                MessageBox.Show("VIN must be 17 characters long.");
+                return;
+            }
+            // Decoding each section of the VIN
+            labelWmi.Text = PassThruJ2534.lib.Decoder.VIN_DECODER.DecodeWMI(vin.Substring(0, 3));     // World Manufacturer Identifier
+            labelVd.Text = PassThruJ2534.lib.Decoder.VIN_DECODER.DecodeVDS(vin.Substring(3, 6));     // Vehicle Descriptor Section
+            labelSn.Text = PassThruJ2534.lib.Decoder.VIN_DECODER.DecodeVIS(vin.Substring(9, 8));     // Vehicle Identifier Section
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage9_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        { 
+        
+        }
+        bool flagNoDataAbort;
+        static byte[] RemoveFirstNBytes(byte[] originalArray, int n)
+        {
+            // Check if the original array is large enough
+            if (originalArray == null || originalArray.Length <= n)
+            {
+                throw new ArgumentException("The original array is too small or null.");
+            }
+            // Create a new array with a size reduced by n
+            byte[] newArray = new byte[originalArray.Length - n];
+            // Copy the data from the original array to the new array, starting from index n
+            Array.Copy(originalArray, n, newArray, 0, newArray.Length);
+            return newArray;
+        }
+        // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public byte[] readMemoryByAddress(uint address, uint blockSize)
+        {
+            string ecuRx = textBoxEcuRx.Text;
+            string rx = ecuRx.Substring(ecuRx.Length - 2, 2);
+            byte ecuRxIdentifier1 = 0x07;
+            byte ecuRxIdentifier2 = Convert.ToByte(rx, 16);
+            //Send the read memory request
+            byte blockSizeUpper = (byte)((blockSize >> 8) & 0xFF);
+            byte blockSizeLower = (byte)(blockSize & 0xFF);
+            byte[] readMemoryByAddress = new byte[] { 0, 0, ecuRxIdentifier1, ecuRxIdentifier2, 0x23, 0x00, (byte)((address >> 16) & 0xFF), (byte)((address >> 8) & 0xFF), (byte)((address) & 0xFF), blockSizeUpper, blockSizeLower };
+            int NumberOfMsgs = 1;
+            PassThruMsg WriteMsg = new PassThruMsg(ProtocolID.ISO15765, TxFlag.ISO15765_FRAME_PAD, readMemoryByAddress);
+            IntPtr WritePtr = WriteMsg.ToIntPtr();
+            var ErrorResult = J2534Port.Functions.PassThruWriteMsgs((int)ChannelID, WritePtr, ref NumberOfMsgs, 0);//timeout of 0 means just send it and dont care how long.
+            if (ErrorResult != J2534Err.STATUS_NOERROR)
+            {
+                Log(ErrorResult.ToString() + "\r\n");
+                flagNoDataAbort = true;
+                //Shits fucked, fauled writing.
+            }
+            // ///////////////////////////////////////////////////////////////
+            //8) Read Respnse
+            //byte[] nodata = new byte[1];
+            bool SearchForResponse = true;
+            while (SearchForResponse == true)
+            {
+                int NumReadMsgs = 1;
+                IntPtr MyRXMsg = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(PassThruMsg)) * NumReadMsgs);
+                ErrorResult = J2534Port.Functions.PassThruReadMsgs((int)ChannelID, MyRXMsg, ref NumReadMsgs, 20); //this is your timeout here.
+                if (ErrorResult != J2534Err.STATUS_NOERROR) //if no frames received, it goes here.
+                {
+                    Log(ErrorResult.ToString() + "\r\n");
+                    Log("Failed to read PassThru Msg \r\n");
+                    //Shits fucked, fauled reading!!!
+                    break;
+                }
+                else
+                {
+                    //Log("PassThru Read Msg Success \r\n");
+                }
+                //Convert the memory pointer back to a PassThruMsg Object
+                PassThruMsg FoundFrame = MyRXMsg.AsMsgList(1).Last();
+                if (((int)FoundFrame.RxStatus == ((int)J2534.RxStatus.TX_INDICATION_SUCCESS ^ (int)J2534.RxStatus.TX_MSG_TYPE)) ||
+                    ((int)FoundFrame.RxStatus == ((int)J2534.RxStatus.TX_INDICATION_SUCCESS ^ (int)J2534.RxStatus.TX_MSG_TYPE ^ (int)J2534.RxStatus.ISO15765_ADDR_TYPE)) ||
+                    ((int)FoundFrame.RxStatus == ((int)J2534.RxStatus.START_OF_MESSAGE))
+                    )
+                {
+                    //We dont want any of this, continue!
+                    Marshal.FreeHGlobal(MyRXMsg);
+                    continue;
+                }
+                Marshal.FreeHGlobal(MyRXMsg);
+                //This should have our bytes!
+                byte[] MyRXDBytes = FoundFrame.GetBytes();
+                string DataToString = "";
+                for (int i = 0; i < MyRXDBytes.Length; i++)
+                {
+                    DataToString += MyRXDBytes[i].ToString("X2") + "  ";
+                }
+                Log("Rx: " + DataToString + "\r\n");
+                //DataToString = DataToString.Replace(" ", "");
+                //DataToString = DataToString.Substring(10);
+                //return DataToString;
+                // 00 00 07 28 63 11 22 33 44 55 66
+                // Here we are removing the first five bytes of the passthru message, and returning on the flash memory bytes //
+                byte[] flashBytes = RemoveFirstNBytes(MyRXDBytes, 5);
+                return flashBytes;
+            }
+            //string noData = "";i
+            //return noData;
+            byte[] nodata = new byte[] { 0x00 };
+            return nodata;
+        }
+        // ///////////////
+        // START DIRECT MEMORY READ
+        private void startDirectMemoryRead(byte finishAddress, byte startAddress,uint blockSize )
+        {
+            int j = 0;
+            byte[] dmr = new byte[finishAddress];
+            var ErrorResult = J2534Port.Functions.ClearRxBuffer((int)ChannelID); // CLEAR THE RX BUFFER
+            if (ErrorResult != J2534Err.STATUS_NOERROR) { Log(ErrorResult.ToString() + "\r\n"); Log("Error Clearing RX Buffer) \r\n"); }
+            else { Log("Cleared RX Buffer\r\n"); }
+            ErrorResult = J2534Port.Functions.ClearTxBuffer((int)ChannelID); // CLEAER THE TX BUFFER
+            if (ErrorResult != J2534Err.STATUS_NOERROR) { Log(ErrorResult.ToString() + "\r\n"); Log("Error Clearing TX Buffer) \r\n"); }
+            else { Log("Cleared TX Buffer\r\n"); }
+            var saveFileDialog2 = new SaveFileDialog(); saveFileDialog2.Filter = "binary files (*.bin)|*.bin"; saveFileDialog2.FilterIndex = 2;
+            if (saveFileDialog2.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = saveFileDialog2.FileName;
+                FileStream fileStream = File.Open(filePath, FileMode.Create);
+                for (uint i = startAddress; i <= finishAddress; i += blockSize)
+                {
+                    Log("Direct Memory Read... ");
+                    dmr = readMemoryByAddress(i, blockSize); fileStream.Write(dmr, 0, dmr.Length);
+                    if (textBoxLog.Text.Contains("ERR_BUFFER_EMPTY")) { textBoxLog.Text = ""; j++; if (j == 10) { flagNoDataAbort = true; } }
+                    if (flagNoDataAbort == true) { Log("No DATA, Aborting"); break; }
+                    if (i == finishAddress) { Log("Direct Memory Read Complete"); }
+                }
+            }
+        }
+        private void button20_Click(object sender, EventArgs e)
+        {
+            byte startAddress = Convert.ToByte(textBoxStartAddress.Text, 16);
+            byte finishAddress = Convert.ToByte(textBoxFinishAddress.Text, 16);
+            uint blockSize = Convert.ToUInt32(textBoxBlockSize.Text, 16);
+            startDirectMemoryRead(startAddress, finishAddress, blockSize);
+        }
+        /// <summary>
+        /// /
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEcuRx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
         // /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     }
 }

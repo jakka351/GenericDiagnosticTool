@@ -48,6 +48,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="lib\Decoder\VIN_DECODER.cs" />
     <Compile Include="lib\Interface\J2534.cs" />
     <Compile Include="lib\Interface\J2534DeviceFinder.cs" />
     <Compile Include="lib\Interface\J2534Devices.cs" />
