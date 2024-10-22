@@ -12,34 +12,32 @@
 // /_______  /__(____  /\___  /|___|  /\____/____  > |__| |__|\___  >
 //         \/        \//_____/      \/           \/               \/  //Version 1.0.0
 // 
+using J2534;
 using System;
 using System.IO;
+using System.Net;
 using System.Data;
 using System.Text;
 using System.Linq;
 using System.Drawing;
+using System.IO.Pipes;
+using System.IO.Ports;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Reflection;
-using System.Reflection.Emit;
-using System.Collections;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
+using System.Collections;
 using System.Windows.Forms;
+using System.Globalization;
 using System.ComponentModel;
+using System.Threading.Tasks;
+using System.Reflection.Emit;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Runtime.ConstrainedExecution;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
- 
-using System.IO.Ports;
-using System.Net;
 using System.Runtime.Serialization.Formatters;
 using System.Runtime.Serialization.Formatters.Binary;
-
-using J2534;
-using System.IO.Pipes;
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 namespace PassThruJ2534
 {
@@ -1217,6 +1215,58 @@ namespace PassThruJ2534
 
         private void textBoxEcuRx_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void label34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage12_Click(object sender, EventArgs e)
+        {
+
+        }
+        //FIND ALL DID's
+        private void button22_Click(object sender, EventArgs e)
+        {
+            for (int did = 0x0000; did <= 0xFFFF; did++)
+            {
+                // Extract upper and lower byte of the DID
+                byte upperByte = (byte)((did >> 8) & 0xFF);  // Upper byte of the DID
+                byte lowerByte = (byte)(did & 0xFF);         // Lower byte of the DID
+
+                // Send the PassThru message with the current DID
+                byte[] array = { 0, 0, ecuId, ecuId2, 0x22, upperByte, lowerByte };
+                string did1 = sendPassThruMsg(array);
+                if (did1.Contains("62"))
+                {
+                    Log("Data Identifier Found!");
+                    // create a DID variable here that goes into a list
+                }
+                else if(did1.Contains("7F"))
+                {
+                    Log($"No Data Identifer found at" + did.ToString());
+                }
+
+                // Optionally, you can add a delay or log the progress here
+                // Thread.Sleep(10);  // Adding a short delay if necessary
+                // Console.WriteLine($"Sent DID: 0x{did:X4}");
+            }
+
+        }
+        // Retreive Single DID
+        private void button23_Click(object sender, EventArgs e)
+        {
+            string did = textBoxDid.Text;
+            // Convert the first two characters to a byte (0xFF)
+            byte upperByte = Convert.ToByte(did.Substring(0, 2), 16);
+            // Convert the last two characters to a byte (0xFF)
+            byte lowerByte = Convert.ToByte(did.Substring(2, 2), 16);
+
+            byte[] array = { 0x00, 0x00, ecuId, ecuId2, 0x22, upperByte, lowerByte };
+            sendPassThruMsg(array);
+
 
         }
 

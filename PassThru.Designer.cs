@@ -33,14 +33,17 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DSC = new System.Windows.Forms.TabPage();
+            this.label27 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxDiagSessControl = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label28 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxEcuReset = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label31 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -51,10 +54,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label29 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxControlDtc = new System.Windows.Forms.ComboBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label30 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -69,6 +74,13 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.button21 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -168,6 +180,13 @@
             this.comboBoxCanBus = new System.Windows.Forms.ComboBox();
             this.comboBoxJ2534Devices = new System.Windows.Forms.ComboBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBoxDid = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.DSC.SuspendLayout();
@@ -176,6 +195,7 @@
             this.tabPage3.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage10.SuspendLayout();
+            this.tabPage11.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -186,6 +206,7 @@
             this.menuStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage12.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -207,6 +228,8 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage10);
+            this.tabControl1.Controls.Add(this.tabPage11);
+            this.tabControl1.Controls.Add(this.tabPage12);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.HotTrack = true;
             this.tabControl1.Location = new System.Drawing.Point(7, 20);
@@ -219,21 +242,32 @@
             // 
             // DSC
             // 
+            this.DSC.Controls.Add(this.label27);
             this.DSC.Controls.Add(this.button3);
             this.DSC.Controls.Add(this.label3);
             this.DSC.Controls.Add(this.comboBoxDiagSessControl);
             this.DSC.Location = new System.Drawing.Point(4, 4);
             this.DSC.Name = "DSC";
             this.DSC.Padding = new System.Windows.Forms.Padding(3);
-            this.DSC.Size = new System.Drawing.Size(324, 491);
+            this.DSC.Size = new System.Drawing.Size(324, 473);
             this.DSC.TabIndex = 0;
             this.DSC.Text = "DIAGNOSTIC SESSION CONTROL";
             this.DSC.UseVisualStyleBackColor = true;
             this.DSC.Click += new System.EventHandler(this.DSC_Click);
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(16, 16);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(291, 20);
+            this.label27.TabIndex = 7;
+            this.label27.Text = "DIAGNOSTIC SESSION CONTROL";
+            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(29, 71);
+            this.button3.Location = new System.Drawing.Point(28, 108);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(251, 23);
             this.button3.TabIndex = 6;
@@ -244,7 +278,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 25);
+            this.label3.Location = new System.Drawing.Point(28, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 13);
             this.label3.TabIndex = 5;
@@ -262,27 +296,38 @@
             "0x01 standardDiagnosticUDS",
             "0x02 ecuProgrammingUDS",
             "0x03 extendedDiagnosticUDS"});
-            this.comboBoxDiagSessControl.Location = new System.Drawing.Point(29, 44);
+            this.comboBoxDiagSessControl.Location = new System.Drawing.Point(28, 81);
             this.comboBoxDiagSessControl.Name = "comboBoxDiagSessControl";
             this.comboBoxDiagSessControl.Size = new System.Drawing.Size(251, 21);
             this.comboBoxDiagSessControl.TabIndex = 4;
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label28);
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.comboBoxEcuReset);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(324, 491);
+            this.tabPage2.Size = new System.Drawing.Size(324, 473);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ECU RESET";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(25, 20);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(110, 20);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "ECU RESET";
+            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(32, 76);
+            this.button4.Location = new System.Drawing.Point(29, 103);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(251, 23);
             this.button4.TabIndex = 9;
@@ -293,7 +338,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 30);
+            this.label5.Location = new System.Drawing.Point(29, 57);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 8;
@@ -308,13 +353,14 @@
             "0x03 softReset",
             "0x04 enableRapidPowerShutDown",
             "0x05 disableRapidPowerShutDown"});
-            this.comboBoxEcuReset.Location = new System.Drawing.Point(32, 49);
+            this.comboBoxEcuReset.Location = new System.Drawing.Point(29, 76);
             this.comboBoxEcuReset.Name = "comboBoxEcuReset";
             this.comboBoxEcuReset.Size = new System.Drawing.Size(251, 21);
             this.comboBoxEcuReset.TabIndex = 7;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label31);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.comboBox7);
             this.tabPage1.Controls.Add(this.button6);
@@ -327,16 +373,26 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(324, 491);
+            this.tabPage1.Size = new System.Drawing.Size(324, 473);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "SECURITY ACCESS";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(23, 22);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(176, 20);
+            this.label31.TabIndex = 189;
+            this.label31.Text = "SECURITY ACCESS";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(25, 89);
+            this.label10.Location = new System.Drawing.Point(24, 144);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(62, 13);
             this.label10.TabIndex = 188;
@@ -424,7 +480,7 @@
             "Orion Restraints Control Module",
             "Orion Powertrain Control Module",
             "Orion Transmission Control Module"});
-            this.comboBox7.Location = new System.Drawing.Point(25, 105);
+            this.comboBox7.Location = new System.Drawing.Point(24, 160);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(251, 21);
             this.comboBox7.TabIndex = 187;
@@ -436,7 +492,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(28, 184);
+            this.button6.Location = new System.Drawing.Point(27, 251);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(251, 24);
             this.button6.TabIndex = 186;
@@ -447,7 +503,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(34, 132);
+            this.checkBox2.Location = new System.Drawing.Point(33, 187);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(53, 17);
             this.checkBox2.TabIndex = 10;
@@ -456,7 +512,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(28, 155);
+            this.button5.Location = new System.Drawing.Point(27, 210);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(251, 23);
             this.button5.TabIndex = 9;
@@ -466,7 +522,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 46);
+            this.label2.Location = new System.Drawing.Point(24, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 13);
             this.label2.TabIndex = 3;
@@ -482,7 +538,7 @@
             "0x05",
             "0x11",
             "0x55"});
-            this.comboBox2.Location = new System.Drawing.Point(25, 65);
+            this.comboBox2.Location = new System.Drawing.Point(24, 120);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(251, 21);
             this.comboBox2.TabIndex = 2;
@@ -490,7 +546,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 3);
+            this.label1.Location = new System.Drawing.Point(24, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 13);
             this.label1.TabIndex = 1;
@@ -503,27 +559,38 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Ford CAN Generic Diagnostic Specification",
             "Ford Global Generic Diagnostic Specification"});
-            this.comboBox1.Location = new System.Drawing.Point(25, 22);
+            this.comboBox1.Location = new System.Drawing.Point(24, 77);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(251, 21);
             this.comboBox1.TabIndex = 0;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label29);
             this.tabPage3.Controls.Add(this.button8);
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.comboBoxControlDtc);
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(324, 491);
+            this.tabPage3.Size = new System.Drawing.Size(324, 473);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "CONTROL DTC SETTING";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(29, 19);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(213, 20);
+            this.label29.TabIndex = 13;
+            this.label29.Text = "CONTROL DTC SETTING";
+            // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(33, 71);
+            this.button8.Location = new System.Drawing.Point(33, 99);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(251, 23);
             this.button8.TabIndex = 12;
@@ -534,7 +601,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(33, 25);
+            this.label6.Location = new System.Drawing.Point(33, 53);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 13);
             this.label6.TabIndex = 11;
@@ -546,13 +613,14 @@
             this.comboBoxControlDtc.Items.AddRange(new object[] {
             "0x01 DTC Setting On",
             "0x02 DTC Setting Off"});
-            this.comboBoxControlDtc.Location = new System.Drawing.Point(33, 44);
+            this.comboBoxControlDtc.Location = new System.Drawing.Point(33, 72);
             this.comboBoxControlDtc.Name = "comboBoxControlDtc";
             this.comboBoxControlDtc.Size = new System.Drawing.Size(251, 21);
             this.comboBoxControlDtc.TabIndex = 10;
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.label30);
             this.tabPage6.Controls.Add(this.checkBox1);
             this.tabPage6.Controls.Add(this.button2);
             this.tabPage6.Controls.Add(this.label4);
@@ -560,15 +628,25 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(324, 491);
+            this.tabPage6.Size = new System.Drawing.Size(324, 473);
             this.tabPage6.TabIndex = 6;
             this.tabPage6.Text = "TESTER PRESENT";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(25, 21);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(165, 20);
+            this.label30.TabIndex = 10;
+            this.label30.Text = "TESTER PRESENT";
+            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(31, 70);
+            this.checkBox1.Location = new System.Drawing.Point(32, 107);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(117, 17);
             this.checkBox1.TabIndex = 9;
@@ -577,7 +655,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(31, 93);
+            this.button2.Location = new System.Drawing.Point(32, 130);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(248, 23);
             this.button2.TabIndex = 8;
@@ -588,7 +666,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 24);
+            this.label4.Location = new System.Drawing.Point(29, 61);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 13);
             this.label4.TabIndex = 7;
@@ -601,7 +679,7 @@
             "0x00 Not Specified",
             "0x01 Request Response",
             "0x02 Suppress Response"});
-            this.comboBox4.Location = new System.Drawing.Point(28, 43);
+            this.comboBox4.Location = new System.Drawing.Point(29, 80);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(251, 21);
             this.comboBox4.TabIndex = 6;
@@ -620,7 +698,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 4);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(324, 491);
+            this.tabPage10.Size = new System.Drawing.Size(324, 473);
             this.tabPage10.TabIndex = 7;
             this.tabPage10.Text = "READ MEMORY BY ADDRESS";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -643,7 +721,7 @@
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(30, 209);
+            this.button20.Location = new System.Drawing.Point(30, 171);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(238, 23);
             this.button20.TabIndex = 11;
@@ -688,7 +766,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(22, 3);
+            this.label23.Location = new System.Drawing.Point(22, 5);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(273, 25);
             this.label23.TabIndex = 1;
@@ -697,13 +775,81 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(6, 28);
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(23, 30);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(313, 25);
+            this.label22.Size = new System.Drawing.Size(263, 20);
             this.label22.TabIndex = 0;
-            this.label22.Text = "0x23 readMemoryByAddress";
+            this.label22.Text = "READ MEMORY BY ADDRESS";
             this.label22.Click += new System.EventHandler(this.label22_Click);
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Controls.Add(this.button21);
+            this.tabPage11.Controls.Add(this.textBox2);
+            this.tabPage11.Controls.Add(this.textBox3);
+            this.tabPage11.Controls.Add(this.label34);
+            this.tabPage11.Controls.Add(this.label35);
+            this.tabPage11.Controls.Add(this.label32);
+            this.tabPage11.Location = new System.Drawing.Point(4, 4);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(324, 473);
+            this.tabPage11.TabIndex = 8;
+            this.tabPage11.Text = "WRITE DATA BY COMMON ID";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(48, 128);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(238, 23);
+            this.button21.TabIndex = 18;
+            this.button21.Text = "Write Data by Common ID";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(186, 89);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 17;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(186, 64);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 16;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(45, 92);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(33, 13);
+            this.label34.TabIndex = 15;
+            this.label34.Text = "Data:";
+            this.label34.Click += new System.EventHandler(this.label34_Click);
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(45, 67);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(70, 13);
+            this.label35.TabIndex = 14;
+            this.label35.Text = "DID Address:";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(32, 17);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(254, 20);
+            this.label32.TabIndex = 1;
+            this.label32.Text = "WRITE DATA BY COMMON ID";
             // 
             // groupBox2
             // 
@@ -1257,10 +1403,11 @@
             this.startReadAllPassThruMsgsButton.TabIndex = 2;
             this.startReadAllPassThruMsgsButton.Text = "Start CAN Sniffer";
             this.startReadAllPassThruMsgsButton.UseVisualStyleBackColor = true;
-            this.startReadAllPassThruMsgsButton.Click += new System.EventHandler(this.button7_Click);
             // 
             // textBoxCAN
             // 
+            this.textBoxCAN.BackColor = System.Drawing.SystemColors.InfoText;
+            this.textBoxCAN.ForeColor = System.Drawing.Color.SpringGreen;
             this.textBoxCAN.Location = new System.Drawing.Point(227, 26);
             this.textBoxCAN.Multiline = true;
             this.textBoxCAN.Name = "textBoxCAN";
@@ -1310,12 +1457,12 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(18, 18);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(141, 24);
+            this.label21.Size = new System.Drawing.Size(211, 37);
             this.label21.TabIndex = 27;
-            this.label21.Text = "VIN Deccoder";
+            this.label21.Text = "VIN Decoder";
             // 
             // labelSn
             // 
@@ -1381,7 +1528,7 @@
             // textBoxInterVin
             // 
             this.textBoxInterVin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxInterVin.Location = new System.Drawing.Point(392, 15);
+            this.textBoxInterVin.Location = new System.Drawing.Point(401, 123);
             this.textBoxInterVin.Name = "textBoxInterVin";
             this.textBoxInterVin.Size = new System.Drawing.Size(226, 29);
             this.textBoxInterVin.TabIndex = 20;
@@ -1391,24 +1538,28 @@
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(515, 214);
+            this.button7.Location = new System.Drawing.Point(515, 203);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(343, 28);
             this.button7.TabIndex = 19;
             this.button7.Text = "DECODE VEHICLE IDENTIFICATION NUMBER";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click_2);
             // 
             // button10
             // 
+            this.button10.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(154, 214);
+            this.button10.Location = new System.Drawing.Point(154, 203);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(355, 28);
             this.button10.TabIndex = 13;
             this.button10.Text = "GET VEHICLE IDENTIFICATION NUMBER";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label11
@@ -2668,7 +2819,6 @@
             this.comboBoxCanBus.Name = "comboBoxCanBus";
             this.comboBoxCanBus.Size = new System.Drawing.Size(198, 21);
             this.comboBoxCanBus.TabIndex = 2;
-            this.comboBoxCanBus.SelectedIndexChanged += new System.EventHandler(this.comboBoxCanBus_SelectedIndexChanged);
             // 
             // comboBoxJ2534Devices
             // 
@@ -2682,6 +2832,80 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.Controls.Add(this.label37);
+            this.tabPage12.Controls.Add(this.label36);
+            this.tabPage12.Controls.Add(this.textBoxDid);
+            this.tabPage12.Controls.Add(this.label33);
+            this.tabPage12.Controls.Add(this.button23);
+            this.tabPage12.Controls.Add(this.button22);
+            this.tabPage12.Location = new System.Drawing.Point(4, 4);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(324, 473);
+            this.tabPage12.TabIndex = 9;
+            this.tabPage12.Text = "READ DATA BY COMMON ID";
+            this.tabPage12.UseVisualStyleBackColor = true;
+            this.tabPage12.Click += new System.EventHandler(this.tabPage12_Click);
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(52, 198);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(240, 23);
+            this.button22.TabIndex = 0;
+            this.button22.Tag = "Find DID\'s 0z0000-0xFFFF";
+            this.button22.Text = "Find DID\'s 0z0000-0xFFFF";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(52, 108);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(240, 23);
+            this.button23.TabIndex = 1;
+            this.button23.Text = "Retrieve DID Data";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(49, 53);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(98, 13);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "DID Data Retriever";
+            // 
+            // textBoxDid
+            // 
+            this.textBoxDid.Location = new System.Drawing.Point(52, 82);
+            this.textBoxDid.Name = "textBoxDid";
+            this.textBoxDid.Size = new System.Drawing.Size(240, 20);
+            this.textBoxDid.TabIndex = 3;
+            this.textBoxDid.Text = "Enter DID here as \"FFFF\"";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(49, 170);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(112, 13);
+            this.label36.TabIndex = 4;
+            this.label36.Text = "Find All Possible DID\'s";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(44, 14);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(247, 20);
+            this.label37.TabIndex = 5;
+            this.label37.Text = "READ DATA BY COMMON ID";
             // 
             // PassThru
             // 
@@ -2710,6 +2934,8 @@
             this.tabPage6.PerformLayout();
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
+            this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
@@ -2726,6 +2952,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage12.ResumeLayout(false);
+            this.tabPage12.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2871,5 +3099,24 @@
         private System.Windows.Forms.TextBox textBoxBlockSize;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox textBoxDid;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Label label37;
     }
 }
