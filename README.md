@@ -18,6 +18,7 @@ General purpose diagnostic software that allows you to control individual diagno
 - OBD2 Implementation
 - CAN Sniffer
 - VIN Decoder
+- DID bruteforcing, find all DIDs that return data using service 0x22
 - Direct Memory Read using service 0x23
 
 ![image](https://github.com/user-attachments/assets/586e7fbf-9265-4dab-b46c-9ff85fc407cb)
