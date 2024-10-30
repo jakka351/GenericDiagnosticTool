@@ -21,6 +21,7 @@ General purpose diagnostic software that allows you to control individual diagno
 - OBD2 Services
 - CAN Sniffer
 - VIN Decoder
+- Store and Send Arbitrary PassThru messages to ECU
 
 ![image](https://github.com/user-attachments/assets/586e7fbf-9265-4dab-b46c-9ff85fc407cb)
 
