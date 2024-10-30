@@ -1,3 +1,5 @@
+# Generic Diagnostic Tool
+
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 ![image](https://github.com/user-attachments/assets/0283746b-6880-4dab-a376-7861bda1d027)
 
@@ -5,21 +7,20 @@
 
 <a href="https://testerpresent.com.au/"><img src="https://img.shields.io/badge/Tester Present -Specialist Automotive Solutions-blue" /></a>
 
-## Generic PassThru Diagnostic Software
-General purpose diagnostic software that allows you to control individual diagnostic services. Have not seen any open source generic diagnostic software for J2534 devices so I thought I would make some. Currently for use on vehicles with ECUs on a typical High Speed CAN and Medium Speed CAN, aiming for it to work with Ford, Mazda, JLR, Volvo and anything OBD2 compliant. Allows you to set the ECU RX & TX Address (ie 7E0, 7E8 for a Powertrain Control Module) and connect to that ECU, and perform basic diagnostic functions using both KWP2000 protocol or UDS protocol. This is a work in progress... 
+## Generic Diagnostic Tool
+General purpose diagnostic software that allows you to control individual diagnostic services. Have not seen any open source generic diagnostic software for J2534 devices so I thought I would make some. Currently for use on vehicles with ECUs on a typical High Speed CAN and Medium Speed CAN, aiming for it to work with Ford, Mazda, JLR, Volvo and anything OBD2 compliant. Allows you to set the ECU RX & TX Address (ie 7E0, 7E8 for a Powertrain Control Module) and connect to that ECU, and perform basic diagnostic functions using both KWP2000 protocol or UDS protocol. Hoping to try and use this as reverse engineering software, it seems to be heading in that direction anyways. This is a work in progress... 
 
-## Current Functionality (using KWP2000, UDS)
-- Diagnostic Session Control
-- ECU Reset
-- Tester Present
-- Security Access
-- Control DTC Setting
-- Bruteforce Security Access
-- OBD2 Implementation
+## Current Functionality (using KWP2000, UDS) implemented diagnostic services
+- 0x10 Diagnostic Session Control
+- 0x11 ECU Reset
+- 0x3E Tester Present
+- 0x27 Security Access & Bruteforcing tool
+- 0x85 Control DTC Setting
+- 0x22 DID bruteforcing, find all DIDs that return data
+- 0x23 Direct Memory Read
+- OBD2 Services
 - CAN Sniffer
 - VIN Decoder
-- DID bruteforcing, find all DIDs that return data using service 0x22
-- Direct Memory Read using service 0x23
 
 ![image](https://github.com/user-attachments/assets/586e7fbf-9265-4dab-b46c-9ff85fc407cb)
 
