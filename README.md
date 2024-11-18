@@ -10,6 +10,12 @@
 ## Generic Diagnostic Tool
 General purpose diagnostic software that allows you to control individual diagnostic services. Have not seen any open source generic diagnostic software for J2534 devices so I thought I would make some. Currently for use on vehicles with ECUs on a typical High Speed CAN and Medium Speed CAN, aiming for it to work with Ford, Mazda, JLR, Volvo and anything OBD2 compliant. Allows you to set the ECU RX & TX Address (ie 7E0, 7E8 for a Powertrain Control Module) and connect to that ECU, and perform basic diagnostic functions using both KWP2000 protocol or UDS protocol. Hoping to try and use this as reverse engineering software, it seems to be heading in that direction anyways. This is a work in progress... 
 
+## Latest Screenshots
+![image](https://github.com/user-attachments/assets/c9ebc7cb-9a5a-484f-98af-10f8d9fd7bbc)
+![image](https://github.com/user-attachments/assets/29c367b0-9bc5-4da5-9d1c-a4631bcdf807)
+![image](https://github.com/user-attachments/assets/6075986c-dd73-4fd7-a086-bd849740e247)
+
+
 ## Current Functionality (using KWP2000, UDS) implemented diagnostic services
 - 0x10 Diagnostic Session Control
 - 0x11 ECU Reset
