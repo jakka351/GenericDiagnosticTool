@@ -54,6 +54,6 @@ General purpose diagnostic software that allows you to control individual diagno
 This implementation currently only works with an OBDXPro FT J2534 interface(https://obdxpro.com). Hoping to troubleshoot it such that it is compliant with all J2534 interfaces, ie VCM2, VCM3, Tactrix Openport, Mongoose Pro. Feel free to fork and modify it to work with your devices.
 
 ## Executable Download
-https://mega.nz/file/8P8kFLjb#k7rp6s0qEAtiGq2ecEcXoxE9P0Xromfc8elWgNvsRZA
+See the Releases Page.
 ![image](https://github.com/user-attachments/assets/5d286541-9565-4ab7-8677-83823695f371)
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
