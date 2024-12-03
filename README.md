@@ -1,7 +1,8 @@
 # Generic Diagnostic Tool
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
-![image](https://github.com/user-attachments/assets/0283746b-6880-4dab-a376-7861bda1d027)
+![image](https://github.com/user-attachments/assets/7932d065-f401-461b-b10f-054ac3428bf2)
+
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
