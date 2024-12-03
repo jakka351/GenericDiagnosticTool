@@ -12,6 +12,9 @@ General purpose diagnostic software that allows you to control individual diagno
 ## Latest Update in Releases
 ![image](https://github.com/user-attachments/assets/e1370ac2-acb6-4277-8f2d-1d4652c536d1)
 
+![image](https://github.com/user-attachments/assets/f2258744-688f-483f-87b9-5fa314041040)
+
+
 ![image](https://github.com/user-attachments/assets/5a4d10e0-aa59-4a80-b0dc-51fae13e31ad)
 
 ![image](https://github.com/user-attachments/assets/15f95c3e-2c87-41c1-9b00-81e92119132e)
