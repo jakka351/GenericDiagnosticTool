@@ -10,6 +10,7 @@
 General purpose diagnostic software that allows you to control individual diagnostic services. Have not seen any open source generic diagnostic software for J2534 devices so I thought I would make some. Currently for use on vehicles with ECUs on a typical High Speed CAN and Medium Speed CAN, aiming for it to work with Ford, Mazda, JLR, Volvo and anything OBD2 compliant. Allows you to set the ECU RX & TX Address (ie 7E0, 7E8 for a Powertrain Control Module) and connect to that ECU, and perform basic diagnostic functions using both KWP2000 protocol or UDS protocol. Hoping to try and use this as reverse engineering software, it seems to be heading in that direction anyways. This is a work in progress... 
 
 ## Latest Update in Releases
+Scaling and Resolution issue has been fixed. Added more to Security Access & DMR Tabs, CAN Sniffer should be working now, VIN grabber and decoder should be working, OBD2 should be working. Tested with an OBDXPro FT and a Ford VCM2, other interfaces should work now as well, this has come at the cost of having MidSpeed CAN access for the time being. 04/12/2024.
 ![image](https://github.com/user-attachments/assets/e1370ac2-acb6-4277-8f2d-1d4652c536d1)
 ![image](https://github.com/user-attachments/assets/6351d32e-d334-49ef-b227-ecd124ba30fa)
 
