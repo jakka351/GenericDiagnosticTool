@@ -14,14 +14,6 @@ This is general purpose diagnostic software that allows you to control individua
 ## Latest Update in Releases
 Scaling and Resolution issue has been fixed. Added more to Security Access & DMR Tabs, CAN Sniffer should be working now, VIN grabber and decoder should be working, OBD2 should be working. Tested with an OBDXPro FT and a Ford VCM2, other interfaces should work now as well, this has come at the cost of having MidSpeed CAN access for the time being. 04/12/2024.
 ![image](https://github.com/user-attachments/assets/e1370ac2-acb6-4277-8f2d-1d4652c536d1)
-![image](https://github.com/user-attachments/assets/6351d32e-d334-49ef-b227-ecd124ba30fa)
-
-![image](https://github.com/user-attachments/assets/f2258744-688f-483f-87b9-5fa314041040)
-![image](https://github.com/user-attachments/assets/35937797-683f-49ac-b49d-a12091a05d7f)
-
-![image](https://github.com/user-attachments/assets/5a4d10e0-aa59-4a80-b0dc-51fae13e31ad)
-
-![image](https://github.com/user-attachments/assets/15f95c3e-2c87-41c1-9b00-81e92119132e)
 
 
 
