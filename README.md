@@ -15,7 +15,7 @@ This is general purpose diagnostic software that allows you to control individua
 
 ## Latest Update in Releases
 Scaling and Resolution issue has been fixed. Added more to Security Access & DMR Tabs, CAN Sniffer should be working now, VIN grabber and decoder should be working, OBD2 should be working. Tested with an OBDXPro FT and a Ford VCM2, other interfaces should work now as well, this has come at the cost of having MidSpeed CAN access for the time being. 04/12/2024.
-![image](https://github.com/user-attachments/assets/e1370ac2-acb6-4277-8f2d-1d4652c536d1)
+![image](https://github.com/user-attachments/assets/0fb41b00-4817-4c39-a4b7-3f462ab7412e)
 
 
 
@@ -51,9 +51,10 @@ Scaling and Resolution issue has been fixed. Added more to Security Access & DMR
 - Enumerate all online ECUs
 - PID Lookup tool via service 0x22
 
+## 64 Bit Mode
+The software can be run as x64, if you are using the OBDxPro FT J2534 Interface, as this has x64 drivers available to use, where as no other J2534 device manufacturers have implemented a 64 bit J2534 Driver.
 
 <img align="right" src="https://testerpresent.com.au/wp-content/uploads/2024/03/EDR@2x-1.png" height="20%" width="20%"/>
-
 ## J2534 Interface
 This implementation currently only works with an OBDXPro FT J2534 interface(https://obdxpro.com). Hoping to troubleshoot it such that it is compliant with all J2534 interfaces, ie VCM2, VCM3, Tactrix Openport, Mongoose Pro. Feel free to fork and modify it to work with your devices.
 
