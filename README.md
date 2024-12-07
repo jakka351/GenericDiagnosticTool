@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
-<a href="https://testerpresent.com.au/"><img src="https://img.shields.io/badge/Tester Present -Specialist Automotive Solutions-blue" /></a>
+<a href="https://testerpresent.com.au/"><img src="https://img.shields.io/badge/Tester Present Specialist Automotive Solutions -Open Source Projects- blue" /></a>
 
 ## Generic Diagnostic Tool
 Generic Diagnostic Tool is an open source, free J2534 PassThru software tool for general purpose use of raw diagnostic protocols on an ECU. It can be used for diagnostics, reverse engineering, development and hacking of ECUs.
