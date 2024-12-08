@@ -15,13 +15,18 @@ This is general purpose diagnostic software that allows you to control individua
 
 ## Latest Update in Releases
 Scaling and Resolution issue has been fixed. Added more to Security Access & DMR Tabs, CAN Sniffer should be working now, VIN grabber and decoder should be working, OBD2 should be working. Tested with an OBDXPro FT and a Ford VCM2, other interfaces should work now as well, this has come at the cost of having MidSpeed CAN access for the time being. 04/12/2024.
-![image](https://github.com/user-attachments/assets/0fb41b00-4817-4c39-a4b7-3f462ab7412e)
+Update 08/12/2024:
+Diagnostic Fault Codes can now be read out in their own tab, codes can be read and cleared. No Definitions as of yet.
+![image](https://github.com/user-attachments/assets/d7368eb7-1d4c-438e-8ec7-cc470fe19328)
+
 
 
 
 ## Current Functionality (using KWP2000, UDS) implemented diagnostic services
 - 0x10 Diagnostic Session Control
 - 0x11 ECU Reset
+- 0x14 Clear Diagnostic Information (Clear DTC)
+- 0x18 Read Diagnostic Information (Read DTC), DTC has its own tab now with a read out of read fault codes printed into a list box
 - 0x3E Tester Present
 - 0x27 Security Access & Bruteforcing tool
 - 0x85 Control DTC Setting
