@@ -22,6 +22,8 @@ Diagnostic Fault Codes can now be read out in their own tab, codes can be read a
 ![image](https://github.com/user-attachments/assets/d7368eb7-1d4c-438e-8ec7-cc470fe19328)
 
 
+## Needed for the project
+Things such as security access algorithms and seed keys from various OEMs, Diagnostic Fault Code definitions, protocol specification sheets, ECU information, DID/PID definitions and anything else that is related are needed to expand the project. If you are able to supply any kf these things it would be grewtly appreciated. Feel free to get in touch!
 
 
 ## Current Functionality (using KWP2000, UDS) implemented diagnostic services
