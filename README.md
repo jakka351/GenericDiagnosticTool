@@ -21,7 +21,7 @@ Update 08/12/2024:
 Diagnostic Fault Codes can now be read out in their own tab, codes can be read and cleared. No Definitions as of yet.
   
 Update 11/12/2024:  
-Added another 400 secret keys to the bruteforcer, taken from JLR SDD and thanks to https://github.com/smartgauges/exml so now the Bruteforcer will be able to unlock JLR ECUs up until 2016.   
+Added another 400 secret keys to the bruteforcer, taken from JLR SDD and thanks to https://github.com/smartgauges/exml so now the Bruteforcer will be able to unlock JLR ECUs up until 2016. Also adeed PSA Security Access Algo.
 
 ![image](https://github.com/user-attachments/assets/d7368eb7-1d4c-438e-8ec7-cc470fe19328)
 
