@@ -24,10 +24,12 @@ Update 11/12/2024:
 Added another 400 secret keys to the bruteforcer, taken from JLR SDD and thanks to https://github.com/smartgauges/exml so now the Bruteforcer will be able to unlock JLR ECUs up until 2016. Also adeed PSA Security Access Algo.
 
 ![image](https://github.com/user-attachments/assets/d7368eb7-1d4c-438e-8ec7-cc470fe19328)
+![image](https://github.com/user-attachments/assets/0e431420-f2be-4f41-9d97-f716f621b4dc)
+
 
 
 ## Needed for the project
-Things such as security access algorithms and seed keys from various OEMs, Diagnostic Fault Code definitions, protocol specification sheets, ECU information, DID/PID definitions and anything else that is related are needed to expand the project. If you are able to supply any kf these things it would be grewtly appreciated. Feel free to get in touch!
+Things such as security access algorithms and seed keys from various OEMs, Diagnostic Fault Code definitions, protocol specification sheets, ECU information, DID/PID definitions and anything else that is related are needed to expand the project. If you are able to supply any of these things it would be greatly appreciated. ACTIVELY LOOKING FOR DIAGNOSTIC TROUBLE CODE DEFINTIIONS & DICTIONARIES. Feel free to get in touch!
 
 
 ## Current Functionality (using KWP2000, UDS) implemented diagnostic services
