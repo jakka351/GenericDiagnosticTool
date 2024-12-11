@@ -66,7 +66,7 @@ Things such as security access algorithms and seed keys from various OEMs, Diagn
 - Diagnostic Command (service 0xB1)
 
 ## 64 Bit Mode
-The software can be run as x64, if you are using the OBDxPro FT J2534 Interface, as this has x64 drivers available to use, where as no other J2534 device manufacturers have implemented a 64 bit J2534 Driver. This is needed for bruteforcing security access to prevent an out of memory exception.
+The software can be run as x64, if you are using the OBDxPro FT J2534 Interface, as this has x64 drivers available to use, where as no other J2534 device manufacturers have implemented a 64 bit J2534 Driver. This is needed for bruteforcing security access to prevent an out of memory exception. A 64 Bit Version of the software will be available in the releases pages shortly.
 
 <img align="right" src="https://testerpresent.com.au/wp-content/uploads/2024/03/EDR@2x-1.png" height="20%" width="20%"/>
 
@@ -75,6 +75,8 @@ This implementation currently only works with an OBDXPro FT J2534 interface(http
 
 Update 07/12/2024: Minor modifications to the J2534 code have proven successful and I have tested the software with a Ford VCM2 and Tactrix Openport successfully. Looking for more interfaces to be tested.
 
+## Technical Support
+If you are using this software and require techncial support, Tester Present Specialist Automotive solutions provides technical support for $150 AUD per hour. Feel free to get in touch if you require support. https://testerpresent.com.au
 
 ## Executable Download
 See the Releases Page.
