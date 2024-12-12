@@ -23,6 +23,9 @@ Diagnostic Fault Codes can now be read out in their own tab, codes can be read a
 Update 11/12/2024:  
 Added another 400 secret keys to the bruteforcer, taken from JLR SDD and thanks to https://github.com/smartgauges/exml so now the Bruteforcer will be able to unlock JLR ECUs up until 2016. Also adeed PSA Security Access Algo.
 
+Update 13/12/2024:  
+Started work on a nicely formatted DTC table to replace the single listBox currently being used to display DTC, as well as fully parsing out each fault code to display the type, sub type and definition of each DTC in the table. Collected various definitions and dictionaries with a view to creating a mega DTC definition dictionary that can cover all bases.
+
 ![image](https://github.com/user-attachments/assets/d7368eb7-1d4c-438e-8ec7-cc470fe19328)
 ![image](https://github.com/user-attachments/assets/056474a0-d3af-45c8-b11e-72f915fc88d3)
 
