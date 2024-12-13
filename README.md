@@ -27,7 +27,8 @@ Update 13/12/2024:
 Started work on a nicely formatted DTC table to replace the single listBox currently being used to display DTC, as well as fully parsing out each fault code to display the type, sub type and definition of each DTC in the table. Collected various definitions and dictionaries with a view to creating a mega DTC definition dictionary that can cover all bases.
 
 ![image](https://github.com/user-attachments/assets/d7368eb7-1d4c-438e-8ec7-cc470fe19328)
-![image](https://github.com/user-attachments/assets/056474a0-d3af-45c8-b11e-72f915fc88d3)
+![image](https://github.com/user-attachments/assets/375d5be0-9f75-4e11-b00e-bbe185f020af)
+)
 
 
 
