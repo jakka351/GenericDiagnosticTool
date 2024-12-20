@@ -67,10 +67,16 @@ Things such as security access algorithms and seed keys from various OEMs, Diagn
 
 ## Planned Functionality 
 
-- Read and Clear Diagnostic Trouble Codes
-- Enumerate all online ECUs
+- Read and Clear Diagnostic Trouble Codes (partially conpleted)
+- Enumerate all online ECUs(ECU RX and TX CAN ID identifier)
 - Flash Toolkit
 - Diagnostic Command (service 0xB1)
+- Routine Control (service 0x31)
+- Wtite Data to ECU
+- Communication Control (service 0x28)
+- ECU Self Tests
+- Request Download/Upload and Transfer Data (services 0x34, 0x35 and 0x36)
+- Expand to cover 29 Bit CAN IDs as ECU addresses
 
 ## 64 Bit Mode
 The software can be run as x64, if you are using the OBDxPro FT J2534 Interface, as this has x64 drivers available to use, where as no other J2534 device manufacturers have implemented a 64 bit J2534 Driver. This is needed for bruteforcing security access to prevent an out of memory exception. A 64 Bit Version of the software will be available in the releases pages shortly.
