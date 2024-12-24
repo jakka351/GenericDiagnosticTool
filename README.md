@@ -26,9 +26,11 @@ Added another 400 secret keys to the bruteforcer, taken from JLR SDD and thanks 
 Update 13/12/2024:  
 Started work on a nicely formatted DTC table to replace the single listBox currently being used to display DTC, as well as fully parsing out each fault code to display the type, sub type and definition of each DTC in the table. Collected various definitions and dictionaries with a view to creating a mega DTC definition dictionary that can cover all bases.
 
-![image](https://github.com/user-attachments/assets/d7368eb7-1d4c-438e-8ec7-cc470fe19328)
+Update 24/12/2024:  
+Started the code to use 29 BIT CAN Identifiers for the ECU RX and TX Address.
+![image](https://github.com/user-attachments/assets/f25639d4-8942-4e41-bc26-7130dd33a0fb)
+
 ![image](https://github.com/user-attachments/assets/375d5be0-9f75-4e11-b00e-bbe185f020af)
-)
 
 
 
