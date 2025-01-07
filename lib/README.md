@@ -1,3 +1,0 @@
-#lib
-
-Main code files
