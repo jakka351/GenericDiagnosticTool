@@ -1,0 +1,12 @@
+P1103	Turbocharger Wastegate Actuator
+P1104	Turbocharger Wastegate Solenoid
+P1105	Fuel Pressure Solenoid
+P1300	Ignition Timing Adjustment circuit
+P1400	Manifold Differential Pressure Sensor circuit
+P1500	Alternator FR Terminal circuit
+P1600	Serial Communication Link
+P1715	Pulse Generator Assembly
+P1750	Solenoid Assembly
+P1751	A/T Control Relay
+P1791	Engine Coolant Temperature Level Input circuit
+P1795	Throttle Position Input circuit to TCM

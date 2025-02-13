@@ -1,0 +1,55 @@
+P1106	MAP Circuit Intermittent Voltage High
+P1107	MAP Circuit Intermittent Voltage Low
+P1108	Barometric Pressure Circuit Input High
+P1111	IAT Sensor Circuit Intermittent Voltage High
+P1112	IAT Sensor Circuit Intermittent Voltage Low
+P1114	ECT Sensor Circuit Intermittent Voltage Low
+P1115	ECT Sensor Circuit Intermittent Voltage High
+P1121	TP Sensor Circuit Intermittent Voltage High
+P1122	TP Sensor Circuit Intermittent Voltage Low
+P1133	H02S Insufficient Switching Bank 1 Sensor 1
+P1134	H02S Transition Time Ratio Bank 1 Sensor 1
+P1153	H02S Insufficient Switching Bank 2 Sensor 1
+P1154	H02S Transition Time Ratio Bank 2 Sensor 1
+P1171	Fuel System Lean During Acceleration
+P1297	Electrical Load Detector Circuit Input Low
+P1298	Electrical Load Detector Circuit Input High
+P1300	Random Misfire
+P1336	CKP System Variation Not Learned
+P1359	CKP/TDC Sensor Disconnected
+P1361	TDC Sensor Intermittent Interruption
+P1362	TDC Sensor No Signal
+P1380	ABS Rough Road System Fault
+P1381	Cylinder Position Sensor Intermittent Interruption, Misfire Detected (Except 1998 Rodeo)
+P1381	ABS Rough Road Class 2 Serial Data Fault Or Link Error (1998 Rodeo)
+P1382	Cylinder Position Sensor No Signal
+P1390	G Sensor Circuit Intermittent Voltage Low
+P1391	G Sensor Performance
+P1392	G Sensor Voltage Low
+P1393	G Sensor Voltage High
+P1394	G Sensor Intermittent Voltage High
+P1404	EGR Valve Stuck Closed
+P1406	EGR Valve Pintle Position Circuit
+P1441	EVAP System Flow During Non-Purge
+P1442	EVAP Vacuum Switch Voltage High During Ignition On
+P1459	EVAP Emission Purge Flow Switch Malfunction
+P1491	EGR Valve Lift Insufficient Detected
+P1498	EGR Valve Lift Sensor Voltage High
+P1508	IAC System RPM Low
+P1509	IAC System RPM High
+P1546	A/C Compressor Clutch Output Circuit Malfunction
+P1548	A/C Compressor Clutch Output Circuit Malfunction
+P1607	PCM Internal Circuit Failure "A"
+P1618	SPI Communications Error
+P1625	PCM Unexpected Reset
+P1627	PCM A/D Conversion Malfunction
+P1635	5 Volt Reference Voltage Circuit Malfunction
+P1640	ODM 1 Input Voltage High (Except 1998 Rodeo)
+P1640	ODM Output "A" Circuit Fault (1998 Rodeo)
+P1650	Quad Driver Module "A" Fault
+P1790	Trans ROM Checksum Error
+P1792	Trans EEPROM Checksum Error
+P1835	Trans Kickdown Switch Malfunction
+P1850	Brake Band Apply Solenoid Malfunction
+P1860	TCC PWM Solenoid Circuit Failure
+P1870	Transmission Component Slipping

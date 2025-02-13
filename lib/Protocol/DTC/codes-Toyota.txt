@@ -1,0 +1,41 @@
+P1100	BARO Sensor Circuit
+P1120	Accelerator Pedal Position Sensor Circuit
+P1121	Accelerator Pedal Position Sensor Range/Performance Problem
+P1125	Throttle Control Motor Circuit
+P1126	Magnetic Clutch Circuit
+P1127	ETCS Actuator Power Source Circuit
+P1128	Throttle Control Motor Lock
+P1129	Electric Throttle Control System
+P1130	Air/Fuel Sensor Circuit Range/Performance. (Bank 1 Sensor 1)
+P1133	Air/Fuel Sensor Circuit Response. (Bank 1 Sensor 1)
+P1135	Air/Fuel Sensor Heater Circuit Response. (Bank 1 Sensor 1)
+P1150	Air/Fuel Sensor Circuit Range/Performance. (Bank 1 Sensor 2)
+P1153	Air/Fuel Sensor Circuit Response. (Bank 1 Sensor 2)
+P1155	Air/Fuel Sensor Heater Circuit. (Bank 1 Sensor 2)
+P1200	Fuel Pump Relay Circuit
+P1300	Igniter Circuit Malfunction - No. 1
+P1310	Igniter Circuit Malfunction - No. 2
+P1335	No Crankshaft Position Sensor Signal - Engine Running
+P1349	VVT System
+P1400	Sub-Throttle Position Sensor
+P1401	Sub-Throttle Position Sensor Range/Performance Problem
+P1405	Turbo Pressure Sensor Circuit
+P1406	Turbo Pressure Sensor Range/Performance Problem
+P1410	EGR Valve Position Sensor Circuit Malfunction
+P1411	EGR Valve Position Sensor Circuit Range/Performance
+P1500	Starter Signal Circuit
+P1510	Boost Pressure Control Circuit
+P1511	Boost Pressure Low
+P1512	Boost Pressure High
+P1520	Stop Lamp Switch Signal Malfunction
+P1565	Cruise Control Main Switch Circuit
+P1600	ECM BATT Malfunction
+P1605	Knock Control CPU
+P1630	Traction Control System
+P1633	ECM
+P1652	Idle Air Control Valve Control Circuit
+P1656	OCV Circuit
+P1658	Wastegate Valve Control Circuit
+P1661	EGR Circuit
+P1662	EGR by-pass Valve Control Circuit
+P1780	Park/Neutral Position Switch Malfunction (Only For A/T)

@@ -1,0 +1,53 @@
+P1106	BARO Sensor Circuit Range/Performance Malfunction
+P1107	BARO Circuit Low Input
+P1108	BARO Circuit High Input
+P1121	Throttle Position Lower Than Expected
+P1122	Throttle Position Higher Than Expected
+P1128	MAP Lower Than Expected
+P1129	MAP Higher Than Expected
+P1259	VTEC System Malfunction
+P1297	ELD Circuit Low Input
+P1298	ELD Circuit High Input
+P1300	Random Misfire
+P1336	Crankshaft Speed Fluctuation Sensor Intermittant Interruption
+P1337	Crankshaft Speed Fluctuation Sensor No Signal
+P1359	Crankshaft Position/TDC/Cylinder Position Sensor Connector Disconnection
+P1361	TDC Sensor Intermittent Interruption
+P1362	TDC 1 Sensor No Signal
+P1366	TDC 2 Sensor Intermittent
+P1367	TDC 2 Sensor No Signal
+P1381	Cylinder Position Sensor Intermittant Inturruption
+P1382	Cylinder Position Sensor No Signal
+P1456	EVAP System Leak Detected (Fuel Tank System)
+P1457	EVAP Control System Leak Detected (Control Canister System)
+P1491	EGR Valve Lift Insufficient Detected
+P1498	Voltage Problem In EGR Valve Position Sensor Circuit
+P1508	Idle Air Control Valve Circuit Failure
+P1519	IAC Valve Circuit Failure
+P1607	ECM/PCM Internal Circuit Failure
+P1656	Automatic Transaxle
+P1660	A/T FI Data Line Failure
+P1676	FPTDR Signal Line Failure
+P1678	FPTDR Signal Line Failure
+P1681	A/T FI Signal A Low Input
+P1682	A/T FI Signal A High Input
+P1686	A/T FI Signal B Low Input
+P1687	A/T FI Signal B High Input
+P1705	Automatic Transaxle
+P1706	Automatic Transaxle
+P1709	Automatic Transaxle
+P1710	Automatic Transaxle
+P1713	Automatic Transaxle
+P1738	Automatic Transaxle
+P1739	Automatic Transaxle
+P1740	Automatic Transaxle
+P1753	Automatic Transaxle
+P1758	Automatic Transaxle
+P1768	Automatic Transaxle
+P1773	Automatic Transaxle
+P1778	Automatic Transaxle
+P1786	Automatic Transaxle
+P1790	Automatic Transaxle
+P1791	Automatic Transaxle
+P1792	Automatic Transaxle
+P1794	Automatic Transaxle

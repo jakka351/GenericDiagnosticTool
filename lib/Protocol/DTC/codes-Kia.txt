@@ -1,0 +1,45 @@
+P1115	Engine Coolant Temperature Signal from ECM to TCM
+P1121	Throttle Position Sensor Signal Malfunction from ECM to TCM
+P1170	Front Heated Oxygen Sensor Stuck
+P1195	EGR Pressure Sensor (1.6L) or Boost Sensor (1.8L) Open or Short
+P1196	Ignition Switch "Start" Open or Short (1.6L)
+P1250	Pressure Regulator Control Solenoid Valve Open or Short
+P1252	Pressure Regulator Control Solenoid Valve No. 2 Circuit Malfunction
+P1307	Chassis Acceleration Sensor Signal Malfunction
+P1308	Chassis Acceleration Sensor Signal Low
+P1309	Chassis Acceleration Sensor Signal High
+P1345	No SGC Signal (1.6L)
+P1386	Knock Sensor Control Zero Test
+P1402	EGR Valve Position Sensor Open or Short
+P1449	Canister Drain Cut Valve Open or Short (1.8L)
+P1450	Excessive Vacuum Leak
+P1455	Fuel Tank Sending Unit Open or Short (1.8L)
+P1457	Purge Solenoid Valve Low System Malfunction
+P1458	A/C Compressor Control Signal Malfunction
+P1485	EGR Solenoid Valve Vacuum Open or Short
+P1486	EGR Solenoid Valve Vent Open or Short
+P1487	EGR Boost Sensor Solenoid Valve Open or Short
+P1496	EGR Stepper Motor Malfunction - Circuit 1 (1.8L)
+P1497	EGR Stepper Motor Malfunction - Circuit 2 (1.8L)
+P1498	EGR Stepper Motor Malfunction - Circuit 3 (1.8L)
+P1499	EGR Stepper Motor Malfunction - Circuit 4 (1.8L)
+P1500	No Vehicle Speed Signal to TCM
+P1505	Idle Air Control Valve Opening Coil Voltage Low
+P1506	Idle Air Control Valve Opening Coil Voltage High
+P1507	Idle Air Control Valve Closing Coil Voltage Low
+P1508	Idle Air Control Valve Closing Coil Voltage High
+P1523	VICS Solenoid Valve
+P1586	A/T-M/T Codification
+P1608	PCM Malfunction
+P1611	MIL Request Circuit Voltage Low
+P1614	MIL Request Circuit Voltage High
+P1624	MIL Request Signal from TCM to ECM
+P1631	Alternator "T" Open or No Power Output (1.8L)
+P1632	Battery Voltage Detection Circuit for Alternator Regulator (1.8L)
+P1633	Battery Overcharge
+P1634	Alternator "B" Open (1.8L)
+P1693	MIL Circuit Malfunction
+P1743	Torque Converter Clutch Solenoid Valve Open or Short
+P1794	Battery or Circuit Failure
+P1795	4WD Switch Signal Malfunction
+P1797	P or N Range Signal or Clutch Pedal Position Switch Open or Short

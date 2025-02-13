@@ -1,0 +1,151 @@
+P0101	Mass Air Flow Sensor Signal Error Fault
+P0102	Mass Air Flow Sensor Low Out of Range Fault
+P0103	Mass Air Flow Sensor High Out of Range Fault
+P0111	Air Temperature Sensor Signal Error Fault
+P0112	Air Temperature Sensor Low Out of Range Fault
+P0113	Air Temperature Sensor High Out of Range Fault
+P0116	Engine Coolant Temperature Sensor Falling Temp Fault
+P0117	Engine Coolant Temperature Sensor Low Out of Range Fault
+P0118	Engine Coolant Temperature Sensor High Out of Range Fault
+P0121	Throttle Position Sensor Output Signal Error Fault
+P0122	Throttle Position Sensor Low Out of Range Fault
+P0123	Throttle Position Sensor High Out of Range Fault
+P0125	Engine Coolant Temp Sensor Warm Up Fault
+P0130	Oxygen Sensor Cycle Fault, Engine Back A, Upstream of Catalytic Converter
+P0131	Oxygen Sensor Low Voltage, Engine Back A, Upstream of Catalytic Converter
+P0132	Oxygen Sensor High Voltage, Engine Back A, Upstream of Catalytic Converter
+P0133	Oxygen Sensor Slow Response, Engine Back A, Upstream of Catalytic Converter
+P0136	Oxygen Sensor Cycle Fault, Engine Back A, Downstream of Catalytic Converter
+P0137	Oxygen Sensor Low Voltage, Engine Back A, Downstream of Catalytic Converter
+P0138	Oxygen Sensor High Voltage, Engine Back A, Downstream of Catalytic Converter
+P0139	Oxygen Sensor Slow Response, Engine Back A, Downstream of Catalytic Converter
+P0150	Oxygen Sensor Cycle Fault, Engine Bank B, Upstream of Catalytic Converter
+P0151	Oxygen Sensor Low Voltage, Engine Bank B, Upstream of Catalytic Converter
+P0152	Oxygen Sensor High Voltage, Engine Bank B, Upstream of Catalytic Converter
+P0153	Oxygen Sensor Slow Response, Engine Bank B, Upstream of Catalytic Converter
+P0156	Oxygen Sensor Cycle Fault, Engine Bank B, Downstream of Catalytic Converter
+P0157	Oxygen Sensor Low Voltage, Engine Bank B, Downstream of Catalytic Converter
+P0158	Oxygen Sensor High Voltage, Engine Bank B, Downstream of Catalytic Converter
+P0159	Oxygen Sensor Slow Response, Engine Bank B, Downstream of Catalytic Converter
+P0171	Oxygen Sensor System Too Lean Fault Bank A
+P0172	Oxygen Sensor System Too Rich Fault Bank A
+P0174	Oxygen Sensor System Too Lean Fault Bank B
+P0175	Oxygen Sensor System Too Rich Fault Bank B
+P0181	Fuel Temperature Sensor Signal Error Fault
+P0182	Fuel Temperature Sensor Low Out of Range Fault
+P0183	Fuel Temperature Sensor High Out of Range Fault
+P0201	Injector 1 Circuit Fault
+P0202	Injector 2 Circuit Fault
+P0203	Injector 3 Circuit Fault
+P0204	Injector 4 Circuit Fault
+P0205	Injector 5 Circuit Fault
+P0206	Injector 6 Circuit Fault
+P0207	Injector 7 Circuit Fault
+P0208	Injector 8 Circuit Fault
+P0300	Misfire On Multiple Cylinder
+P0301	Misfire Cylinder 1
+P03O2	Misfire Cylinder 2
+P03O3	Misfire Cylinder 3
+P0304	Misfire Cylinder 4
+P0305	Misfire Cylinder 5
+P0306	Misfire Cylinder 6
+P0307	Misfire Cylinder 7
+P0308	Misfire Cylinder 8
+P0326	Continuous Knock Fault Bank A
+P0327	Background Noise Low Fault Bank A
+P0328	Background Noise High Fault Bank A
+P0331	Continuous Knock Fault Bank B
+P0332	Background Noise Low Fault Bank B
+P0333	Background Noise High Fault Bank B
+P0335	Crankshaft Position Sensor Signal Error Fault
+P0336	Crankshaft Position Sensor Out of Range Fault
+P0340	Camshaft Position Sensor Signal Error Fault
+P0420	Catalyst Efficiency Low Fault Bank A
+P0430	Catalyst Efficiency Low Fault Bank B
+P0441	Evap Purge Valve Incorrect Flow Fault
+P0442	Evap System Small Leak Detected Fault
+P0443	Evap Purge Valve Open or Short Circuit Fault
+P0451	Fuel Tank Pressure Sensor Signal Error Fault
+P0452	Fuel Tank Pressure Sensor Low out of Range Fault
+P0453	Fuel Tank Pressure Sensor High Out of Range Fault
+P0461	Fuel Tank Level Measurement Not Valid Fault
+P0500	Vehicle Speed Sensor Signal Error Fault
+P0506	Idle Speed Control Engine Speed Low Fault
+P0507	Idle Speed Control Engine Speed High Fault
+P0560	Battery Voltage Below Minimum Fault
+P0562	Measurement Circuit OK Battery Voltage Low Fault
+P0563	Battery Voltage Above Maximum Fault
+P0605	ECM Self Test Fault
+P1130	Oxygen Sensor Fuel Trim at Limit, Engine Back A, Upstream of Catalytic Converter
+P1131	Oxygen Sensor Engine Lean, Engine Back A, Upstream of Catalytic Converter
+P1132	Oxygen Sensor Engine Rich, Engine Back A, Upstream of Catalytic Converter
+P1137	Oxygen Sensor Engine Lean, Engine Back A, Downstream of Catalytic Converter
+P1138	Oxygen Sensor Engine Rich, Engine Back A, Downstream of Catalytic Converter
+P1150	Oxygen Sensor Fuel Trim at Limit, Engine Bank B, Upstream of Catalytic Converter
+P1151	Oxygen Sensor Engine Lean, Engine Bank B, Upstream of Catalytic Converter
+P1152	Oxygen Sensor Engine Rich, Engine Bank B, Upstream of Catalytic Converter
+P1157	Oxygen Sensor Engine Lean, Engine Bank B, Downstream of Catalytic Converter
+P1158	Oxygen Sensor Engine Rich, Engine Bank B, Downstream of Catalytic Converter
+P1171	Oxygen Sensor System Too Lean Fault Banks A & B
+P1172	Oxygen Sensor System Too Rich Fault Banks A & B
+P1176	Maximum Positive FMFR Correction Fault
+P1177	Maximum Negative FMFR Correction Fault
+P1178	Maximum Positive AMFR Correction Fault
+P1179	Maximum Negative AMFR Correction Fault
+P1185	Oxygen Sensor Heater Circuit Open Upstream
+P1186	Oxygen Sensor Heater Circuit Short Upstream
+P1187	Oxygen Sensor Heater Circuit Short Upstream
+P1188	Oxygen Sensor Heater High Resistance Upstream
+P1189	Oxygen Sensor Heater Type 1 Low Resistance Upstream
+P1190	Oxygen Sensor Heater Type 2 Low Resistance Upstream
+P1191	Oxygen Sensor Heater Circuit Open Downstream
+P1192	Oxygen Sensor Heater Circuit Short Downstream
+P1193	Oxygen Sensor Heater Circuit Open Downstream
+P1194	Oxygen Sensor Heater High Resistance Downstream
+P1195	Oxygen Sensor Heater Type 1 Low Resistance Downstream
+P1196	Oxygen Sensor Heater Type 2 Low Resistance Downstream
+P1199	Fuel Level Sensor Circuit Fault
+P1201	Injector 1 Open Circuit or Ground Short Fault
+P1202	Injector 2 Open Circuit or Ground Short Fault
+P1203	Injector 3 Open Circuit or Ground Short Fault
+P1204	Injector 4 Open Circuit or Ground Short Fault
+P1205	Injector 5 Open Circuit or Ground Short Fault
+P1206	Injector 6 Open Circuit or Ground Short Fault
+P1207	Injector 7 Open Circuit or Ground Short Fault
+P1208	Injector 8 Open Circuit or Ground Short Fault
+P1313	Misfire Catalyst Damage Fault Bank A
+P1314	Misfire Catalyst Damage Fault Bank B
+P1315	Misfire Persistent Fault
+P1316	Misfire Excessive Emissions Fault
+P1317	ABS Rough Road Line Low Fault
+P1318	ABS Rough Road Line High Fault
+P1361	No Ignition Coil Activation Fault Coil 1
+P1362	No Ignition Coil Activation Fault Coil 2
+P1363	No Ignition Coil Activation Fault Coil 3
+P1364	No Ignition Coil Activation Fault Coil 4
+P1371	Early Ignition Coil Activation Fault Coil 1
+P1372	Early Ignition Coil Activation Fault Coil 2
+P1373	Early Ignition Coil Activation Fault Coil 3
+P1374	Early Ignition Coil Activation Fault Coil 4
+P1440	Evap System Purge Valve Stuck Open Fault
+P1441	Evap System Purge Valve Flow 1 Fault
+P1442	Evap System Purge Valve Blocked Fault
+P1447	Evap System Purge Valve Open or Short Circuit Fault
+P1448	Evap System Purge Valve Flow 2 Fault
+P1508	Idle Speed Control Open Circuit Fault
+P15O9	Idle Speed Control Short Circuit Fault
+P1514	Neutral Drive Load Fault
+P1516	Neutral Drive Gear Change Fault
+P1517	Neutral Drive Cranking Fault
+P1607	Malfunction Indicator Lamp Short Circuit Fault
+P1608	Malfunction Indicator Lamp Open Circuit Fault
+P1620	Reprogramming Code Learn Fault
+P1621	Serial Data Link Dead Fault
+P1622	Repeated Wrong ECM Security Code Fault
+P1623	ECM Security Code Fault
+P1701	Transfer Box Line Fault
+P1703	Transfer Box Line Open Circuit Fault
+P1708	Transfer Box Line Short Circuit Fault
+P1775	Gearbox Fault
+P1776	Gearbox Ignition Retard Request Timeout Fault
+P1777	Gearbox Ignition Retard Request Line Fault

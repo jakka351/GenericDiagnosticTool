@@ -1,0 +1,153 @@
+P1000	OBD-II Monitor Testing Incomplete
+P1001	KOER Test Cannot Be Completed
+P1039	Vehicle Speed Signal Missing or Improper
+P1051	Brake Switch Signal Missing or Improper
+P1100	Mass Air Flow Sensor Intermittent
+P1101	Mass Air Flow Sensor out of Self-Test Range
+P1112	Intake Air Temperature Sensor Intermittent
+P1116	Engine Coolant Temperature Sensor is out of Self-Test Range
+P1117	Engine Coolant Temperature Sensor Intermittent
+P1120	Throttle Position Sensor out of range
+P1121	Throttle Position Sensor Inconsistent with Mass Air Flow Sensor
+P1124	Throttle Position Sensor out of Self-Test Range
+P1125	Throttle Position Sensor Intermittent
+P1127	Heated Oxygen Sensor Heater not on During KOER Test
+P1128	Heated Oxygen Sensor Signals reversed
+P1129	Heated Oxygen Sensor Signals reversed
+P1130	Lack of Upstream Heated Oxygen Sensor Switch - Adaptive Fuel Limit - Bank No. 1
+P1131	Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank No. 1
+P1132	Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank No. 1
+P1135	Ignition Switch Signal Missing or Improper
+P1137	Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank No. 1
+P1138	Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank No. 1
+P1150	Lack of Upstream Heated Oxygen Sensor Switch - Adaptive Fuel Limit - Bank No. 2
+P1151	Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank No. 2
+P1152	Lack of Upstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank No. 2
+P1157	Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Lean - Bank No. 2
+P1158	Lack of Downstream Heated Oxygen Sensor Switch - Sensor Indicates Rich - Bank No. 2
+P1220	Series Throttle Control fault
+P1224	Throttle Position Sensor B out of Self-Test Range
+P1230	Open Power to Fuel Pump circuit
+P1231	High Speed Fuel Pump Relay activated
+P1232	Low Speed Fuel Pump Primary circuit failure
+P1233	Fuel Pump Driver Module off-line
+P1234	Fuel Pump Driver Module off-line
+P1235	Fuel Pump Control out of range
+P1236	Fuel Pump Control out of range
+P1237	Fuel Pump Secondary circuit fault
+P1238	Fuel Pump Secondary circuit fault
+P1250	Lack of Power to FPRC Solenoid
+P1260	Theft Detected - Engine Disabled
+P1270	Engine RPM or Vehicle Speed Limiter Reached
+P1288	Cylinder Head Temperature Sensor out of Self-Test Range
+P1289	Cylinder Head Temperature Sensor Signal Greater Than Self-Test Range
+P1290	Cylinder Head Temperature Sensor Signal Less Than Self-Test Range
+P1299	Cylinder Head Temperature Sensor Detected Engine Overheating Condition
+P1309	Misfire Detection Monitor not enabled
+P1351	Ignition Diagnostic Monitor circuit Input fault
+P1352	Ignition Coil A - Primary circuit fault
+P1353	Ignition Coil B - Primary circuit fault
+P1354	Ignition Coil C - Primary circuit fault
+P1355	Ignition Coil D - Primary circuit fault
+P1356	Loss of Ignition Diagnostic Module Input to PCM
+P1358	Ignition Diagnostic Monitor Signal out of Self-Test Range
+P1359	Spark Output circuit fault
+P1364	Ignition Coil Primary circuit fault
+P1380	VCT Solenoid Valve circuit Short or Open
+P1381	Cam Timing Advance is excessive
+P1383	Cam Timing Advance is excessive
+P1390	Octane Adjust out of Self-Test Range
+P1400	Differential Pressure Feedback Electronic Sensor circuit Low Voltage
+P1401	Differential Pressure Feedback Electronic Sensor circuit High Voltage
+P1403	Differential Pressure Feedback Electronic Sensor Hoses Reversed
+P1405	Differential Pressure Feedback Electronic Sensor circuit Upstream Hose
+P1406	Differential Pressure Feedback Electronic Sensor circuit Downstream Hose
+P1407	EGR No Flow Detected
+P1408	EGR Flow out of Self-Test Range
+P1409	Electronic Vacuum Regulator Control circuit fault
+P1410	EGR Barometric Pressure Sensor VREF Voltage
+P1411	Secondary Air is not being diverted
+P1413	Secondary Air Injection System Monitor circuit Low Voltage
+P1414	Secondary Air Injection System Monitor circuit High Voltage
+P1442	Secondary Air Injection System Monitor circuit High Voltage
+P1443	Evaporative Emission Control System - Vacuum System - Purge Control Solenoid or Purge Control Valve fault
+P1444	Purge Flow Sensor circuit Input Low
+P1445	Purge Flow Sensor circuit Input High
+P1450	Inability of Evaporative Emission Control System to Bleed Fuel Tank
+P1451	EVAP Control System Canister Vent Solenoid Circuit Malfunction
+P1452	Inability of Evaporative Emission Control System to Bleed Fuel Tank
+P1455	Substantial Leak or Blockage in Evaporative Emission Control System
+P1460	Wide Open Throttle Air Conditioning Cutoff circuit malfunction
+P1461	Air Conditioning Pressure Sensor circuit Low Input
+P1462	Air Conditioning Pressure Sensor circuit high Input
+P1463	Air Conditioning Pressure Sensor Insufficient Pressure change
+P1464	ACCS to PCM High During Self-Test
+P1469	Low Air Conditioning Cycling Period
+P1473	Fan Secondary High with Fans Off
+P1474	Low Fan Control Primary circuit
+P1479	High Fan Control Primary circuit
+P1480	Fan Secondary Low with Low Fans On
+P1481	Fan Secondary Low with High Fans On
+P1483	Power to Cooling Fan Exceeded Normal Draw
+P1484	Variable Load Control Module Pin 1 Open
+P1500	Vehicle Speed Sensor Intermittent
+P1501	Programmable Speedometer & Odometer Module/Vehicle Speed Sensor Intermittent circuit-failure
+P1502	Invalid or Missing Vehicle Speed Message or Brake Data
+P1504	Intake Air Control circuit malfunction
+P1505	Idle Air Control System at Adaptive Clip
+P1506	Idle Air Control Over Speed Error
+P1507	Idle Air Control Under Speed Error
+P1512	Intake Manifold Runner Control Stuck Closed
+P1513	Intake Manifold Runner Control Stuck Closed
+P1516	Intake Manifold Runner Control Input Error
+P1517	Intake Manifold Runner Control Input Error
+P1518	Intake Manifold Runner Control fault - Stuck Open
+P1519	Intake Manifold Runner Control fault - Stuck Closed
+P1520	Intake Manifold Runner Control circuit fault
+P1530	Open or Short to A/C Compressor Clutch circuit
+P1537	Intake Manifold Runner Control Stuck Open
+P1538	Intake Manifold Runner Control Stuck Open
+P1539	Power to A/C Compressor Clutch circuit Exceeded Normal Current Draw
+P1549	Intake Manifold Temperature Valve Vacuum Actuator Connection
+P1550	Power Steering Pressure Sensor out of Self-Test Range
+P1605	PCM Keep Alive Memory Test Error
+P1625	Voltage to Vehicle Load Control Module Fan circuit not detected
+P1626	Voltage to Vehicle Load Control Module circuit not detected
+P1650	Power Steering Pressure Switch out of Self-Test Range
+P1651	Power Steering Pressure Switch Input fault
+P1700	Transmission system problems
+P1701	Reverse Engagement Error
+P1702	Transmission system problems
+P1703	Brake On/Off Switch out of Self-Test Range
+P1704	Transmission system problems
+P1705	Manual Lever Position Sensor out of Self-Test Range
+P1709	Park or Neutral Position Switch out of Self-Test Range
+P1710	Transmission system problems
+P1711	Transmission Fluid Temperature Sensor out of Self-Test Range
+P1729	4x4 Low Switch Error
+P1740	Transmission system problems
+P1741	Torque Converter Clutch Control Error
+P1742	Torque Converter Clutch Solenoid Faulty
+P1743	Torque Converter Clutch Solenoid Faulty
+P1744	Torque Converter Clutch System Stuck in Off Position
+P1745	Transmission system problems
+P1746	Electronic Pressure Control Solenoid - Open circuit
+P1747	Electronic Pressure Control Solenoid - Short circuit
+P1749	Electronic Pressure Control Solenoid Failed Low
+P1751	Shift Solenoid No. 1 Performance
+P1754	Coast Clutch Solenoid circuit malfunction
+P1756	Shift Solenoid No. 2 Performance
+P1760	Transmission system problems
+P1761	Shift Solenoid No. 3 Performance
+P1762	Transmission system problems
+P1767	Transmission system problems
+P1780	Transmission Control Switch circuit is out of Self-Test Range
+P1781	4x4 Low Switch is out of Self-Test Range
+P1783	Transmission Over-Temperature Condition
+P1784	Transmission system problems
+P1785	Transmission system problems
+P1786	Transmission system problems
+P1787	Transmission system problems
+P1788	Transmission system problems
+P1789	Transmission system problems
+P1900	Transmission system problems

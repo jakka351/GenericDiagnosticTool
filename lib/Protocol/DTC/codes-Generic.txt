@@ -1,0 +1,934 @@
+P0001	Fuel Volume Regulator Control Circuit/Open
+P0002	Fuel Volume Regulator Control Circuit Range/Performance
+P0003	Fuel Volume Regulator Control Circuit Low
+P0004	Fuel Volume Regulator Control Circuit High
+P0005	Fuel Shutoff Valve "A" Control Circuit/Open
+P0006	Fuel Shutoff Valve "A" Control Circuit Low
+P0007	Fuel Shutoff Valve "A" Control Circuit High
+P0008	Engine Positions System Performance Bank 1
+P0009	Engine Position System Performance Bank 2
+P0010	"A" Camshaft Position Actuator Circuit (Bank 1)
+P0011	"A" Camshaft Position - Timing Over-Advanced or System Performance (Bank 1)
+P0012	"A" Camshaft Position - Timing Over-Retarded (Bank 1)
+P0013	"B" Camshaft Position - Actuator Circuit (Bank 1)
+P0014	"B" Camshaft Position - Timing Over-Advanced or System Performance (Bank 1) - See Trouble Code P0011
+P0015	"B" Camshaft Position -Timing Over-Retarded (Bank 1) - See Trouble Code P0012
+P0016	Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor A)
+P0017	Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor B)
+P0018	Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor A)
+P0019	Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor B)
+P0020	"A" Camshaft Position Actuator Circuit (Bank 2)
+P0021	"A" Camshaft Position - Timing Over-Advanced or System Performance (Bank 2)
+P0022	"A" Camshaft Position - Timing Over-Retarded (Bank 2)
+P0023	"B" Camshaft Position - Actuator Circuit (Bank 2) - See Trouble Code P0020
+P0024	"B" Camshaft Position - Timing Over-Advanced or System Performance (Bank 2) - See Trouble Code P0021
+P0025	"B" Camshaft Position - Timing Over-Retarded (Bank 2) - See Trouble Code P0022
+P0026	Intake Valve Control Solenoid Circuit Range/Performance Bank 1
+P0027	Exhaust Valve Control solenoid Circuit Range/Performance Bank 1
+P0028	Intake valve Control Solenoid Circuit Range/Performance Bank 2
+P0029	Exhaust Valve Control Solenoid Circuit Range/Performance Bank 2
+P0030	HO2S Heater Control Circuit (Bank 1 Sensor 1)
+P0031	HO2S Heater Control Circuit Low (Bank 1 Sensor 1)
+P0032	HO2S Heater Control Circuit High (Bank 1 Sensor 1)
+P0033	Turbo Charger Bypass Valve Control Circuit
+P0034	Turbo Charger Bypass Valve Control Circuit Low
+P0035	Turbo Charger Bypass Valve Control Circuit High
+P0036	HO2S Heater Control Circuit (Bank 1 Sensor 2)
+P0037	HO2S Heater Control Circuit Low (Bank 1 Sensor 2)
+P0038	HO2S Heater Control Circuit High (Bank 1 Sensor 2)
+P0039	Turbo/Super Charger Bypass Valve Control Circuit Range/Performance
+P0040	Upstream Oxygen Sensors Swapped From Bank To Bank
+P0041	Downstream Oxygen Sensors Swapped From Bank To Bank
+P0042	HO2S Heater Control Circuit (Bank 1 Sensor 3)
+P0043	HO2S Heater Control Circuit Low (Bank 1 Sensor 3)
+P0044	HO2S Heater Control Circuit High (Bank 1 Sensor 3)
+P0050	HO2S Heater Control Circuit (Bank 2 Sensor 1)
+P0051	HO2S Heater Control Circuit Low (Bank 2 Sensor 1)
+P0052	HO2S Heater Control Circuit High (Bank 2 Sensor 1)
+P0053	HO2S Heater Resistance (Bank 1, Sensor 1)
+P0054	HO2S Heater Resistance (Bank 1, Sensor 2)
+P0055	HO2S Heater Resistance (Bank 1, Sensor 3)
+P0056	HO2S Heater Control Circuit (Bank 2 Sensor 2)
+P0057	HO2S Heater Control Circuit Low (Bank 2 Sensor 2)
+P0058	HO2S Heater Control Circuit High (Bank 2 Sensor 2)
+P0059	HO2S Heater Resistance (Bank 2, Sensor 1)
+P0060	HO2S Heater Resistance (Bank 2, Sensor 2)
+P0061	HO2S Heater Resistance (Bank 2, Sensor 3)
+P0062	HO2S Heater Control Circuit (Bank 2 Sensor 3)
+P0063	HO2S Heater Control Circuit Low (Bank 2 Sensor 3)
+P0064	HO2S Heater Control Circuit High (Bank 2 Sensor 3)
+P0065	Air Assisted Injector Control Range/Performance
+P0066	Air Assisted Injector Control Circuit or Circuit Low
+P0067	Air Assisted Injector Control Circuit High
+P0068	MAP/MAF - Throttle Position Correlation
+P0069	Manifold Absolute Pressure - Barometric Pressure Correlation
+P0070	Ambient Air Temperature Sensor Circuit
+P0071	Ambient Air Temperature Sensor Range/Performance
+P0072	Ambient Air Temperature Sensor Circuit Low Input
+P0073	Ambient Air Temperature Sensor Circuit High Input
+P0074	Ambient Air Temperature Sensor Circuit Intermittent
+P0075	Intake Valve Control Solenoid Circuit (Bank 1)
+P0076	Intake Valve Control Solenoid Circuit Low (Bank 1)
+P0077	Intake Valve Control Solenoid Circuit High (Bank 1)
+P0078	Exhaust Valve Control Solenoid Circuit (Bank 1)
+P0079	Exhaust Valve Control Solenoid Circuit Low (Bank 1)
+P0080	Exhaust Valve Control Solenoid Circuit High (Bank 1)
+P0081	Intake valve Control Solenoid Circuit (Bank 2)
+P0082	Intake Valve Control Solenoid Circuit Low (Bank 2)
+P0083	Intake Valve Control Solenoid Circuit High (Bank 2)
+P0084	Exhaust Valve Control Solenoid Circuit (Bank 2)
+P0085	Exhaust Valve Control Solenoid Circuit Low (Bank 2)
+P0086	Exhaust Valve Control Solenoid Circuit High (Bank 2)
+P0087	Fuel Rail/System Pressure - Too Low
+P0088	Fuel Rail/System Pressure - Too High
+P0089	Fuel Pressure Regulator 1 Performance
+P0090	Fuel Pressure Regulator 1 Control Circuit
+P0091	Fuel Pressure Regulator 1 Control Circuit Low
+P0092	Fuel Pressure Regulator 1 Control Circuit High
+P0093	Fuel System Leak Detected - Large Leak
+P0094	Fuel System Leak Detected - Small Leak
+P0095	Intake Air Temperature Sensor 2 Circuit
+P0096	Intake Air Temperature Sensor 2 Circuit Range/Performance
+P0097	Intake Air Temperature Sensor 2 Circuit Low
+P0098	Intake Air Temperature Sensor 2 Circuit High
+P0099	Intake Air Temperature Sensor 2 Circuit Intermittent/Erratic
+P0100	Mass or Volume Air Flow Circuit Malfunction
+P0101	Mass or Volume Air Flow Circuit Range/Performance Problem
+P0102	Mass or Volume Air Flow Circuit Low Input
+P0103	Mass or Volume Air Flow Circuit High Input
+P0104	Mass or Volume Air Flow Circuit Intermittent
+P0105	Manifold Absolute Pressure/Barometric Pressure Circuit Malfunction
+P0106	Manifold Absolute Pressure/Barometric Pressure Circuit Range/Performance Problem
+P0107	Manifold Absolute Pressure/Barometric Pressure Circuit Low Input
+P0108	Manifold Absolute Pressure/Barometric Pressure Circuit High Input
+P0109	Manifold Absolute Pressure/Barometric Pressure Circuit Intermittent
+P0110	Intake Air Temperature Circuit Malfunction
+P0111	Intake Air Temperature Circuit Range/Performance Problem
+P0112	Intake Air Temperature Circuit Low Input
+P0113	Intake Air Temperature Circuit High Input
+P0114	Intake Air Temperature Circuit Intermittent
+P0115	Engine Coolant Temperature Circuit Malfunction
+P0116	Engine Coolant Temperature Circuit Range/Performance Problem
+P0117	Engine Coolant Temperature Circuit Low Input
+P0118	Engine Coolant Temperature Circuit High Input
+P0119	Engine Coolant Temperature Circuit Intermittent
+P0120	Throttle Position Sensor/Switch A Circuit Malfunction
+P0121	Throttle Position Sensor/Switch A Circuit Range/Performance Problem
+P0122	Throttle Position Sensor/Switch A Circuit Low Input
+P0123	Throttle Position Sensor/Switch A Circuit High Input
+P0124	Throttle Position Sensor/Switch A Circuit Intermittent
+P0125	Insufficient Coolant Temperature for Closed Loop Fuel Control
+P0126	Insufficient Coolant Temperature for Stable Operation
+P0128	Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)
+P0130	02 Sensor Circuit Malfunction (Bank I Sensor 1)
+P0131	02 Sensor Circuit Low Voltage (Bank I Sensor I)
+P0132	02 Sensor Circuit High Voltage (Bank I Sensor 1)
+P0133	02 Sensor Circuit Slow Response (Bank 1 Sensor 1)
+P0134	02 Sensor Circuit No Activity Detected (Bank I Sensor 1)
+P0135	02 Sensor Heater Circuit Malfunction (Bank 1 Sensor 1)
+P0136	02 Sensor Circuit Malfunction (Bank I Sensor 2)
+P0137	02 Sensor Circuit Low Voltage (Bank I Sensor 2)
+P0138	02 Sensor Circuit High Voltage (Bank I Sensor 2)
+P0139	02 Sensor Circuit Slow Response (Bank 1 Sensor 2)
+P0140	02 Sensor Circuit No Activity Detected (Bank 1 Sensor 2)
+P0141	02 Sensor Heater Circuit Malfunction (Bank 1 Sensor 2)
+P0142	02 Sensor Circuit Malfunction (Bank I Sensor 3)
+P0143	02 Sensor Circuit Low Voltage (Bank I Sensor 3)
+P0144	02 Sensor Circuit High Voltage (Bank I Sensor 3)
+P0145	02 Sensor Circuit Slow Response (Bank 1 Sensor 3)
+P0146	02 Sensor Circuit No Activity Detected (Bank I Sensor 3)
+P0147	02 Sensor Heater Circuit Malfunction (Bank I Sensor 3)
+P0150	02 Sensor Circuit Malfunction (Bank 2 Sensor I)
+P0151	02 Sensor Circuit Low Voltage (Bank 2 Sensor I)
+P0152	02 Sensor Circuit High Voltage (Bank 2 Sensor 1)
+P0153	02 Sensor Circuit Slow Response (Bank 2 Sensor 1)
+P0154	02 Sensor Circuit No Activity Detected (Bank 2 Sensor 1)
+P0155	02 Sensor Heater Circuit Malfunction (Bank 2 Sensor 1)
+P0156	02 Sensor Circuit Malfunction (Bank 2 Sensor 2)
+P0157	02 Sensor Circuit Low Voltage (Bank 2 Sensor 2)
+P0158	02 Sensor Circuit High Voltage (Bank 2 Sensor 2)
+P0159	02 Sensor Circuit Slow Response (Bank 2 Sensor 2)
+P0160	02 Sensor Circuit No Activity Detected (Bank 2 Sensor 2)
+P0161	02 Sensor Heater Circuit Malfunction (Bank 2 Sensor 2)
+P0162	02 Sensor Circuit Malfunction (Bank 2 Sensor 3)
+P0163	02 Sensor Circuit Low Voltage (Bank 2 Sensor 3)
+P0164	02 Sensor Circuit High Voltage (Bank 2 Sensor 3)
+P0165	02 Sensor Circuit Slow Response (Bank 2 Sensor 3)
+P0166	02 Sensor Circuit No Activity Detected (Bank 2 Sensor 3)
+P0167	02 Sensor Heater Circuit Malfunction (Bank 2 Sensor 3)
+P0170	Fuel Trim Malfunction (Bank 1)
+P0171	System too Lean (Bank 1)
+P0172	System too Rich (Bank 1)
+P0173	Fuel Trim Malfunction (Bank 2)
+P0174	System too Lean (Bank 2)
+P0175	System too Rich (Bank 2)
+P0176	Fuel Composition Sensor Circuit Malfunction
+P0177	Fuel Composition Sensor Circuit Range/Performance
+P0178	Fuel Composition Sensor Circuit Low Input
+P0179	Fuel Composition Sensor Circuit High Input
+P0180	Fuel Temperature Sensor A Circuit Malfunction
+P0181	Fuel Temperature Sensor A Circuit Range/Performance
+P0182	Fuel Temperature Sensor A Circuit Low Input
+P0183	Fuel Temperature Sensor A Circuit High Input
+P0184	Fuel Temperature Sensor A Circuit Intermittent
+P0185	Fuel Temperature Sensor B Circuit Malfunction
+P0186	Fuel Temperature Sensor B Circuit Range/Performance
+P0187	Fuel Temperature Sensor B Circuit Low Input
+P0188	Fuel Temperature Sensor B Circuit High Input
+P0189	Fuel Temperature Sensor B Circuit Intermittent
+P0190	Fuel Rail Pressure Sensor Circuit Malfunction
+P0191	Fuel Rail Pressure Sensor Circuit Range/Performance
+P0192	Fuel Rail Pressure Sensor Circuit Low Input
+P0193	Fuel Rail Pressure Sensor Circuit High Input
+P0194	Fuel Rail Pressure Sensor Circuit Intermittent
+P0195	Engine Oil Temperature Sensor Malfunction
+P0196	Engine Oil Temperature Sensor Range/Performance
+P0197	Engine Oil Temperature Sensor Low
+P0198	Engine Oil Temperature Sensor High
+P0199	Engine Oil Temperature Sensor Intermittent
+P0200	Injector Circuit Malfunction
+P0201	Injector Circuit Malfunction - Cylinder 1
+P0202	Injector Circuit Malfunction - Cylinder 2
+P0203	Injector Circuit Malfunction - Cylinder 3
+P0204	Injector Circuit Malfunction - Cylinder 4
+P0205	Injector Circuit Malfunction - Cylinder 5
+P0206	Injector Circuit Malfunction - Cylinder 6
+P0207	Injector Circuit Malfunction - Cylinder 7
+P0208	Injector Circuit Malfunction - Cylinder 8
+P0209	Injector Circuit Malfunction - Cylinder 9
+P0210	Injector Circuit Malfunction - Cylinder 10
+P0211	Injector Circuit Malfunction - Cylinder 11
+P0212	Injector Circuit Malfunction - Cylinder 12
+P0213	Cold Start Injector 1 Malfunction
+P0214	Cold Start Injector 2 Malfunction
+P0215	Engine Shutoff Solenoid Malfunction
+P0216	Injection Timing Control Circuit Malfunction
+P0217	Engine Overtemp Condition
+P0218	Transmission Over Temperature Condition
+P0219	Engine Overspeed Condition
+P0220	Throttle/Petal Position Sensor/Switch B Circuit Malfunction
+P0221	Throttle/Petal Position Sensor/Switch B Circuit Range/Performance Problem
+P0222	Throttle/Petal Position Sensor/Switch B Circuit Low Input
+P0223	Throttle/Petal Position Sensor/Switch B Circuit High Input
+P0224	Throttle/Petal Position Sensor/Switch B Circuit Intermittent
+P0225	Throttle/Petal Position Sensor/Switch C Circuit Malfunction
+P0226	Throttle/Petal Position Sensor/Switch C Circuit Range/Performance Problem
+P0227	Throttle/Petal Position Sensor/Switch C Circuit Low Input
+P0228	Throttle/Petal Position Sensor/Switch C Circuit High Input
+P0229	Throttle/Petal Position Sensor/Switch C Circuit Intermittent
+P0230	Fuel Pump Primary Circuit Malfunction
+P0231	Fuel Pump Secondary Circuit Low
+P0232	Fuel Pump Secondary Circuit High
+P0233	Fuel Pump Secondary Circuit Intermittent
+P0234	Engine Overboost Condition
+P0235	Turbocharger Boost Sensor A Circuit Malfunction
+P0236	Turbocharger Boost Sensor A Circuit Range/Performance
+P0237	Turbocharger Boost Sensor A Circuit Low
+P0238	Turbocharger Boost Sensor A Circuit High
+P0239	Turbocharger Boost Sensor B Malfunction
+P0240	Turbocharger Boost Sensor B Circuit Range/Performance
+P0241	Turbocharger Boost Sensor B Circuit Low
+P0242	Turbocharger Boost Sensor B Circuit High
+P0243	Turbocharger Wastegate Solenoid A Malfunction
+P0244	Turbocharger Wastegate Solenoid A Range/Performance
+P0245	Turbocharger Wastegate Solenoid A Low
+P0246	Turbocharger Wastegate Solenoid A High
+P0247	Turbocharger Wastegate Solenoid B Malfunction
+P0248	Turbocharger Wastegate Solenoid B Range/Performance
+P0249	Turbocharger Wastegate Solenoid B Low
+P0250	Turbocharger Wastegate Solenoid B High
+P0251	Injection Pump Fuel Metering Control "A" Malfunction (Cam/Rotor/Injector)
+P0252	Injection Pump Fuel Metering Control "A" Range/Performance (Cam/Rotor/Injector)
+P0253	Injection Pump Fuel Metering Control "A" Low (Cam/Rotor/Injector)
+P0254	Injection Pump Fuel Metering Control "A" High (Cam/Rotor/Injector)
+P0255	Injection Pump Fuel Metering Control "A" Intermittent (Cam/Rotor/Injector)
+P0256	Injection Pump Fuel Metering Control "B" Malfunction (Cam/Rotor/Injector)
+P0257	Injection Pump Fuel Metering Control "B" Range/Performance Injector)
+P0258	Injection Pump Fuel Metering Control "B" Low (Cam/R
+P0259	Injection Pump Fuel Metering Control "B" High (Cam/R
+P0260	Injection Pump Fuel Metering Control "B" Intermittent Injector)
+P0261	Cylinder I Injector Circuit Low
+P0262	Cylinder I Injector Circuit High
+P0263	Cylinder I Contribution/Balance Fault
+P0264	Cylinder 2 Injector Circuit Low
+P0265	Cylinder 2 Injector Circuit High
+P0266	Cylinder 2 Contribution/Balance Fault
+P0267	Cylinder 3 Injector Circuit Low
+P0268	Cylinder 3 Injector Circuit High
+P0269	Cylinder 3 Contribution/Balance Fault
+P0270	Cylinder 4 Injector Circuit Low
+P0271	Cylinder 4 Injector Circuit High
+P0272	Cylinder 4 Contribution/Balance Fault
+P0273	Cylinder 5 Injector Circuit Low
+P0274	Cylinder 5 Injector Circuit High
+P0275	Cylinder S Contribution/Balance Fault
+P0276	Cylinder 6 Injector Circuit Low
+P0277	Cylinder 6 Injector Circuit High
+P0278	Cylinder 6 Contribution/Balance Fault
+P0279	Cylinder 7 Injector Circuit Low
+P0280	Cylinder 7 Injector Circuit High
+P0281	Cylinder 7 Contribution/Balance Fault
+P0282	Cylinder 8 Injector Circuit Low
+P0283	Cylinder 8 Injector Circuit High
+P0284	Cylinder 8 Contribution/Balance Fault
+P0285	Cylinder 9 Injector Circuit Low
+P0286	Cylinder 9 Injector Circuit High
+P0287	Cylinder 9 Contribution/Balance Fault
+P0288	Cylinder 10 Injector Circuit Low
+P0289	Cylinder 10 Injector Circuit High
+P0290	Cylinder 10 Contribution/Balance Fault
+P0291	Cylinder 11 Injector Circuit Low
+P0292	Cylinder 11 Injector Circuit High
+P0293	Cylinder 11 Contribution/Balance Fault
+P0294	Cylinder 12 Injector Circuit Low
+P0295	Cylinder 12 Injector Circuit High
+P0296	Cylinder 12 Contribution/Range Fault
+P0300	Random/Multiple Cylinder Misfire Detected
+P0301	Cylinder 1 Misfire Detected
+P0302	Cylinder 2 Misfire Detected
+P0303	Cylinder 3 Misfire Detected
+P0304	Cylinder 4 Misfire Detected
+P0305	Cylinder 5 Misfire Detected
+P0306	Cylinder 6 Misfire Detected
+P0307	Cylinder 7 Misfire Detected
+P0308	Cylinder 8 Misfire Detected
+P0309	Cylinder 9 Misfire Detected
+P0310	Cylinder 10 Misfire Detected
+P0311	Cylinder 11 Misfire Detected
+P0312	Cylinder 12 Misfire Detected
+P0313	Misfire Detected with Low Fuel
+P0314	Single Cylinder Misfire (Cylinder not Specified)
+P0315	Crankshaft Position System Variation Not Learned
+P0316	Misfire Detected On Startup (First 1000 Revolutions)
+P0317	Rough Road Hardware Not Present
+P0318	Rough Road Sensor A Signal Circuit
+P0319	Rough Road Sensor B Signal Circuit
+P0320	Ignition/Distributor Engine Speed Input Circuit Malfunction
+P0321	Ignition/Distributor Engine Speed Input Circuit Range/Performance
+P0322	Ignition/Distributor Engine Speed Input Circuit No Signal
+P0323	Ignition/Distributor Engine Speed Input Circuit Intermittent
+P0325	Knock Sensor 1 Circuit Malfunction (Bank I or Single Sensor)
+P0326	Knock Sensor 1 Circuit Range/Performance (Bank 1 or Single Sensor)
+P0327	Knock Sensor 1 Circuit Low Input (Bank I or Single Sensor)
+P0328	Knock Sensor 1 Circuit High Input (Bank I or Single Sensor)
+P0329	Knock Sensor 1 Circuit Intermittent (Bank 1 or Single Sensor)
+P0330	Knock Sensor 2 Circuit Malfunction (Bank 2)
+P0331	Knock Sensor 2 Circuit Range/Performance (Bank 2)
+P0332	Knock Sensor 2 Circuit Low Input (Bank 2)
+P0333	Knock Sensor 2 Circuit High Input (Bank 2)
+P0334	Knock Sensor 2 Circuit Intermittent (Bank 2)
+P0335	Crankshaft Position Sensor A Circuit Malfunction
+P0336	Crankshaft Position Sensor A Circuit Range/Performance
+P0337	Crankshaft Position Sensor A Circuit Low Input
+P0338	Crankshaft Position Sensor A Circuit High Input
+P0339	Crankshaft Position Sensor A Circuit Intermittent
+P0340	Camshaft Position Sensor Circuit Malfunction
+P0341	Camshaft Position Sensor Circuit Range/Performance
+P0342	Camshaft Position Sensor Circuit Low Input
+P0343	Camshaft Position Sensor Circuit High Input
+P0344	Camshaft Position Sensor Circuit Intermittent
+P0345	Camshaft Position Sensor A Circuit Malfunction (Bank 2)
+P0346	Camshaft Position Sensor A Circuit Range/Performance (Bank 2)
+P0347	Camshaft Position Sensor A Circuit Low Input (Bank 2)
+P0348	Camshaft Position Sensor A Circuit High Input (Bank 2)
+P0349	Camshaft Position Sensor A Circuit Intermittent (Bank 2)
+P0350	Ignition Coil Primary/Secondary Circuit Malfunction
+P0351	Ignition Coil A Primary/Secondary Circuit Malfunction
+P0352	Ignition Coil B Primary/Secondary Circuit Malfunction
+P0353	Ignition Coil C Primary/Secondary Circuit Malfunction
+P0354	Ignition Coil D Primary/Secondary Circuit Malfunction
+P0355	Ignition Coil E Primary/Secondary Circuit Malfunction
+P0356	Ignition Coil F Primary/Secondary Circuit Malfunction
+P0357	Ignition Coil G Primary/Secondary Circuit Malfunction
+P0358	Ignition Coil H Primary/Secondary Circuit Malfunction
+P0359	Ignition Coil I Primary/Secondary Circuit Malfunction
+P0360	Ignition Coil J Primary/Secondary Circuit Malfunction
+P0361	Ignition Coil K Primary/Secondary Circuit Malfunction
+P0362	Ignition Coil L Primary/Secondary Circuit Malfunction
+P0370	Timing Reference High Resolution Signal A Malfunction
+P0371	Timing Reference High Resolution Signal A Too Many Pulses
+P0372	Timing Reference High Resolution Signal A Too Few Pulses
+P0373	Timing Reference High Resolution Signal A Intermittent/Erratic Pulses
+P0374	Timing Reference High Resolution Signal A No Pulses
+P0375	Timing Reference High Resolution Signal B Malfunction
+P0376	Timing Reference High Resolution Signal B Too Many Pulses
+P0377	Timing Reference High Resolution Signal B Too Few Pulses
+P0378	Timing Reference High Resolution Signal B Intermittent/Erratic Pulses
+P0379	Timing Reference High Resolution Signal B No Pulses
+P0380	Glow Plug/Heater Circuit "A" Malfunction
+P0381	Glow Plug/Heater Indicator Circuit Malfunction
+P0382	Exhaust Gas Recirculation Flow Malfunction
+P0385	Crankshaft Position Sensor B Circuit Malfunction
+P0386	Crankshaft Position Sensor B Circuit Range/Performance
+P0387	Crankshaft Position Sensor B Circuit Low Input
+P0388	Crankshaft Position Sensor B Circuit High Input
+P0389	Crankshaft Position Sensor B Circuit Intermittent
+P0400	Exhaust Gas Recirculation Flow Malfunction
+P0401	Exhaust Gas Recirculation Flow Insufficient Detected
+P0402	Exhaust Gas Recirculation Flow Excessive Detected
+P0403	Exhaust Gas Recirculation Circuit Malfunction
+P0404	Exhaust Gas Recirculation Circuit Range/Performance
+P0405	Exhaust Gas Recirculation Sensor A Circuit Low
+P0406	Exhaust Gas Recirculation Sensor A Circuit High
+P0407	Exhaust Gas Recirculation Sensor B Circuit Low
+P0408	Exhaust Gas Recirculation Sensor B Circuit High
+P0410	Secondary Air Injection System Malfunction
+P0411	Secondary Air Injection System Incorrect Flow Detected
+P0412	Secondary Air Injection System Switching Valve A Circuit Malfunction
+P0413	Secondary Air Injection System Switching Valve A Circuit Open
+P0414	Secondary Air Injection System Switching Valve A Circuit Shorted
+P0415	Secondary Air Injection System Switching Valve B Circuit Malfunction
+P0416	Secondary Air Injection System Switching Valve B Circuit Open
+P0417	Secondary Air Injection System Switching Valve B Circuit Shorted
+P0418	Secondary Air Injection System Relay "A" Circuit Malfunction
+P0419	Secondary Air Injection System Relay "B" Circuit Malfunction
+P0420	Catalyst System Efficiency Below Threshold (Bank 1)
+P0421	Warm Up Catalyst Efficiency Below Threshold (Bank 1)
+P0422	Main Catalyst Efficiency Below Threshold (Bank 1)
+P0423	Heated Catalyst Efficiency Below Threshold (Bank 1)
+P0424	Heated Catalyst Temperature Below Threshold (Bank 1)
+P0430	Catalyst System Efficiency Below Threshold (Bank 2)
+P0431	Warm Up Catalyst Efficiency Below Threshold (Bank 2)
+P0432	Main Catalyst Efficiency Below Threshold (Bank 2)
+P0433	Heated Catalyst Efficiency Below Threshold (Bank 2)
+P0434	Heated Catalyst Temperature Below Threshold (Bank 2)
+P0440	Evaporative Emission Control System Malfunction
+P0441	Evaporative Emission Control System Incorrect Purge Flow
+P0442	Evaporative Emission Control System Leak Detected (small leak)
+P0443	Evaporative Emission Control System Purge Control Valve Circuit
+P0444	Evaporative Emission Control System Purge Control Valve Circuit Open
+P0445	Evaporative Emission Control System Purge Control Valve Circuit Shorted
+P0446	Evaporative Emission Control System Vent Control Circuit Malfunction
+P0447	Evaporative Emission Control System Vent Control Circuit Open
+P0448	Evaporative Emission Control System Vent Control Circuit Shorted
+P0449	Evaporative Emission Control System Vent Valve/Solenoid Circuit Malfunction
+P0450	Evaporative Emission Control System Pressure Sensor Malfunction
+P0451	Evaporative Emission Control System Pressure Sensor Range/Performance
+P0452	Evaporative Emission Control System Pressure Sensor Low Input
+P0453	Evaporative Emission Control System Pressure Sensor High Input
+P0454	Evaporative Emission Control System Pressure Sensor Intermittent
+P0455	Evaporative Emission Control System Leak Detected (gross leak)
+P0456	Evaporative Emissions System Small Leak Detected
+P0457	Evaporative Emission Control System Leak Detected
+P0458	Evaporative Emission System Purge Control Valve Circuit Low
+P0459	Evaporative Emission System Purge Control Valve Circuit High
+P0460	Fuel Level Sensor Circuit Malfunction
+P0461	Fuel Level Sensor Circuit Range/Performance
+P0462	Fuel Level Sensor Circuit Low Input
+P0463	Fuel Level Sensor Circuit High Input
+P0464	Fuel Level Sensor Circuit Intermittent
+P0465	Purge Flow Sensor Circuit Malfunction
+P0466	Purge Flow Sensor Circuit Range/Performance
+P0467	Purge Flow Sensor Circuit Low Input
+P0468	Purge Flow Sensor Circuit High Input
+P0469	Purge Flow Sensor Circuit Intermittent
+P0470	Exhaust Pressure Sensor Malfunction
+P0471	Exhaust Pressure Sensor Range/Performance
+P0472	Exhaust Pressure Sensor Low
+P0473	Exhaust Pressure Sensor High
+P0474	Exhaust Pressure Sensor Intermittent
+P0475	Exhaust Pressure Control Valve Malfunction
+P0476	Exhaust Pressure Control Valve Range/Performance
+P0477	Exhaust Pressure Control Valve Low
+P0478	Exhaust Pressure Control Valve High
+P0479	Exhaust Pressure Control Valve Intermittent
+P0480	Cooling Fan I Control Circuit Malfunction
+P0481	Cooling Fan 2 Control Circuit Malfunction
+P0482	Cooling Fan 3 Control Circuit Malfunction
+P0483	Cooling Fan Rationality Check Malfunction
+P0484	Cooling Fan Circuit Over Current
+P0485	Cooling Fan Power/Ground Circuit Malfunction
+P0500	Vehicle Speed Sensor Malfunction
+P0501	Vehicle Speed Sensor Range/Performance
+P0502	Vehicle Speed Sensor Low Input
+P0503	Vehicle Speed Sensor Intermittent/Erratic/High
+P0505	Idle Control System Malfunction
+P0506	Idle Control System RPM Lower Than Expected
+P0507	Idle Control System RPM Higher Than Expected
+P0510	Closed Throttle Position Switch Malfunction
+P0520	Engine Oil Pressure Sensor/Switch Circuit Malfunction
+P0521	Engine Oil Pressure Sensor/Switch Circuit Range/Performance
+P0522	Engine Oil Pressure Sensor/Switch Circuit Low Voltage
+P0523	Engine Oil Pressure Sensor/Switch Circuit High Voltage
+P0530	A/C Refrigerant Pressure Sensor Circuit Malfunction
+P0531	A/C Refrigerant Pressure Sensor Circuit Range/Performance
+P0532	A/C Refrigerant Pressure Sensor Circuit Low Input
+P0533	A/C Refrigerant Pressure Sensor Circuit High Input
+P0534	Air Conditioner Refrigerant Charge Loss
+P0550	Power Steering Pressure Sensor Circuit Malfunction
+P0551	Power Steering Pressure Sensor Circuit Range/Performance
+P0552	Power Steering Pressure Sensor Circuit Low Input
+P0553	Power Steering Pressure Sensor Circuit High Input
+P0554	Power Steering Pressure Sensor Circuit Intermittent
+P0560	System Voltage Malfunction
+P0561	System Voltage Unstable
+P0562	System Voltage Low
+P0563	System Voltage High
+P0565	Cruise Control On Signal Malfunction
+P0566	Cruise Control Off Signal Malfunction
+P0567	Cruise Control Resume Signal Malfunction
+P0568	Cruise Control Set Signal Malfunction
+P0569	Cruise Control Coast Signal Malfunction
+P0570	Cruise Control Accel Signal Malfunction
+P0571	Cruise Control/Brake Switch A Circuit Malfunction
+P0572	Cruise Control/Brake Switch A Circuit Low
+P0573	Cruise Control/Brake Switch A Circuit High
+P0574	Cruise Control Related Malfunction
+P0575	Cruise Control Related Malfunction
+P0576	Cruise Control Related Malfunction
+P0576	Cruise Control Related Malfunction
+P0578	Cruise Control Related Malfunction
+P0579	Cruise Control Related Malfunction
+P0580	Cruise Control Related Malfunction
+P0600	Serial Communication Link Malfunction
+P0601	Internal Control Module Memory Check Sum Error
+P0602	Control Module Programming Error
+P0603	Internal Control Module Keep Alive Memory (KAM) Error
+P0604	Internal Control Module Random Access Memory (RAM) Error
+P0605	Internal Control Module Read Only Memory (ROM) Error
+P0606	PCM Processor Fault
+P0607	Control Module Performance
+P0608	Control Module VSS Output "A" Malfunction
+P0609	Control Module VSS Output "B" Malfunction
+P0620	Generator Control Circuit Malfunction
+P0621	Generator Lamp "L" Control Circuit Malfunction
+P0622	Generator Field "F" Control Circuit Malfunction
+P0650	Malfunction Indicator Lamp (MIL) Control Circuit Malfunction
+P0654	Engine RPM Output Circuit Malfunction
+P0655	Engine Hot Lamp Output Control Circuit Malfunction
+P0656	Fuel Level Output Circuit Malfunction
+P0700	Transmission Control System Malfunction
+P0701	Transmission Control System Range/Performance
+P0702	Transmission Control System Electrical
+P0703	Torque Converter/Brake Switch B Circuit Malfunction
+P0704	Clutch Switch Input Circuit Malfunction
+P0705	Transmission Range Sensor Circuit malfunction (PRNDL Input)
+P0706	Transmission Range Sensor Circuit Range/Performance
+P0707	Transmission Range Sensor Circuit Low Input
+P0708	Transmission Range Sensor Circuit High Input
+P0709	Transmission Range Sensor Circuit Intermittent
+P0710	Transmission Fluid Temperature Sensor Circuit Malfunction
+P0711	Transmission Fluid Temperature Sensor Circuit Range/Performance
+P0712	Transmission Fluid Temperature Sensor Circuit Low Input
+P0713	Transmission Fluid Temperature Sensor Circuit High Input
+P0714	Transmission Fluid Temperature Sensor Circuit Intermittent
+P0715	Input/Turbine Speed Sensor Circuit Malfunction
+P0716	Input/Turbine Speed Sensor Circuit Range/Performance
+P0717	Input/Turbine Speed Sensor Circuit No Signal
+P0718	Input/Turbine Speed Sensor Circuit Intermittent
+P0719	Torque Converter/Brake Switch B Circuit Low
+P0720	Output Speed Sensor Circuit Malfunction
+P0721	Output Speed Sensor Range/Performance
+P0722	Output Speed Sensor No Signal
+P0723	Output Speed Sensor Intermittent
+P0724	Torque Converter/Brake Switch B Circuit High
+P0725	Engine Speed input Circuit Malfunction
+P0726	Engine Speed Input Circuit Range/Performance
+P0727	Engine Speed Input Circuit No Signal
+P0728	Engine Speed Input Circuit Intermittent
+P0730	Incorrect Gear Ratio
+P0731	Gear I Incorrect ratio
+P0732	Gear 2 Incorrect ratio
+P0733	Gear 3 Incorrect ratio
+P0734	Gear 4 Incorrect ratio
+P0735	Gear 5 Incorrect ratio
+P0736	Reverse incorrect gear ratio
+P0740	Torque Converter Clutch Circuit Malfunction
+P0741	Torque Converter Clutch Circuit Performance or Stuck Off
+P0742	Torque Converter Clutch Circuit Stock On
+P0743	Torque Converter Clutch Circuit Electrical
+P0744	Torque Converter Clutch Circuit Intermittent
+P0745	Pressure Control Solenoid Malfunction
+P0746	Pressure Control Solenoid Performance or Stuck Off
+P0747	Pressure Control Solenoid Stuck On
+P0748	Pressure Control Solenoid Electrical
+P0749	Pressure Control Solenoid Intermittent
+P0750	Shift Solenoid A Malfunction
+P0751	Shift Solenoid A Performance or Stuck Off
+P0752	Shift Solenoid A Stuck On
+P0753	Shift Solenoid A Electrical
+P0754	Shift Solenoid A Intermittent
+P0755	Shift Solenoid B Malfunction
+P0756	Shift Solenoid B Performance or Stock Off
+P0757	Shift Solenoid B Stuck On
+P0758	Shift Solenoid B Electrical
+P0759	Shift Solenoid B Intermittent
+P0760	Shift Solenoid C Malfunction
+P0761	Shift Solenoid C Performance or Stuck Off
+P0762	Shift Solenoid C Stuck On
+P0763	Shift Solenoid C Electrical
+P0764	Shift Solenoid C Intermittent
+P0765	Shift Solenoid D Malfunction
+P0766	Shift Solenoid D Performance or Stuck Off
+P0767	Shift Solenoid D Stuck On
+P0768	Shift Solenoid D Electrical
+P0769	Shift Solenoid D Intermittent
+P0770	Shift Solenoid E Malfunction
+P0771	Shift Solenoid E Performance or Stuck Off
+P0772	Shift Solenoid E Stuck On
+P0773	Shift Solenoid E Electrical
+P0774	Shift Solenoid E Intermittent
+P0780	Shift Malfunction
+P0781	1-2 Shift Malfunction
+P0782	2-3 Shift Malfunction
+P0783	3-4 Shift Malfunction
+P0784	4-5 Shift Malfunction
+P0785	Shift/Timing Solenoid Malfunction
+P0786	Shift/Timing Solenoid Range/Performance
+P0787	Shift/Timing Solenoid Low
+P0788	Shift/Timing Solenoid High
+P0789	Shift/Timing Solenoid Intermittent
+P0790	Normal/Performance Switch Circuit Malfunction
+P0801	Reverse Inhibit Control Circuit Malfunction
+P0803	1-4 Upshift (Skip Shift) Solenoid Control Circuit Malfunction
+P0804	1-4 Upshift (Skip Shift) Lamp Control Circuit Malfunction
+;	C0000	Vehicle Speed Information Circuit Malfunction
+C0035	Left Front Wheel Speed Circuit Malfunction
+C0040	Right Front Wheel Speed Circuit Malfunction
+C0041	Right Front Wheel Speed Sensor Circuit Range/Performance (EBCM)
+C0045	Left Rear Wheel Speed Circuit Malfunction
+C0046	Left Rear Wheel Speed Sensor Circuit Range/Performance (EBCM)
+C0050	Right Rear Wheel Speed Circuit Malfunction
+C0051	LF Wheel Speed Sensor Circuit Range/Performance (EBCM)
+C0060	Left Front ABS Solenoid #1 Circuit Malfunction
+C0065	Left Front ABS Solenoid #2 Circuit Malfunction
+C0070	Right Front ABS Solenoid #1 Circuit Malfunction
+C0075	Right Front ABS Solenoid #2 Circuit Malfunction
+C0080	Left Rear ABS Solenoid #1 Circuit Malfunction
+C0085	Left Rear ABS Solenoid #2 Circuit Malfunction
+C0090	Right Rear ABS Solenoid #1 Circuit Malfunction
+C0095	Right Rear ABS Solenoid #2 Circuit Malfunction
+C0110	Pump Motor Circuit Malfunction
+C0121	Valve Relay Circuit Malfunction
+C0128	Low Brake Fluid Circuit Low
+C0141	Left TCS Solenoid #1 Circuit Malfunction
+C0146	Left TCS Solenoid #2 Circuit Malfunction
+C0151	Right TCS Solenoid #1 Circuit Malfunction
+C0156	Right TCS Solenoid #2 Circuit Malfunction
+C0161	ABS/TCS Brake Switch Circuit Malfunction
+C0221	Right Front Wheel Speed Sensor Circuit Open
+C0222	Right Front Wheel Speed Signal Missing
+C0223	Right Front Wheel Speed Signal Erratic
+C0225	Left Front Wheel Speed Sensor Circuit Open
+C0226	Left Front Wheel Speed Signal Missing
+C0227	Left Front Wheel Speed Signal Erratic
+C0229	Drop Out of Front Wheel Speed Signals
+C0235	Rear Wheel Speed Signal Circuit Open
+C0236	Rear Wheel Speed Signal Circuit Missing
+C0237	Rear Wheel Speed Signal Erratic
+C0238	Wheel Speed Mismatch
+C0241	EBCM Control Valve Circuit
+C0245	Wheel Speed Sensor Frequency Error
+C0254	EBCM Control Valve Circuit
+C0265	EBCM Relay Circuit
+C0266	EBCM Relay Circuit
+C0267	Pump Motor Circuit Open/Shorted
+C0268	Pump Motor Circuit Open/Shorted
+C0269	Excessive Dump/Isolation Time
+C0271	EBCM Malfunction
+C0272	EBCM Malfunction
+C0273	EBCM Malfunction
+C0274	Excessive Dump/Isolation Time
+C0279	Powertrain Configuration Not Valid
+C0281	Brake Switch Circuit
+C0283	Traction Switch Shorted to Ground
+C0284	EBCM Malfunction
+C0286	ABS Indicator Lamp Circuit Shorted to B+
+C0287	Delivered Torque Circuit
+C0288	Brake Warning Lamp Circuit Shorted to B+
+C0290	Lost Communications With PCM
+C0292	Lost Communications With PCM
+C0291	Lost Communications With BCM
+C0297	Powertrain Configuration Data Not Received
+C0298	Powertrain Indicated Traction Control Malfunction
+C0300	Rear Speed Sensor Malfunction
+C0305	Front Speed Sensor Malfunction
+C0306	Motor A or B Circuit
+C0308	Motor A/B Circuit Low
+C0309	Motor A/B Circuit High
+C0310	Motor A/B Circuit Open
+C0315	Motor Ground Circuit Open
+C0321	Transfer Case Lock Circuit
+C0323	T-Case Lock Circuit Low
+C0324	T-Case Lock Circuit High
+C0327	Encoder Circuit Malfunction
+C0357	Park Switch Circuit High
+C0359	Four Wheel Drive Low Range (4LO) Discrete Output Circuit
+C0362	4LO Discrete Output Circuit High
+C0367	Front Axle Control Circuit High
+C0374	General System Malfunction
+C0376	Front/Rear Shaft Speed Mismatch
+C0379	Front Axle System
+C0387	Unable to Perform Shift
+C0472	Steering Handwheel Speed Sensor Signal V Low
+C0473	Steering Handwheel Speed Sensor Signal V High
+C0495	EVO Tracking Error
+C0498	Steering Assist Control Actuator Feed Circuit Low
+C0499	Steering Assist Control Solenoid Feed Circuit High
+C0503	Steering Assist Control Solenoid Return Circuit Low
+C0504	Steering Assist Control Solenoid Return Circuit High
+C0550	ECU Malfunction - internal write / checksum malfunction
+C0559	EEPROM Checksum Error
+C0563	Calibration ROM Checksum Error
+C0577	Left Front Solenoid Circuit Low
+C0578	Left Front Solenoid Circuit High
+C0579	Left Front Solenoid Circuit Open
+C0582	Right Front Solenoid Circuit Low
+C0583	Right Front Solenoid Circuit High
+C0584	Right Front Solenoid Circuit Open
+C0587	Left Rear Solenoid Circuit Low
+C0588	Left Rear Solenoid Circuit High
+C0589	Left Rear Solenoid Circuit Open
+C0592	Right Rear Solenoid Circuit Low
+C0593	Right Rear Solenoid Circuit High
+C0594	Right Rear Solenoid Circuit Open
+C0611	VIN Information Error
+C0615	Left Front Position Sensor Malfunction
+C0620	Right Front Position Sensor Malfunction
+C0625	Left Rear Position Sensor Malfunction
+C0628	Level Control Position Sensor Circuit High
+C0630	Right Rear Position Sensor Malfunction
+C0635	Left Front Normal Force Circuit Malfunction
+C0638	Left Front Normal Force Circuit High
+C0640	Right Front Normal Force Circuit Malfunction
+C0643	Right Front Normal Force Circuit High
+C0655	Level Control Compressor Relay Malfunction
+C0657	Level Control Compressor Circuit Low
+C0658	Level Control Compressor Circuit High
+C0660	Level Control Exhaust Valve Circuit Malfunction
+C0662	Level Control Exhaust Valve Circuit Low
+C0663	Level Control Exhaust Valve Circuit High
+C0665	Chassis Pitch Signal Circuit
+C0690	Damper Control Relay Circuit Malfunction
+C0691	Damper Control Relay Circuit Range
+C0693	Damper Control Relay Circuit High
+C0695	Position Sensor Overcurrent (8 volt supply)
+C0696	Position Sensor Overcurrent (5 volt supply)
+C0710	Steering Position Signal Malfunction
+C0750	Tire Pressure Monitor (TPM) system sensor not transmitting
+C0755	Tire Pressure Monitor (TPM) system sensor not transmitting
+C0760	Tire Pressure Monitor (TPM) system sensor not transmitting
+C0765	Tire Pressure Monitor (TPM) system sensor not transmitting
+C0800	Device Power #1 Circuit Malfunction
+C0896	Electronic Suspension Control (ESC) voltage is outside the normal range of 9 to 15.5 volts
+C1211	ABS Indicator Lamp Circuit Malfunction
+C1214	System Relay Contact or Coil Circuit Open
+C1217	Pump Motor Shorted to Ground
+C1218	Pump Motor Circuit Shorted to Voltage or Motor Ground Open
+C1221	Left Front Wheel Speed Sensor Input Signal is 0
+C1222	Right Front Wheel Speed Sensor Input Signal is 0
+C1223	Left Rear Wheel Speed Sensor Input Signal is 0
+C1224	Right Rear Wheel Speed Sensor Input Signal is 0
+C1225	Left Front Excessive Wheel Speed Variation
+C1226	Right Front Excessive Wheel Speed Variation
+C1227	Left Rear Excessive Wheel Speed Variation
+C1228	Right Rear Excessive Wheel Speed Variation
+C1232	Left Front Wheel Speed Circuit Open or Shorted
+C1233	Right Front Wheel Speed Circuit Open or Shorted
+C1234	Left Rear Wheel Speed Circuit Open or Shorted
+C1235	Right Rear Wheel Speed Circuit Open or Shorted
+C1236	Low System Supply Voltage
+C1237	High System Supply Voltage
+C1238	Brake Thermal Model Exceeded
+C1241	Variable Effort Steering Circuit Malfunction
+C1242	Pump Motor Circuit Open
+C1243	BPMV Pump Motor Stalled
+C1244	Powertrain Indicated Engine Drag Control Malfunction
+C1246	Brake Lining Wear Circuit Open
+C1248	EBCM Turned the Red Brake Warning Indicator On
+C1251	RSS Indicated Malfunction
+C1252	Left Front Normal Force Malfunction
+C1253	Right Front Normal Force Malfunction
+C1254	Abnormal Shutdown Detected
+C1255	EBCM Internal Malfunction
+C1256	EBCM Internal Malfunction
+C1261	Left Front Inlet Valve Solenoid Malfunction
+C1262	Left Front Outlet Valve Solenoid Malfunction
+C1263	Right Front Inlet Valve Solenoid Malfunction
+C1264	Right Front Outlet Valve Solenoid Malfunction
+C1265	Left Rear Inlet Valve Solenoid Malfunction
+C1266	Left Rear Outlet Valve Solenoid Malfunction
+C1267	Right Rear Inlet Valve Solenoid Malfunction
+C1268	Right Rear Outlet Valve Solenoid Malfunction
+C1271	Left Front TCS Master Cylinder Isolation Valve Malfunction
+C1272	Left Front TCS Prime Valve Malfunction
+C1273	Right Front TCS Master Cylinder Isolation Valve Malfunction
+C1274	Right Front TCS Prime Valve Malfunction
+C1276	Delivered Torque Signal Circuit Malfunction
+C1277	Requested Torque Signal Circuit Malfunction
+C1278	TCS Temporarily Inhibited By PCM
+C1281	VSES Sensors Uncorrelated
+C1282	Yaw Rate Sensor Bias Circuit Malfunction
+C1283	Excessive Time to Center Steering
+C1284	Lateral Accelerometer Sensor Bias Malfunction
+C1285	Lateral Accelerometer Sensor Circuit Malfunction
+C1286	Steering Sensor Bias Malfunction
+C1287	Steering Sensor Rate Malfunction
+C1288	Steering Sensor Circuit Malfunction
+C1291	Open Brake Lamp Switch Contacts During Deceleration
+C1292	Brake Fluid Pressure Sensor Circuit
+C1293	Code C1291 Set in Previous Ignition Cycle
+C1294	Brake Lamp Switch Circuit Always Active
+C1295	Brake Lamp Switch Circuit Open
+C1296	Brake Fluid Pressure Sensor Circuit
+C1297	PCM Indicated Brake Extended Travel Switch Failure
+C1298	PCM Class 2 Serial Data Link Malfunction
+C1326	Battery Out of Range
+C1650	RSS Control Module Fault
+C1658	RSS Control Module Calibration Fault
+C1710	Left Front Damper Actuator Short Circuit to Battery
+C1711	Left Front Damper Actuator Short Circuit to Ground
+C1712	Left Front Damper Actuator Open Circuit
+C1715	Right Front Damper Actuator Short Circuit to Battery
+C1716	Right Front Damper Actuator Short Circuit to Ground
+C1717	Right Front Damper Actuator Open Circuit
+C1720	Left Rear Damper Actuator Short Circuit to Battery
+C1721	Left Rear Damper Actuator Short Circuit to Ground
+C1722	Left Rear Damper Actuator Open Circuit
+C1725	Right Rear Damper Actuator Short Circuit to Battery
+C1726	Right Rear Damper Actuator Short Circuit to Ground
+C1727	Right Rear Damper Actuator Open Circuit
+C1735	Compressor Relay Short to Battery
+C1736	Compressor Relay Short to GND/Open Circuit
+C1737	Exhaust Solenoid Valve Short to Battery
+C1738	Exhaust Solenoid Valve Short to GND
+C1743	Speed Signal Fault
+C1744	Lift/Dive Signal Discrete Fault
+C1760	Left Front Position Sensor Input Fault
+C1761	Right Front Position Sensor Input Fault
+C1762	Left Rear Position Sensor Input Fault
+C1763	Right Rear Position Sensor Input Fault
+C1768	Position Sensor Supply Fault
+C1780	Loss of Steering Position Signal
+C1782	ICCS2 DL Left Output Short Circuit to Bat
+C1783	ICCS2 DL Left Output Short Circuit to GND
+C1784	ICCS2 DL Right Output Short Circuit to Bat
+C1785	ICCS2 DL Right Output Short Circuit to GND
+C1786	Damper Control Relay Fault
+C1787	Damper Control Relay Short to GND
+C1788	Damper Control Relay Short to Bat
+B0001	Driver Frontal Stage 1 Deployment Control (Subfault)
+B0002	Driver Frontal Stage 2 Deployment Control (Subfault)
+B0003	Driver Frontal Stage 3 Deployment Control (Subfault)
+B0004	Driver Knee Bolster Deployment Control (Subfault)
+B0005	Collapsible Steering Column Deployment Control
+B0010	Passenger Frontal Stage 1 Deployment Control (Subfault)
+B0011	Passenger Frontal stage 2 Deployment Control (Subfault)
+B0012	Passenger Frontal stage 3 Deployment Control (Subfault)
+B0013	Passenger Knee Bolster Deployment Control (Subfault)
+B0020	Left Side Airbag Deployment Control (Subfault)
+B0021	Left Curtain Deployment Control 1 (Subfault)
+B0022	Left Curtain Deployment Control 2 (Subfault)
+B0028	Right Side Airbag Deployment Control (Subfault)
+B0029	Right Curtain Deployment Control 1 (Subfault)
+B002a	Right Curtain Deployment Control 2 (Subfault)
+B0030	Second Row Left Side Airbag Deployment Control (Subfault)
+B0031	Second Row Left Frontal Stage 1 Deployment Control (Subfault)
+B0032	Second Row Left Frontal Stage 2 Deployment Control (Subfault)
+B0033	Second Row Left Frontal Stage 3 Deployment Control (Subfault)
+B0038	Second Row Right Side Airbag Deployment Control (Subfault)
+B0039	Second Row Right Frontal Stage 1 Deployment Control (Subfault)
+B003a	Second Row Right Frontal Stage 2 Deployment Control (Subfault)
+B003b	Second Row Right Frontal Stage 3 Deployment Control (Subfault)
+B0040	Third Row Left Side Airbag Deployment Control (Subfault)
+B0041	Third Row Left Frontal Stage 1 Deployment Control (Subfault)
+B0042	Third Row Left Frontal Stage 2 Deployment Control (Subfault)
+B0043	Third Row Left Frontal Stage 3 Deployment Control (Subfault)
+B0048	Third Row Right Side Airbag Deployment Control (Subfault)
+B0049	Third Row Right Frontal Stage 1 Deployment Control (Subfault)
+B004A	Third Row Right Frontal Stage 2 Deployment Control (Subfault)
+B004B	Third Row Right Frontal Stage 3 Deployment Control (Subfault)
+B0050	Driver Seatbelt Sensor (Subfault)
+B0051	First Row Center Seatbelt Sensor (Subfault)
+B0052	Passenger Seatbelt Sensor (Subfault)
+B0053	Second Row Left Seatbelt Sensor (Subfault)
+B0054	Second RowCenter Seatbelt Sensor (Subfault)
+B0055	Second Row Right Seatbelt Sensor (Subfault)
+B0056	Third Row Left Seatbelt Sensor (Subfault)
+B0057	Third Row Center Seatbelt Sensor (Subfault)
+B0058	Third Row Right Seatbelt Sensor (Subfault)
+B0060	Driver Seatbelt Tension Sensor (Subfault)
+B0061	Passenger Seatbelt Tension Sensor (Subfault)
+B0070	Driver Seatbelt Pretensioner "A" Deployment Control (Subfault)
+B0071	First Row Center Seatbelt Pretensioner Deployment Control (Subfault)
+B0072	Passenger Seatbelt Pretensioner "A" Deployment Control (Subfault)
+B0073	Second Row Left Seatbelt Pretensioner Deployment Control (Subfault)
+B0074	Second Row Center Seatbelt Pretensioner Deployment Control (Subfault)
+B0075	Second Row Right Seatbelt Pretensioner Deployment Control (Subfault)
+B0076	Third Row Left Seatbelt Pretensioner Deployment Control (Subfault)
+B0077	Third Row Center Seatbelt Pretensioner Deployment Control (Subfault)
+B0078	Third Row Right Seatbelt Pretensioner Deployment Control (Subfault)
+B0079	Driver Seatbelt Pretensioner "B" Deployment Control (Subfault)
+B007A	Passenger Seatbelt Pretensioner "B" Deployment Control (Subfault)
+B007b	Second Row Left Seatbelt Pretensioner "B" Deployment Control (Subfault)
+B007C	Second Row Right Seatbelt Pretensioner "B" Deployment Control (Subfault)
+B007D	Second Row Center Seatbelt Pretensioner "B" Deployment Control (Subfault)
+B007E	Driver Seatbelt Pretensioner "C" Deployment Control (Subfault)
+B007F	Passenger Seatbelt Pretensioner "C" Deployment Control (Subfault)
+B0080	Driver Seatbelt Load Limiter Deployment Control (Subfault)
+B0081	First Row Center Seatbelt Load Limiter Deployment Control (Subfault)
+B0082	Passenger Seatbelt Load Limiter Deployment Control (Subfault)
+B0083	Second Row Left Seatbelt Load Limiter Deployment Control (Subfault)
+B0084	Second Row Center Seatbelt Load Limiter Deployment Control (Subfault)
+B0085	Second Row Right Seatbelt Load Limiter Deployment Control (Subfault)
+B0086	Third Row Left Seatbelt Load Limiter Deployment Control (Subfault)
+B0087	Third Row Center Seatbelt Load Limiter Deployment Control (Subfault)
+B0088	Third Row Right Seatbelt Load Limiter Deployment Control (Subfault)
+B0090	Left Frontal Restraints Sensor (Subfault)
+B0091	Left Side Restraints Sensor 1 (Subfault)
+B0092	Left Side Restraints Sensor 2 (Subfault)
+B0093	Left Side Restraints Sensor 3 (Subfault)
+B0094	Center Frontal Restraints Sensor (Subfault)
+B0095	Right Frontal Restraints Sensor (Subfault)
+B0096	Right Side Restraints Sensor 1 (Subfault)
+B0097	Right Side Restraints Sensor 2 (Subfault)
+B0098	Right Side Restraints Sensor 3 (Subfault)
+B0099	Roll Over Sensor (Subfault)
+B009A	Left Side Restraints Sensor 4 (Subfault)
+B009B	Left Side Restraints Sensor 5 (Subfault)
+B009C	Left Side Restraints Sensor 6 (Subfault)
+B009D	Right Side Restraints Sensor 4 (Subfault)
+B009E	Right Side Restraints Sensor 5 (Subfault)
+B009F	Right Side Restraints Sensor 6 (Subfault)
+B00A0	Occupant Classification System (Subfault)
+B00A1	Occupant Position System (Subfault)
+B00B0	Driver Seat Occupant Classification Sensor "A" (Subfault)
+B00B1	Driver Seat Occupant Classification Sensor "B" (Subfault)
+B00B2	Driver Seat Occupant Classification Sensor "C" (Subfault)
+B00B3	Driver Seat Occupant Classification Sensor "D" (Subfault)
+B00B4	Driver Seat Occupant Classification Sensor "E" (Subfault)
+B00B5	Driver Seat Track Position Restraints Sensor (Subfault)
+B00B6	Driver Seat Recline Position Restraints Sensor (Subfault)
+B00B7	Driver Seat Occupant Position Sensor "A" (Subfault)
+B00B8	Driver Seat Occupant Position Sensor "B" (Subfault)
+B00B9	Driver Seat Occupant Position Sensor "C" (Subfault)
+B00BA	Driver Seat Occupant Position Sensor "D" (Subfault)
+B00BB	Driver Seat Occupant Position Sensor "E" (Subfault)
+B00C0	Passenger Seat Occupant Classification Sensor "A" (Subfault)
+B00C1	Passenger Seat Occupant Classification Sensor "B" (Subfault)
+B00C2	Passenger Seat Occupant Classification Sensor "C" (Subfault)
+B00C3	Passenger Seat Occupant Classification Sensor "D" (Subfault)
+B00C4	Passenger Seat Occupant Classification Sensor "E" (Subfault)
+B00C5	Passenger Seat Track Position Restraints Sensor (Subfault)
+B00C6	Passenger Seat Recline Position Restraints Sensor (Subfault)
+B00C7	Passenger Seat Occupant Position Sensor "A" (Subfault)
+B00C8	Passenger Seat Occupant Position Sensor "B" (Subfault)
+B00C9	Passenger Seat Occupant Position Sensor "C" (Subfault)
+B00CA	Passenger Seat Occupant Position Sensor "D" (Subfault)
+B00CB	Passenger Seat Occupant Position Sensor "E" (Subfault)
+B00D0	Driver Seatbelt Indicator (Subfault)
+B00D1	Passenger Seatbelt Indicator (Subfault)
+B00D2	Restraint System Malfunction Indicator 1 (Subfault)
+B00D3	Restraint System Malfunction Indicator 2 (Subfault)
+B00D4	Restraint System Malfunction Audible Indicator (Subfault)
+B00D5	Restraint System Passenger Disable Indicator (Subfault)
+B00DF	Passenger Restraints Disable Switch (Subfault)
+B00E0	Third Row Left Seatbelt Pretensioner "B" Deployment Control (Subfault)
+B00E1	Third Row Right Seatbelt Pretensioner "B" Deployment Control (Subfault)
+B00E2	Third Row Center Seatbelt Pretensioner "B" Deployment Control (Subfault)
+B00E3	Second Row Left Seatbelt Pretensioner "C" Deployment Control (Subfault)
+B00E4	Second Row Right Seatbelt Pretensioner "C" Deployment Control (Subfault)
+B00E5	Second Row Center Seatbelt Pretensioner "C" Deployment Control (Subfault)
+B00E6	Third Row Right Seatbelt Pretensioner "C" Deployment Control (Subfault)
+B00E7	Third Row Left Seatbelt Pretensioner "C" Deployment Control (Subfault)
+B00E8	Third Row Center Seatbelt Pretensioner "C" Deployment Control (Subfault)

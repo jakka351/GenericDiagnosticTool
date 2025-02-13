@@ -1,0 +1,53 @@
+P1100	BARO Sensor Circuit Malfunction
+P1120	Accelerator Pedal Position Sensor Circuit Malfunction
+P1121	Accelerator Pedal Position Sensor Range/Performance Problem
+P1125	Throttle Control Motor Circuit Malfunction
+P1126	Magnetic Clutch Circuit Malfunction
+P1127	ECTS Actuator Power Source Circuit Malfunction
+P1128	Throttle Control Motor Lock Malfunction
+P1129	Electronic Throttle Control System
+P1130	Air/Fuel Ratio Sensor Circuit Range/Performance Malfunction (Bank 1 Sensor 1)
+P1133	Air/Fuel Ratio Sensor Circuit Response Malfunction (Bank 1 Sensor 1)
+P1135	Air/Fuel Ratio Sensor Heater Circuit Malfunction (Bank 1 Sensor 1)
+P1150	Air/Fuel Ratio Sensor Circuit Range/Performance Malfunction (Bank 2 Sensor 1)
+P1153	Air/Fuel Ratio Sensor Circuit Response Malfunction (Bank 2 Sensor 1)
+P1155	Air/Fuel Ratio Sensor Heater Circuit Malfunction (Bank 1 Sensor 1)
+P1200	Fuel Pump Relay/ECU Circuit Malfunction
+P1300	Igniter Circuit Malfunction (Bank 1 Or No. 1)
+P1305	Igniter Circuit Malfunction, (Bank 2 Or No. 2)
+P1310	Igniter Circuit Malfunction (No. 3)
+P1315	Igniter Circuit Malfunction (No. 4)
+P1320	Igniter Circuit Malfunction (No. 5)
+P1325	Igniter Circuit Malfunction (No. 6)
+P1330	Igniter Circuit Malfunction (No. 7)
+P1335	CKP Sensor Circuit Malfunction During Engine Running
+P1340	Igniter Circuit Malfunction (No. 8)
+P1345	VVT Sensor Circuit Malfunction (Bank 1)
+P1346	VVT Sensor Rang/Performance Problem (Bank 1)
+P1349	VVT System Malfunction (Bank 1)
+P1350	VVT Sensor Circuit Malfunction (Bank 2)
+P1351	VVT Sensor Range/Performance Problem (Bank 2)
+P1354	VVT System Malfunction (Bank 2)
+P1400	Sub-TP Sensor Malfunction
+P1401	Sub-TP Sensor Range/Performance
+P1410	EGR Valve Position Sensor Circuit Malfunction
+P1411	EGR Valve Position Sensor Circuit Range/Performance Malfunction
+P1500	Starter Signal Circuit Malfunction
+P1520	Stop Lamp Switch Malfunction
+P1565	Cruise Control Main Switch Circuit Malfunction
+P1566	Cruise Control Main Switch Circuit Malfunction
+P1600	ECM BATT Malfunction
+P1605	Knock Control CPU Malfunction
+P1633	ECM Malfunction (ETCS Circuit)
+P1645	Body ECU Malfunction
+P1656	OCV Circuit Malfunction (Bank 1)
+P1663	OCV Circuit Malfunction (Bank 2)
+P1780	PNP Switch Malfunction
+B2785	Ignition Switch On Malfunction (Immobilizer System)
+B2786	Ignition Switch Off Malfunction (Immobilizer System)
+B2785	Ignition Switch On Malfunction (Immobilizer System)
+B2791	Key Unlock Warning Switch Malfunction (Immobilizer System)
+B2795	Unmatch Key Code (Immobilizer System)
+B2796	No Communication In Immobilizer System
+B2797	Communication Malfunction No. 1 (Immobilizer System)
+B2798	Communication Malfunction No. 2 (Immobilizer System)

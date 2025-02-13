@@ -1,0 +1,280 @@
+B0016	Right Front/Passenger Frontal Deployment Loop (Stage 1) Circuit
+B0017	Right Front/Passenger Frontal Deployment Loop (Stage 1) Circuit
+B0018	Right Front/Passenger Frontal Deployment Loop (Stage 1) Circuit
+B0022	Left Front/Driver Frontal Deployment Loop (Stage 1) Circuit
+B0024	Left Front/Driver Frontal Deployment Loop (Stage 1) Circuit
+B0026	Left Front/Driver Frontal Deployment Loop (Stage 1) Circuit
+B0051	Deployment Commanded
+B0053	Deployment Commanded with Loop Malfunctions Present
+B0090	Active Switch Voltage Out of Range
+B0091	Active Switch: Wrong State
+B0332	Outside Air Temp Sensor Short to Ground
+B0333	Outside Air Temperature Sensor Open
+B0337	Inside Air Temp Sensor Short to GND
+B0338	Inside Air Temperature Sensor Open
+B0348	Sunload Temperature Sensor Open
+B0361	Left Actuator Feedback Short to GND
+B0363	Left Actuator Feedback Open
+B0365	Right Actuator Feedback Short to GND
+B0367	Right Actuator Feedback Open
+B0432	Rear Defogger Relay Circuit
+B0433	Rear Defogger Relay Circuit
+B0441	Left Actuator Out of Range
+B0446	Right Actuator Out of Range
+B0502	RH DRL Relay Circuit
+B0503	RH DRL Relay Circuit
+B0507	LH DRL Relay Circuit
+B0508	LH DRL Relay Circuit
+B0516	Speedometer Signal Circuit Malfunction
+B0521	Tachometer Signal Circuit Malfunction
+B0605	BCM Internal Memory Malfunction
+B0846	Battery 2 Out of Range
+B0846	Battery Out of Range
+B0851	Battery Out of Range
+B0851	Battery 1 Out of Range
+B0856	+5 Volt Reference Out of Range
+B1000	ECU Malfunction
+B1001	Option Configuration Error
+B1512	Driver Information Center (DIC) Switch Circuit
+B1513	Driver Information Center (DIC) Switch Circuit
+B1514	Driver Information Center (DIC) Switch Circuit
+B1515	Driver Information Center (DIC) Switch Circuit
+B1516	Driver Information Center (DIC) Switch Circuit
+B1517	Driver Information Center (DIC) Switch Circuit
+B1518	Driver Information Center (DIC) Switch Circuit
+B1519	Driver Information Center (DIC) Switch Circuit
+B1520	Driver Information Center (DIC) Switch Circuit
+B1521	Driver Information Center (DIC) Switch Circuit
+B1522	Driver Information Center (DIC) Switch Circuit
+B1523	Driver Information Center (DIC) Switch Circuit
+B1524	Driver Information Center (DIC) Switch Circuit
+B1525	Driver Information Center (DIC) Switch Circuit
+B1526	Driver Information Center (DIC) Switch Circuit
+B1527	Driver Information Center (DIC) Switch Circuit
+B1528	Driver Information Center (DIC) Switch Circuit
+B1529	Driver Information Center (DIC) Switch Circuit
+B1530	Driver Information Center (DIC) Switch Circuit
+B1531	Driver Information Center (DIC) Switch Circuit
+B1532	Driver Information Center (DIC) Switch Circuit
+B1533	Driver Information Center (DIC) Switch Circuit
+B1534	Driver Information Center (DIC) Switch Circuit
+B1535	Driver Information Center (DIC) Switch Circuit
+B1536	Driver Information Center (DIC) Switch Circuit
+B1537	Driver Information Center (DIC) Switch Circuit
+B1542	Oil Temperature Circuit Short to Ground
+B1543	Oil Temperature Circuit Open
+B2172	Power Seat Switch Circuit
+B2177	Power Seat Switch Circuit
+B2182	Power Seat Switch Circuit
+B2187	Power Seat Switch Circuit
+B2192	Power Seat Switch Circuit
+B2197	Power Seat Switch Circuit
+B2202	Window Switch Circuit
+B2203	Window Switch Circuit
+B2204	Window Switch Circuit
+B2205	Window Switch Circuit
+B2206	Window Switch Circuit
+B2207	Window Switch Circuit
+B2208	Window Switch Circuit
+B2222	Mirror Select Switch Circuit
+B2223	Mirror Select Switch Circuit
+B2224	Mirror Select Switch Circuit
+B2226	Mirror Switch Circuit
+B2227	Mirror Switch Circuit
+B2228	Mirror Switch Circuit
+B2229	Mirror Switch Circuit
+B2230	Mirror Switch Circuit
+B2231	Mirror Switch Circuit
+B2232	Mirror Switch Circuit
+B2233	Mirror Switch Circuit
+B2234	Mirror Switch Circuit
+B2236	Door Lock Switch Circuit
+B2237	Door Lock Switch Circuit
+B2238	Door Lock Switch Circuit
+B2239	Door Lock Switch Circuit
+B2242	Memory Switch Circuit
+B2243	Memory Switch Circuit
+B2244	Memory Switch Circuit
+B2252	Door Key Cylinder Circuit
+B2253	Door Key Cylinder Circuit
+B2262	Mirror Position Sensor Signal Circuit
+B2263	Mirror Position Sensor Signal Circuit
+B2264	Mirror Position Sensor Signal Circuit
+B2265	Mirror Position Sensor Signal Circuit
+B2272	Mirror Motor Control Circuit
+B2273	Mirror Motor Control Circuit
+B2274	Window Motor Control Circuit
+B2275	Window Motor Control Circuit
+B2276	Door Lock Control Circuit
+B2277	Door Lock Control Circuit
+B2282	Battery #1 Circuit
+B2283	Battery #1 Circuit
+B2284	Battery #2 Circuit
+B2285	Battery #2 Circuit
+B2286	Mirror Position Sensor Circuit
+B2287	Mirror Position Sensor Circuit
+B2403	Front Fog Lamp Switch Circuit
+B2408	Rear Fog Lamp Switch Circuit
+B2482	Backup Lamp Relay Circuit
+B2483	Backup Lamp Relay Circuit
+B2527	Horn Relay Circuit
+B2528	Horn Relay Circuit
+B2567	Folding Top Release Switch Circuit
+B2573	Hatch Release Switch Circuit
+B2578	Right Front Turn Signal Monitor Circuit
+B2583	Left Front Turn Signal Monitor Circuit
+B2587	Column Lock/Unlock Drive A
+B2588	Column Lock/Unlock Drive A
+B2592	Column Lock/Unlock Drive B
+B2593	Column Lock/Unlock Drive B
+B2597	Traction Control System Switch Circuit
+B2600	Seat Motor to Battery Voltage
+B2605	Seat Position Sensor Circuit
+B2606	Seat Position Sensor Circuit
+B2607	Seat Position Sensor Circuit
+B2647	Ambient Light Sensor Circuit Low
+B2648	Ambient Light Sensor Circuit High
+B2721	PASS-Key Detection Circuit
+B2722	PASS-Key Detection Circuit
+B2723	PASS-Key Detection Circuit
+B2735	PASS-Key Programming Mode Active
+B2795	Suspension Control Select Switch Circuit Malfunction
+B2852	Telescoping Column In Switch Shorted to Ground
+B2857	Telescoping Column Out Switch Shorted to Ground
+B2860	Telescoping Column Position Sensor Failure
+B3109	Keyless Entry Transmitter Low Battery
+B3577	Suspension Control Select Switch Contact Malfunction
+C0550	ECU Malfunction
+C0563	Calibration ROM Checksum Error
+C0615	Suspension Position Sensor Circuit
+C0620	Suspension Position Sensor Circuit
+C0625	Suspension Position Sensor Circuit
+C0630	Suspension Position Sensor Circuit
+C0665	Chassis Pitch Signal Circuit
+C0690	Damper Control Relay Circuit Malfunction
+C0691	Damper Control Relay Circuit Range
+C0693	Damper Control Relay Circuit High
+C0695	Position Sensor Overcurrent (8 volt supply)
+C0710	Steering Position Signal Malfunction
+C0750	Tire Pressure Sensor Circuit
+C0755	Tire Pressure Sensor Circuit
+C0760	Tire Pressure Sensor Circuit
+C0765	Tire Pressure Sensor Circuit
+C1214	Solenoid Valve Relay Contact or Coil Circuit Open
+C1217	Pump Motor Relay Contact Circuit Open
+C1218	Pump Motor Circuit Shorted to Voltage or Motor Ground Open
+C1221	Wheel Speed Sensor Circuit
+C1222	Wheel Speed Sensor Circuit
+C1223	Wheel Speed Sensor Circuit
+C1224	Wheel Speed Sensor Circuit
+C1225	Wheel Speed Sensor Circuit
+C1226	Wheel Speed Sensor Circuit
+C1227	Wheel Speed Sensor Circuit
+C1228	Wheel Speed Sensor Circuit
+C1229	Wheel Speed Sensor Circuit
+C1230	Wheel Speed Sensor Circuit
+C1231	Wheel Speed Sensor Circuit
+C1232	Wheel Speed Sensor Circuit
+C1233	Wheel Speed Sensor Circuit
+C1234	Wheel Speed Sensor Circuit
+C1235	Wheel Speed Sensor Circuit
+C1236	Low System Supply Voltage
+C1237	High System Supply Voltage
+C1241	MAGNA STEER Circuit Malfunction
+C1242	Pump Motor Circuit
+C1243	Pump Motor Circuit
+C1247	Brake Pressure Differential Switch Activated
+C1248	DRP Disabled
+C1254	Abnormal Shutdown Detected
+C1255	ECU Malfunction
+C1256	ECU Malfunction
+C1261	EBCM Internal Solenoid Circuit
+C1262	EBCM Internal Solenoid Circuit
+C1263	EBCM Internal Solenoid Circuit
+C1264	EBCM Internal Solenoid Circuit
+C1265	EBCM Internal Solenoid Circuit
+C1266	EBCM Internal Solenoid Circuit
+C1267	EBCM Internal Solenoid Circuit
+C1268	EBCM Internal Solenoid Circuit
+C1269	EBCM Internal Solenoid Circuit
+C1270	EBCM Internal Solenoid Circuit
+C1271	EBCM Internal Solenoid Circuit
+C1272	EBCM Internal Solenoid Circuit
+C1273	EBCM Internal Solenoid Circuit
+C1274	EBCM Internal Solenoid Circuit
+C1276	Delivered Torque Circuit
+P1644	Delivered Torque Circuit
+P1689	Delivered Torque Circuit
+C1277	Powertrain Indicated Traction Control Malfunction
+P1571	Powertrain Indicated Traction Control Malfunction
+C1278	TCS Temporarily Inhibited By PCM
+C1281	VSES Sensors Uncorrected
+C1283	VSES Sensors Uncorrected
+C1286	VSES Sensors Uncorrected
+C1282	Yaw Rate Sensor Bias Circuit Malfunction
+C1284	Lateral Accelerometer Circuit
+C1285	Lateral Accelerometer Circuit
+C1287	Steering Position Sensor Circuit
+C1288	Steering Position Sensor Circuit
+C1291	Open Brake Lamp Switch Contacts During Deceleration
+C1292	Master Cylinder Pressure Sensor Circuit
+C1293	Master Cylinder Pressure Sensor Circuit
+C1296	Master Cylinder Pressure Sensor Circuit
+C1294	Brake Lamp Switch Circuit Always Active
+C1295	Brake Lamp Switch Circuit Open
+;Chevy	Corvette OBD2 Powertrain Codes
+;See	also: Generic OBD-II Powertrain Codes
+P1111	Intake Air Temperature (IAT) Sensor Circuit Intermittent High Voltage
+P1112	Intake Air Temperature (IAT) Sensor Circuit Intermittent Low Voltage
+P1114	Engine Coolant Temperature (ECT) Sensor Circuit Intermittent Low Voltage
+P1115	Engine Coolant Temperature (ECT) Sensor Circuit Intermittent High Voltage
+P1120	Throttle Position (TP) Sensor 1 Circuit
+P1125	Accelerator Pedal Position (APP) System
+P1133	HO2S Insufficient Switching
+P1153	HO2S Insufficient Switching
+P1134	HO2S Transition Time Ratio
+P1154	HO2S Transition Time Ratio
+P1220	Throttle Position (TP) Sensor 2 Circuit
+P1221	Throttle Position (TP) Sensor 1- 2 Correlation
+P1258	Engine Coolant Overtemperature - Protection Mode Active
+P1275	Accelerator Pedal Position (APP) Sensor 1 Circuit
+P1276	Accelerator Pedal Position (APP) Sensor 1 Performance
+P1280	Accelerator Pedal Position (APP) Sensor 2 Circuit
+P1281	Accelerator Pedal Position (APP) Sensor 2 Performance
+P1285	Accelerator Pedal Position (APP) Sensor 3 Circuit
+P1286	Accelerator Pedal Position (APP) Sensor 3 Performance
+P1336	Crankshaft Position (CKP) System Variation Not Learned
+P1380	Misfire Detected - Rough Road Data Not Available
+P1381	Misfire Detected - No Communication with Brake Control Module
+P1415	Secondary Air Injection (AIR) System
+P1416	Secondary Air Injection (AIR) System
+P1431	Fuel Level Sensor 2 Performance
+P1432	Fuel Level Sensor 2 Circuit Low Voltage
+P1433	Fuel Level Sensor 2 Circuit High Voltage
+P1441	Evaporative Emission (EVAP) System Flow During Non-Purge
+P1514	Throttle Body Performance
+P1515	Control Module Throttle Actuator Position Performance
+P1516	Throttle Actuator Control (TAC) Module Throttle Actuator Position Performance
+P1517	Throttle Actuator Control (TAC) Module Performance
+P1518	Throttle Actuator Control (TAC) Module Serial Data Circuit
+P1539	Air Conditioning (A/C) Clutch Feedback Circuit High Voltage
+P1546	Air Conditioning (A/C) Clutch Feedback Circuit Low Voltage
+P1574	Stoplamp Switch Circuit
+P1575	Extended Travel Brake Switch Circuit
+P1626	Theft Deterrent Fuel Enable Signal Lost
+P1630	Theft Deterrent Learn Mode Active
+P1631	Theft Deterrent Start Enable Signal Not Correct
+P1635	5 Volt Reference 1 Circuit
+P1637	Generator L-Terminal Circuit
+P1638	Generator F-Terminal Circuit
+P1639	5 Volt Reference 2 Circuit
+P1652	Powertrain Induced Chassis Pitch Output Circuit
+P1810	TFP Valve Position Switch Circuit
+P1860	TCC PWM Solenoid Circuit Electrical
+P1870	Transmission Component Slipping
+;Chevrolet	Corvette U Codes
+U1000	Class 2 Communication Malfunction
+U1255	Class 2 Communication Malfunction
+U1300	Class 2 Data Link Shorted
+U1301	Class 2 Data Link Shorted
+U1305	Class 2 Data Link Shorted

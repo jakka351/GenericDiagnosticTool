@@ -1,0 +1,33 @@
+P1105	MAP/BARO Pressure Switch Solenoid Valve
+P1126	Thermostat Function
+P1130	Swirl Control Valve Control Solenoid Valve
+P1148	Closed Loop Control (Bank 1)
+P1165	Swirl Control Valve Control Vacuum Switch
+P1168	Closed Loop Control (Bank 2)
+P1320	Ignition Signal
+P1211	ABS/TCS Control Unit
+P1212	ABS/TCS Communication Line
+P1217	Engine Over Temperature (Overheat)
+P1320	Ignition Signal
+P1335	Crankshaft Position Sensor (REF)
+P1336	Crankshaft Position Sensor (CKPS)
+P1400	EGRC Solenoid Valve
+P1401	EGR Temperature Sensor
+P1402	EGR System
+P1440	EVAP Control System Small Leak
+P1441	Vacuum Cut Valve Bypass Valve
+P1444	Canister Purge Volume Control Solenoid Valve
+P1445	EVAP Canister Purge Volume Control Valve
+P1446	EVAP Canister Vent Control Valve (Closed)
+P1447	EVAP Control System Purge Flow Monitoring
+P1448	EVAP Canister Vent Control Valve (Open)
+P1464	Fuel Level Sensor Circuit (Ground Signal)
+P1490	Vacuum Cut Valve Bypass Valve (Circuit)
+P1491	Vacuum Cut Valve Bypass Valve
+P1492	EVAP Canister Purge Control/Solenoid Valve (Circuit)
+P1493	EVAP Canister Purge Control Valve/Solenoid Valve
+P1550	TCC Solenoid Valve
+P1605	A/T Diagnostic Communication Line
+P1705	Throttle Position Sensor Circuit A/T
+P1706	Park/Neutral Position (PNP) Switch
+P1760	Overrun Clutch Solenoid Valve (Circuit)

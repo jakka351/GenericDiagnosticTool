@@ -1,0 +1,36 @@
+P1105	MAP/BARO Switch Solenoid Valve
+P1110	Intake Valve Timing Control (Left Bank)
+P1120	Secondary Throttle Position Sensor (STPS)
+P1125	TPS Intermittant
+P1130	Swirl Control Valve Control Solenoid Valve
+P1135	Intake Valve Timing Control (Right Bank)
+P1140	Intake Valve Timing Control Position Sensor (Left Bank)
+P1145	Intake Valve Timing Control Position Sensor (Right Bank)
+P1148	Closed Loop Control (Bank 1)
+P1165	Swirl Control Valve Control Vacuum Check Switch
+P1168	Closed Loop Control (Bank 2)
+P1210	Traction Control System (TCS) Signal Circuit
+P1220	Fuel Pump Control Module (FPCM)
+P1320	Ignition Signal, Primary
+P1335	Crankshaft Position Sensor (CKPS) (Ref)
+P1336	Crankshaft Position Sensor (CKPS) (Cog)
+P1400	EGRC Solenoid Valve
+P1401	EGR Temperature Sensor
+P1402	EGR Function (Open)
+P1440	EVAP Control System (Small Leak) (Positive Pressure)
+P1441	VC/V Bypass Valve
+P1443	Canister Control Vacuum Check Switch
+P1444	Canister Purge Volume Control Solenoid Valve
+P1445	Purge Volume Control/V
+P1446	EVAP Canister Vent Control Valve (Close)
+P1447	EVAP Control System Purge Flow Monitoring
+P1448	EVAP Canister Vent Control Valve (Open)
+P1490	Vacuum Cut Valve Bypass Valve (Circuit)
+P1491	Vacuum Cut Valve Bypass Valve
+P1492	EVAP Canister Purge Control/Solenoid Valve (Circuit)
+P1493	EVAP Canister Purge Control Valve/Solenoid Valve
+P1605	A/T Diagnosis Communication Line
+P1705	Throttle Position Sensor
+P1706	PNP Switch
+P1760	Overrun Clutch Solenoid Valve
+P1900	Cooling Fan

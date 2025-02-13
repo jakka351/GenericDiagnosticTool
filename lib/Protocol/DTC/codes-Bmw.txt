@@ -1,0 +1,250 @@
+P1083	Fuel Control Mixture Lean (Bank 1 Sensor 1)
+P1084	Fuel Control Mixture Rich (Bank 1 Sensor 1)
+P1085	Fuel Control Mixture Lean (Bank 2 Sensor 1)
+P1086	Fuel Control Mixture Rich (Bank 2 Sensor 1)
+P1087	O2 Sensor Circuit Slow Response in Lean Control Range (Bank 1 Sensor 1)
+P1088	O2 Sensor Circuit Slow Response in Rich Control Range (Bank 1 Sensor 1)
+P1089	O2 Sensor Circuit Slow Response in Lean Control Range (Bank 1 Sensor 2)
+P1090	Pre-Catalyst Fuel Trim Too Lean Bank 1
+P1091	Pre-Catalyst Fuel Trim Too Rich Bank 1
+P1092	Pre-Catalyst Fuel Trim Too Lean Bank 2
+P1093	Pre-Catalyst Fuel Trim Too Rich Bank 2
+P1094	O2 Sensor Circuit Slow Response in Rich Control Range (Bank 2 Sensor 1)
+P1095	O2 Sensor Circuit Slow Switching From Lean to Rich (Bank 1 Sensor 1)
+P1096	O2 Sensor Circuit Slow Switching From Lean to Rich (Bank 2 Sensor 1)
+P1097	O2 Sensor Circuit Slow Response after Coast Down Fuel Cutoff (Bank 1 Sensor 1)
+P1098	O2 Sensor Circuit Slow Response after Coast Down Fuel Cutoff (Bank 2 Sensor 2)
+P1111	Engine Coolant Temperature Radiator Outlet Sensor Low Input
+P1112	Engine Coolant Temperature Radiator Outlet Sensor High Input
+P1115	Coolant Temperature Sensor Plausibility
+P1116	Mass Or Volume Air Flow Circuit Range/Performance Problem (Bank 2)
+P1117	Mass Or Volume Air Flow Circuit Low Input (Bank 2)
+P1118	Mass Or Volume Air Flow Circuit High Input (Bank 2)
+P1120	Pedal Position Sensor Circuit
+P1121	Pedal Position 1 Range/Performance Problem
+P1122	Pedal Position 1 Low Input
+P1123	Pedal Position 1 High Input
+P1132	O2 Sensor Heater Control Circuit (Bank 1 Sensor 1)
+P1133	O2 Sensor Heater Control Circuit (Bank 2 Sensor 1)
+P1134	O2 Sensor Heater Circuit Signal Intermittent (Bank 1 Sensor 2)
+P1135	O2 Sensor Heater Circuit Low Voltage (Bank 1 Sensor 1)
+P1136	O2 Sensor Heater Circuit High Voltage (Bank 1 Sensor 1)
+P1137	O2 Sensor Heater Circuit Signal Intermittant (Bank 1 Sensor 2)
+P1138	O2 Sensor Heater Circuit Low Voltage (Bank 1 Sensor 2)
+P1139	O2 Sensor Heater Circuit High Voltage (Bank 1 Sensor 2)
+P1140	Mass or Volume Air Flow Circuit Range/Performance Problem
+P1145	Solenoid Valve Running Losses Control Circuit Electrical
+P1151	O2 Sensor Heater Circuit Signal Intermittant (Bank 2 Sensor 1)
+P1152	O2 Sensor Heater Circuit Low Voltage (Bank 2 Sensor 1)
+P1153	O2 Sensor Heater Circuit High Voltage (Bank 2 Sensor 1)
+P1155	O2 Sensor Heater Circuit Intermittant (Bank 2 Sensor 2)
+P1156	O2 Sensor Heater Circuit Low Voltage (Bank 2 Sensor 2)
+P1157	O2 Sensor Heater Circuit High Voltage (Bank 2 Sensor 2)
+P1158	Fuel Trim Additve Bank 1 Low
+P1159	Fuel Trim Additve Bank 1 High
+P1160	Fuel Trim Additve Bank 2 Low
+P1161	Fuel Trim Additve Bank 2 High
+P1162	Fuel Trim Additve Per Ignition Bank 1 Low
+P1163	Fuel Trim Additve Per Ignition Bank 1 High
+P1164	Fuel Trim Additve Per Ignition Bank 2 Low
+P1165	Fuel Trim Additve Per Ignition Bank 2 High
+P1174	Fuel Trim Adaptation Additve Bank 1 Malfunction
+P1175	Fuel Trim Adaptation Additve Bank 2 Malfunction
+P1176	O2 Sensor Slow Response Bank 1
+P1177	O2 Sensor Slow Response Bank 2
+P1178	O2 Sensor Signal Circuit Slow Switching From Rich to Lean (Bank 1 Sensor 1)
+P1179	O2 Sensor Signal Circuit Slow Switching From Rich to Lean (Bank 2 Sensor 1)
+P1180	O2 Sensor Signal Circuit Slow Switching From Rich to Lean (Bank 1 Sensor 2)
+P1181	O2 Sensor Signal Circuit Slow Switching From Rich to Lean (Bank 2 Sensor 2)
+P1182	O2 Sensor (Bank 1 Sensor 2) Open Circuit During Coast Down Fuel Cut-off
+P1183	O2 Sensor (Bank 2 Sensor 2) Open Circuit During Coast Down Fuel Cut-off
+P1186	O2 Sensor Heater Control Circuit (Bank 1 Sensor 2)
+P1187	O2 Sensor Heater Control Circuit (Bank 2 Sensor 2)
+P1188	Fuel Control (Bank 1 Sensor 1)
+P1189	Fuel Control (Bank 2 Sensor 1)
+P1190	Pre-catalyst Fuel Trim System Bank 1
+P1191	Pre-catalyst Fuel Trim System Bank 2
+P1192	Post-catalyst Fuel Trim System Bank 1
+P1193	Post-catalyst Fuel Trim System Bank 2
+P1221	Pedal Position Sensor 2 Range/Performance Problem
+P1222	Pedal Position Sensor 2 Low Input
+P1223	Pedal Position Sensor 2 High Input
+P1270	Control Module Self-Test, Torque Monitoring
+P1271	Ambient Air Pressure Sensor Electrical
+P1283	Switching Solenoid for Air Assisted Injection Valves Bank 1 Control Circuit Electrical
+P1284	Switching Solenoid for Air Assisted Injection Valves Bank 1 Control Circuit Signal Low
+P1285	Switching Solenoid for Air Assisted Injection Valves Bank 1 Control Circuit Signal High
+P1287	Switching Solenoid for Air Assisted Injection Valves Bank 2 Control Circuit Electrical
+P1288	Switching Solenoid for Air Assisted Injection Valves Bank 2 Control Circuit Signal Low
+P1289	Switching Solenoid for Air Assisted Injection Valves Bank 2 Control Circuit Signal High
+P1313	"A" Camshaft Position Plausibility
+P1317	"B" Camshaft Position Plausibility
+P1327	Knock Sensor 2 (Bank 1) Low Input
+P1328	Knock Sensor 2 (Bank 1) High Input
+P1332	Knock Sensor 4 Low Input
+P1333	Knock Sensor 4 High Input
+P1340	Multiple Cylinder Misfire During Start
+P1341	Multiple Cylinder Misfire With Fuel Cut-off
+P1342	Misfire During Start Cylinder 1
+P1343	Misfire Cylinder 1 With Fuel Cut-off
+P1344	Misfire During Start Cylinder 2
+P1345	Misfire Cylinder 2 With Fuel Cut-off
+P1346	Misfire During Start Cylinder 3
+P1347	Misfire Cylinder 3 With Fuel Cut-off
+P1348	Misfire During Start Cylinder 4
+P1349	Misfire Cylinder 4 With Fuel Cut-off
+P1350	Misfire During Start Cylinder 5
+P1351	Misfire Cylinder 5 With Fuel Cut-off
+P1352	Misfire During Start Cylinder 6
+P1353	Misfire Cylinder 6 With Fuel Cut-off
+P1354	Misfire During Start Cylinder 7
+P1355	Misfire Cylinder 7 With Fuel Cut-off
+P1356	Misfire During Start Cylinder 8
+P1357	Misfire Cylinder 8 With Fuel Cut-off
+P1358	Misfire During Start Cylinder 9
+P1359	Misfire Cylinder 9 With Fuel Cut-off
+P1360	Misfire During Start Cylinder 10
+P1361	Misfire Cylinder 10 With Fuel Cut-off
+P1362	Misfire During Start Cylinder 11
+P1363	Misfire Cylinder 11 With Fuel Cut-off
+P1364	Misfire During Start Cylinder 12
+P1365	Misfire Cylinder 12 With Fuel Cut-off
+P1384	Knock Sensor 3 Circuit
+P1385	Knock Sensor 4 Circuit
+P1386	Control Module Self-test, Knock Control Baseline Test Bank 1
+P1396	Crankshaft Position Sensor Segment Timing Plausibility
+P1397	Camshaft Position Sensor "B" Circuit (Bank 1)
+P1400	Heated Catalyst Battery Voltage or Current too Low During Heating (Bank 1)
+P1401	Heated Catalyst Current too High During Heating (Bank 1)
+P1402	Heated Catalyst Power Switch Overtemperature Condition (Bank 1)
+P1403	Carbon Canister Shut Off valve Control Circuit Electrical
+P1404	Heated Catalyst Current too High During Heating (Bank 2)
+P1405	Heated Catalyst Power Switch Overtemperature Condition (Bank 2)
+P1406	Heated Catalyst Internal Control Module Checksum/ROM Error
+P1413	Secondary Air Injection Pump Relay Control Circuit Signal Low
+P1414	Secondary Air Injection System Monitor Circuit High
+P1420	Secondary Air Valve Control Circuit Electrical
+P1421	Secondary Air System Bank 1
+P1422	Secondary Air System Bank 2
+P1432	Secondary Air Injection System Incorrect Flow Detected
+P1438	Purge Control Valve Control Open Circuit
+P1439	Purge Control Valve Control Circuit Signal Low
+P1440	Purge Control Valve Control Circuit Signal High
+P1441	Leakage Diagnostic Pump Control Open Circuit
+P1442	Leakage Diagnostic Pump Control Circuit Signal Low
+P1443	Leakage Diagnostic Pump Control Circuit Signal High
+P1444	Diagnostic Module Tank Leakage (DM-TL) Pump Control Open Circuit
+P1445	Diagnostic Module Tank Leakage (DM-TL) Pump Control Circuit Signal Low
+P1446	Diagnostic Module Tank Leakage (DM-TL) Pump Control Circuit Signal High
+P1447	Diagnostic Module Tank Leakage (DM-TL) Pump Too High During Switching
+P1448	Diagnostic Module Tank Leakage (DM-TL) Pump Too Low During Switching
+P1449	Diagnostic Module Tank Leakage (DM-TL) Pump Too High
+P1450	Diagnostic Module Tank Leakage (DM-TL) Switching Solenoid Open Circuit
+P1451	Diagnostic Module Tank Leakage (DM-TL) Switching Solenoid Control Circuit Signal Low
+P1452	Diagnostic Module Tank Leakage (DM-TL) Switching Solenoid Control Circuit Signal High
+P1453	Secondary Air Injection Pump Relay Control Circuit Electrical
+P1454	Secondary Air Injection Pump With Series Resistor Control Circuit Electrical
+P1456	Heated Catalyst Heater Power Supply Open Circuit (Bank 1)
+P1457	Heated Catalyst Heater Power Switch Temperature Sensor Electrical (Bank 1)
+P1459	Heated Catalyst Heater Power Supply Open Circuit (Bank 2)
+P1460	Heated Catalyst Heater Power Switch Temperature Sensor Electrical (Bank 2)
+P1461	Heated Catalyst Gate Voltage Signal Low
+P1462	Heated Catalyst Internal Control Module Checksum/ROM Error
+P1463	Heated Catalyst Battery Temperature Sensor 1 Electrical
+P1464	Heated Catalyst Battery Temperature Sensor 2 Electrical
+P1465	Heated Catalyst Battery Temperature Sensor 1 or 2 Plausibility
+P1466	Heated Catalyst Power Switch Temperature Sensor Plausibility
+P1467	Heated Catalyst Comparison Battery Voltages of Power Switches Plausibility
+P1468	Heated Catalyst Battery Disconnecting Switch Plausibility
+P1470	Leakage Diagnostic Pump Control Circuit Electrical
+P1472	Diagnostic Module Tank leakage (DM-TL) Switching Solenoid Control Circuit Electrical
+P1473	Diagnostic Module Tank leakage (DM-TL) Pump Current Plausibility
+P1475	Leakage Diagnostic Pump Reed Switch Did Not Close
+P1476	Leakage Diagnostic Pump Clamped Tube
+P1477	Leakage Diagnostic Pump Reed Switch Did Not Open
+P1500	Idle Speed Control Valve Stuck Open
+P1501	Idle Speed Control Valve Stuck Closed
+P1502	Idle Speed Control Valve Closing Solenoid Control Circuit Signal High or Low
+P1503	Idle Speed Control Valve Closing Solenoid Control Circuit Signal Low
+P1504	Idle Speed Control Valve Closing Solenoid Control Open Circuit
+P1505	Idle Speed Control Valve Closing Solenoid Control Circuit Electrial
+P1506	Idle Speed Control Valve Open Solenoid Control Circuit Signal High
+P1507	Idle Speed Control Valve Open Solenoid Control Circuit Signal Low
+P1508	Idle Speed Control Valve Opening Solenoid Control Open Circuit
+P1509	Idle Speed Control Valve Opening Solenoid Control Circuit Electrial
+P1510	Idle Speed Control Valve Stuck
+P1511	DISA Control Circuit Electrical
+P1512	DISA Control Circuit Signal Low
+P1513	DISA Control Circuit Signal High
+P1519	"A" Camshaft Position Actuator Bank 1
+P1520	"B" Camshaft Position Actuator Bank 1
+P1522	"A" Camshaft Position Actuator Bank 2
+P1523	"A" Camshaft Position Actuator Signal Low Bank 1
+P1524	"A" Camshaft Position Actuator Signal High Bank 1
+P1525	"A" Camshaft Position Actuator Control Open Circuit Bank 1
+P1526	"A" Camshaft Position Actuator Control Open Circuit Bank 2
+P1527	"A" Camshaft Position Actuator Control Circuit Signal Low Bank 1
+P1528	"A" Camshaft Position Actuator Control Circuit Signal High Bank 1
+P1529	"B" Camshaft Position Actuator Control Circuit Signal Low Bank 1
+P1530	"B" Camshaft Position Actuator Control Circuit Signal High Bank 1
+P1531	"B" Camshaft Position Actuator Control Open Circuit Bank 1
+P1532	"B" Camshaft Position Actuator Control Open Circuit Bank 2
+P1533	"B" Camshaft Position Actuator Control Circuit Signal Low Bank 2
+P1534	"B" Camshaft Position Actuator Control Circuit Signal High Bank 2
+P1540	Pedal Position Sensor
+P1541	Pedal Position Sensor Double Error
+P1542	Pedal Position Sensor Electrical
+P1543	Pedal Position Sensor
+P1544	Pedal Position Sensor
+P1545	Pedal Position Sensor
+P1546	Pedal Position Sensor
+P1550	Idle Speed Control valve Closing Solenoid Control Circuit Electrical
+P1551	"A" Camshaft Position Actuator Control Open Circuit Bank 1
+P1552	"A" Camshaft Position Actuator Control Open Circuit Bank 1
+P1556	"A" Camshaft Position Actuator Control Open Circuit Bank 1
+P1560	"B" Camshaft Position Actuator Control Open Circuit Bank 1
+P1564	Control Module Selection
+P1565	"B" Camshaft Position Actuator Control Open Circuit Bank 1
+P1569	"A" Camshaft Position Actuator Control Open Circuit Bank 2
+P1580	Throttle Valve Mechanically Stuck
+P1581	"B" Camshaft Position Actuator Control Open Circuit Bank 2
+P1589	Control Module Self Test, Knock Control Test Pulse Bank 1
+P1593	DISA Control Circuit Electrical
+P1594	"B" Camshaft Position Actuator Control Open Circuit Bank 2
+P1602	Control Module Self Test, Control Module Defective
+P1603	Control Module Self Test, Torque Monitoring
+P1604	Control Module Self Test, Speed Monitoring
+P1607	CAN Version
+P1608	Serial Communicating Link Control Module
+P1609	Serial Communicating Link EML
+P1611	Serial Communicating Link Transmission Control Module
+P1619	MAP Cooling Control Circuit Signal Low
+P1620	MAP Cooling Control Circuit Signal High
+P1622	MAP Cooling Control Circuit Electrical
+P1623	Pedal Position Sensor Potentiometer Supply
+P1624	Pedal Position Sensor Potentiometer Supply Channel 1 Electrical
+P1625	Pedal Position Sensor Potentiometer Supply Channel 2 Electrical
+P1632	Throttle Valve Adaptation; Adaptation Condition Not Met
+P1633	Throttle Valve Adaptation; Limp Home Position
+P1634	Throttle Valve Adaptation; Spring Test Failed
+P1635	Throttle Valve Adaptation; Lower Mechanical Stop Not Adapted
+P1636	Throttle Valve Control Circuit
+P1637	Throttle Valve Position Control; Control Deviation
+P1638	Throttle Valve Position Control; Throttle Stuck Temporarily
+P1639	Throttle Valve Position Control; Throttle Stuck Permanently
+P1640	Internal Control Module (ROM/RAM) Error
+P1690	Malfunction Indicator Lamp (MIL) Electrical
+P1734	Pressure Control Solenoid "B" Electrical
+P1738	Pressure Control Solenoid "C" Electrical
+P1743	Pressure Control Solenoid "E" Electrical
+P1744	Pressure Control Solenoid "A" Electrical
+P1746	Transmission Control Module Output Stage
+P1747	CAN Bus Monitoring
+P1748	Transmission Control Module Self Test
+P1749	Secondary Pressure Solenoid Communication Error
+P1750	Secondary Pressure Solenoid Circuit Range/Performance
+P1751	Secondary Pressure Solenoid Open Circuit
+P1761	Shift Solenoid Malfunction
+P1765	CAN Throttle Valve
+P1770	CAN Torque Interface
+P1780	CAN Torque Reduction

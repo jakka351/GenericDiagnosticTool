@@ -1,0 +1,20 @@
+P1100	Manifold Absolute Pressure (MAP) Sensor Malfunction (Open/Short)
+P1102	Manifold Absolute Pressure (MAP) Sensor Malfunction - Low Voltage
+P1103	Manifold Absolute Pressure (MAP) Sensor Malfunction - High Voltage
+P1147	ETS Sub Accel Position Sensor 1 Malfunction
+P1151	ETS Main Accel Position Sensor 2 Malfunction
+P1155	ETS Limp Home Valve
+P1159	Variable Intake Motor Malfunction
+P1171	Electronic Throttle System Open
+P1172	Electronic Throttle System Motor Current
+P1173	Electronic Throttle System Rationality Malfunction
+P1174	Electronic Throttle System #1 Close Malfunction
+P1175	Electronic Throttle System #2 Close Malfunction
+P1176	ETS Motor Open/Short #1
+P1176	ETS Motor Open/Short #2
+P1178	ETS Motor Battery Voltage Open
+P1330	Spark Timing Adjust Malfunction
+P1521	Power Steering Switch Malfunction
+P1607	Electronic Throttle System Communication Error
+P1614	Electronic Throttle System Module Malfunction
+P1632	Traction Control System Malfunction

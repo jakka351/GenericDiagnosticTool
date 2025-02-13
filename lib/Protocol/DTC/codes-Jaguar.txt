@@ -1,0 +1,672 @@
+P1100	MAF Sensor Intermittent/ Check of all OBDII Systems Not Complete
+P1101	MAF Sensor Out Of Self Test Range./KOER Not Able To Complete KOER Aborted
+P1102	MAF Sensor In Range But Lower Than Expected
+P1103	MAF Sensor In Range But Higher Than Expected
+P1104	MAF Ground Malfunction
+P1105	Dual Alternator Upper Fault
+P1106	Dual Alternator Lower Fault/ Manifold Absolute Pressure (MAP) Sensor Circuit Intermittent High Voltage
+P1107	Dual Alternator Lower Circuit Malfunction/ Manifold Absolute Pressure (MAP) Sensor Circuit Intermittent Low Voltage
+P1108	Dual Alternator Battery Lamp Circuit Malfunction
+P1109	IAT - B Sensor Intermittent
+P1110	IAT Sensor (D/C) Open/Short
+P1111	Intake Air Temperature (IAT) Sensor Circuit Intermittent High Voltage
+P1112	Intake Air Temperature (IAT) Sensor Circuit Intermittent Low Voltage
+P1113	IAT Sensor Open/Short
+P1114	Engine Coolant Temperature (ECT) Sensor Circuit Intermittent Low Voltage/IAT - B Circuit Low Input
+P1115	Engine Coolant Temperature (ECT) Sensor Circuit Intermittent High Voltage/IAT - B Circuit High Input
+P1116	Engine Coolant sensor out of range/ECT Sensor Out Of Self Test Range
+P1117	Engine Coolant Sensor intermittent/ECT Sensor Intermittent
+P1118	Manifold Absolute Temperature Circuit Low Input
+P1119	Manifold Absolute Temperature Circuit High Input
+P1120	Throttle position sensor out of range
+P1121	Throttle Position (TP) Sensor Circuit Intermittent High Voltage
+P1122	Throttle Position (TP) Sensor Circuit Intermittent Low Voltage
+P1123	Throttle Position Sensor In Range But Higher Than Expected
+P1124	Throttle Position Sensor Out Of Self Test Range
+P1125	Throttle position sensor intermittent
+P1126	Throttle Position (Narrow Range) Sensor Circuit Malfunction
+P1127	Exhaust Not Warm, Downstream O2 Sensor
+P1128	Upstream Heated O2 Sensors Swapped
+P1129	Downstream Heated O2 Sensors Swapped
+P1130	Lack Of HO2S Switch - Adaptive Fuel At Limit
+P1131	Lack Of HO2S Switch - Sensor Indicates Lean
+P1132	Lack Of HO2S Switch - Sensor Indicates Rich
+P1133	HO2S Insufficient Switching Sensor 1
+P1134	HO2S Transition Time Ratio Sensor 1
+P1135	Pedal Position Sensor A Circuit Intermittent
+P1136	Fan Control Circuit Malfunction
+P1137	Lack Of HO2S Switch - Sensor Indicates Lean
+P1138	Lack Of HO2S12 Switch - Sensor Indicates Rich
+P1139	Water In Fuel Indicator Circuit Malfunction
+P1140	Water In Fuel Condition
+P1141	Fuel Restriction Indicator Circuit Malfunction
+P1142	Fuel Restriction Condition
+P1143	Air Assist Control Valve Range/Performance
+P1144	Air Assist Control Valve Circuit Malfunction
+P1150	Lack Of HO2S21 Switch - Adaptive Fuel At Limit
+P1151	Lack Of HO2S21 Switch - Sensor Indicates Lean
+P1152	Lack Of HO2S21 Switch - Sensor Indicates Rich
+P1153	Bank 2 Fuel Control Shifted Lean
+P1154	Bank 2 Fuel Control Shifted Rich
+P1155	Alternative Fuel Controller
+P1156	Fuel Select Switch Malfunction
+P1157	Lack Of HO2S22 Switch - Sensor Indicates Lean
+P1158	Lack Of HO2S22 Switch - Sensor Indicates Rich
+P1159	Fuel Stepper Motor Malfunction
+P1167	Invalid Test,throttle not depressed
+P1168	Fuel Rail Sensor In-Range Low Failure
+P1169	Fuel Rail Sensor In-Range High Failure
+P1170	ESO - Engine Shut Off Solenoid Fault
+P1171	Rotor Sensor Fault
+P1172	Rotor Control Fault
+P1173	Rotor Calibration Fault
+P1174	Cam Sensor Fault
+P1175	Cam Control Fault
+P1176	Cam Calibration Fault
+P1177	Synchronization Fault
+;P1178	( open )
+P1180	Fuel Delivery System Malfunction - Low
+P1181	Fuel Delivery System Malfunction - High
+P1182	Fuel Shut Off Solenoid Malfunction
+P1183	Engine Oil Temperature Circuit Malfunction
+P1184	Engine Oil Temperature Out Of Self Test Range
+P1185	FTS High - Fuel Pump Temperature Sensor High
+P1186	FTS Low - Fuel Pump Temperature Sensor Low
+P1187	Variant Selection
+P1188	Calibration Memory Fault
+P1189	Pump Speed Signal Fault
+P1190	Calibration Resistor Out Of Range
+P1191	Key Line Voltage
+P1192	Voltage External
+P1193	EGR Drive Overcurrent
+P1194	ECU A/D Converter
+P1195	SCP HBCC Failed To Initialize
+P1196	Key Off Voltage High
+P1197	Key Off Voltage Low
+P1198	Pump Rotor Control Underfueling
+P1199	Fuel Level Input Circuit Low
+P1200	Injector Control Circuit
+P1201	Injector Circuit Open / Shorted - Cylinder #1
+P1202	Injector Circuit Open / Shorted - Cylinder #2
+P1203	Injector Circuit Open / Shorted - Cylinder #3
+P1204	Injector Circuit Open / Shorted - Cylinder #4
+P1205	Injector Circuit Open / Shorted - Cylinder #5
+P1206	Injector Circuit Open / Shorted - Cylinder #6
+P1209	Injector Control Pressure System Fault
+P1210	Injector Control Pressure Above Expected Level
+P1211	Injector Control Pressure Sensor Above / Below Desired
+P1212	Injector Control Pressure Not Detected During Crank
+P1213	Start Injector Circuit Malfunction
+P1214	Pedal Position Sensor B Circuit Intermittent
+P1215	Pedal Position Sensor C Circuit Low Input
+P1216	Pedal Position Sensor C Circuit High Input
+P1217	Pedal Position Sensor C Circuit Intermittent
+P1218	CID High
+P1219	CID Low
+P1220	Series Throttle Control System Malfunction
+P1221	Traction Control System Malfunction
+P1222	Traction Control Output Circuit Malfunction
+P1223	Pedal Demand Sensor B Circuit High Input
+P1224	Throttle Position Sensor B Out Of Self Test Range
+P1225	Needle Lift Sensor Malfunction
+P1226	Control Sleeve Sensor Malfunction
+P1227	Wastegate Failed Closed (Over Pressure)
+P1228	Wastegate Failed Open (Under Pressure)
+P1229	Intercooler Pump Driver Fault
+P1230	Fuel Pump Low Speed Malfunction
+P1231	Fuel Pump Secondary Circuit Low, High Speed
+P1232	Fuel Pump Speed Primary Circuit Malfunction
+P1233	Fuel Pump Driver Module Off Line
+P1234	Fuel Pump Driver Module Off Line
+P1235	Fuel Pump Control Out Of Range
+P1236	Fuel Pump Control Out Of Range
+P1237	Fuel Pump Secondary Circuit Malfunction
+P1238	Fuel Pump Secondary Circuit Malfunction
+P1239	Speed Fuel Pump Positive Feed Fault
+P1240	Sensor Power Supply Malfunction
+P1241	Sensor Power Supply Low Input
+P1242	Sensor Power Supply High Input
+P1243	Second Fuel Pump Faulty or Ground Fault
+P1244	Alternator Load Input Failed High
+P1245	Alternator Load Input Failed Low
+P1246	Alternator Load Input Failed
+P1247	Turbo Boost Pressure Low
+P1248	Turbo Boost Pressure Not Detected
+P1249	Wastegate Control Valve Performance
+P1250	PRC Solenoid Circuit Malfunction
+P1251	Air Mixture Solenoid Circuit Malfunction
+P1252	Pedal Correlation PDS1 and LPDS High
+P1253	Pedal Correlation PDS1 and LPDS Low
+P1254	Pedal Correlation PDS2 and LPDS High
+P1255	Pedal Correlation PDS2 and LPDS Low
+P1256	Pedal Correlation PDS1 and HPDS
+P1257	Pedal Correlation PDS2 and HPDS
+P1258	Pedal Correlation PDS1 and PDS2
+P1259	Immobilizer to PCM Signal Error
+P1260	THEFT Detected, Vehicle Immobilzed
+P1261	Cylinder #1 High To Low Side Short
+P1262	Cylinder #2 High To Low Side Short
+P1263	Cylinder #3 High To Low Side Short
+P1264	Cylinder #4 High To Low Side Short
+P1265	Cylinder #5 High To Low Side Short
+P1266	Cylinder #6 High To Low Side Short
+P1267	Cylinder #7 High To Low Side Short
+P1268	Cylinder #8 High To Low Side Short
+P1269	Immobilizer Code Not Programmed
+P1270	Engine RPM Or Speed Limiter Reached
+P1271	Cylinder #1 High To Low Side Open
+P1272	Cylinder #2 High To Low Side Open
+P1273	Cylinder #3 High To Low Side Open
+P1274	Cylinder #4 High To Low Side Open
+P1275	Cylinder #5 High To Low Side Open
+P1276	Cylinder #6 High To Low Side Open
+P1277	Cylinder #7 High To Low Side Open
+P1278	Cylinder #8 High To Low Side Open
+P1280	Injection Control Pressure Out Of Range Low
+P1281	Injection Control Pressure Out Of Range High
+P1282	Excessive Injection Control Pressure
+P1283	IPR Circuit Failure
+P1284	Aborted KOER - ICP Failure
+P1285	Cylinder head over temp sensed
+P1286	Fuel Pulse In Range But Lower Than Expected
+P1287	Fuel Pulse In Range But Higher Than Expected
+P1288	Cylinder Head Temp Sensor Out Of Self Test Range
+P1289	Cylinder Head Temp Sensor High Input
+P1290	Cylinder Head Temp Sensor Low Input
+P1291	Injector High Side Short To GND Or VBATT - Bank 1
+P1292	Injector High Side Short To GND Or VBATT - Bank 2
+P1293	Injector High Side Open - Bank 1
+P1294	Injector High Side Open - Bank 2/Target idle not reached
+P1295	Multi-faults - Bank 1 - With Low Side Shorts
+P1296	Multi-faults - Bank 2 - With Low Side Shorts
+P1297	Injector High Sides Shorted Together
+P1298	IDM Failure
+P1299	Cylinder Head Overtemperature Protection Active
+P1300	Boost Calibration Fault
+P1301	Boost Calibration High
+P1302	Boost Calibration Low
+P1303	EGR Calibration Fault
+P1304	EGR Calibration High
+P1305	EGR Calibration Low
+P1306	Kickdown Relay Pull - In Circuit Fault
+P1307	Kickdown Relay Hold Circuit Fault
+P1308	A/C Clutch Circuit Fault
+P1309	Misfire Monitor AICE Chip Fault
+P1313	Misfire Rate Catalyst Damage Fault - Bank 1
+P1314	Misfire Rate Catalyst Damage Fault - Bank 2
+P1315	Persistent Misfire
+P1316	Injector Circuit / IDM Codes Detected
+P1317	Injector Circuit / IDM Codes Not Updated
+P1336	Crank / Cam Sensor Range / Performance
+P1340	Camshaft Position Sensor B Circuit Malfunction
+P1341	Camshaft Position Sensor B Range / Performance
+P1345	SGC (Cam Position) Sensor Circuit Malfunction/ Crankshaft Position - Camshaft Position Correlation
+P1346	Fuel Level Sensor B Circuit Malfunction
+P1347	Fuel Level Sensor B Range / Performance
+P1348	Fuel Level Sensor B Circuit Low
+P1349	Fuel Level Sensor B Circuit High
+P1350	Fuel Level Sensor B Intermittent/Bypass Line Monitor
+P1351	IDM Input Circuit Malfunction/ Ignition Coil Control Circuit High Voltage
+P1352	Ignition Coil A Primary Circuit Malfunction
+P1353	Ignition Coil B Primary Circuit Malfunction
+P1354	Ignition Coil C Primary Circuit Malfunction
+P1355	Ignition Coil D Primary Circuit Malfunction
+P1360	Ignition Coil A Secondary Circuit Malfunction
+P1361	Ignition Control (IC) Circuit Low Voltage
+P1362	Ignition Coil C Secondary Circuit Malfunction
+P1363	Ignition Coil D Secondary Circuit Malfunction
+P1364	Ignition Coil Primary Circuit Failure
+P1365	Ignition Coil Secondary Circuit Failure
+P1366	Ignition Spare
+P1367	Ignition Spare
+P1368	Ignition Spare
+P1369	Engine Temperature Light Monitor Failure
+P1370	Insufficient RMP Increase During Spark Test
+P1371	Ignition Coil - Cylinder 1 - Early Activation Fault
+P1372	Ignition Coil - Cylinder 2 - Early Activation Fault
+P1373	Ignition Coil - Cylinder 3 - Early Activation Fault
+P1374	Crankshaft Position (CKP)/Ignition Coil - Cylinder 4 - Early Activation Fault
+P1375	Ignition Coil - Cylinder 5 - Early Activation Fault
+P1376	Ignition Coil - Cylinder 6 - Early Activation Fault
+P1380	Misfire Detected - Rough Road Data Not Available
+P1381	Variable Cam Timing Overadvanced (Bank #1)/ Misfire Detected - No Communication with BCM
+P1382	Variable Cam Timing Solenoid #1 Circuit Malfunction
+P1383	Variable Cam Timing Overretarded (Bank #1)
+P1384	VVT Solenoid A Malfunction
+P1385	Variable Cam Timing Solenoid B Malfunction
+P1386	Variable Cam Timing Overadvanced (Bank #2)
+P1387	Variable Cam Timing Solenoid #2 Circuit Malfunction
+P1388	Variable Cam Timing Overretarded (Bank #2)
+P1389	Glow Plug Circuit High Side Low Input
+P1390	Octane Adjust Pin Out Of Self Test Range
+P1391	Glow Plug Circuit Low Input (Bank #1)
+P1392	Glow Plug Circuit High Input (Bank #1)
+P1393	Glow Plug Circuit Low Input (Bank #2)
+P1394	Glow Plug Circuit High Input (Bank #2)
+P1395	Glow Plug Monitor Fault (Bank #1)
+P1396	Glow Plug Monitor Fault (Bank #2)
+P1397	System Voltage Out Of Self Test Range
+P1398	VVT Solenoid B Circuit High Input
+P1399	Glow Plug Circuit High Side, High Input
+P1400	DPFE Circuit Low Input
+P1401	DPFE Circuit High Input
+P1402	EGR Metering Orifice Restricted
+P1403	DPFE Sensor Hoses Reversed
+P1404	IAT - B Circuit Malfunction/ Exhaust Gas Recirculation Closed Position Performance
+P1405	DPFE Sensor Upstream Hose Off Or Plugged
+P1406	Exhaust Gas Recirculation (EGR) Position Sensor Performance
+P1407	EGR No Flow Detected
+P1408	EGR Flow Out Of Self Test Range
+P1409	EVR Control Circuit Malfunction
+P1411	SAI System Incorrect Downstream Flow Detected
+P1413	SAI System Monitor Circuit Low Input
+P1414	SAI System Monitor Circuit High Input
+P1415	Air Pump Circuit Malfunction/ (AIR) System Bank 1
+P1416	Port Air Circuit Malfunction/ (AIR) System Bank 2
+P1417	Port Air Relief Circuit Malfunction
+P1418	Split Air #1 Circuit Malfunction
+P1419	Split Air #2 Circuit Malfunction
+P1420	Catalyst Temperature Sensor Failure
+P1421	Catalyst Damage
+P1422	EGI Temperature Sensor Failure
+P1423	EGI Functionality Test Failed
+P1424	EGI Glow Plug Primary Failure
+P1425	EGI Glow Plug Secondary Failure
+P1426	EGI Mini - MAF Failed Out Of Range
+P1427	EGI Mini - MAF Failed Short Circuit
+P1428	EGI Mini - MAF Failed Open Circuit
+P1429	Electric Air Pump Primary Failure
+P1430	Electric Air Pump Secondary Failure
+P1433	A/C Refrigerant Temperature Circuit Low
+P1434	A/C Refrigerant Temperature Circuit High
+P1435	A/C Refrigerant Temperature Circuit Range/Performance
+P1436	A/C Evaporator Air Temperature Circuit Low
+P1437	A/C Evaporator Air Temperature Circuit High
+P1438	A/C Evaporator Air Temperature Circuit Range/Performance
+P1439	Floor Temperature Switch Circuit Malfunction
+P1440	Purge Valve Stuck Open
+P1441	Evaporative Emission (EVAP) System Flow During Non-Purge Chevrolet Only
+P1441	Evaporative Emission (EVAP) System Flow During Non-Purge Oldsmobile Only
+P1442	Evaporative Emission Control System Leak Detected
+P1443	Evaporative Emission Control System Control Valve
+P1444	Purge Flow Sensor Circuit Low Input
+P1445	Purge Flow Sensor Circuit High Input
+P1446	Evaporative Vac Solenoid Circuit Malfunction
+P1447	ELC System Closure Valve Flow Fault
+P1448	ELC System 2 Fault
+P1449	Evaporative Check Solenoid Circuit Malfunction
+P1450	Unable To Bleed Up Fuel Tank Vacuum
+P1451	Evap Emission Control Sys Vent Control Valve Circuit
+P1452	Unable To Bleed - Up Vacuum in Tank
+P1453	Fuel Tank Pressure Relief Valve Malfunction
+P1454	Evaporative System Vacuum Test Malfunction
+P1455	Evap Emission Control Sys Leak Detected (Gross Leak/No Flow)
+P1456	Fuel Tank Temperature Sensor Circuit Malfunction
+P1457	Unable To Pull Vacuum In Tank
+P1460	Wide open throttle A/C cutoff relay circuit
+P1461	A/C pressure sensor circuit voltage low
+P1462	A/C pressure sensor circuit voltage high
+P1463	A/C Pressure Sensor Insufficient Pressure Change
+P1464	A/C Demand Out of Self Test Range
+P1465	A/C Relay Circuit Malfunction
+P1466	A/C Refrigerant Temperature Sensor/Circuit Malfunction
+P1467	A/C Compressor Temperature Sensor Malfunction
+P1468	SSPOD Open Circuit or Closed Circuit Fault
+P1469	Low A/C Cycling Period
+P1470	A/C Cycling Period Too Short
+P1471	Electrodrive Fan 1 Operational Failure (Driver Side)
+P1472	Electrodrive Fan 2 Operational Failure (Passenger Side)
+P1473	Fan Secondary High With Fan(s) Off
+P1474	Low Fan Control Primary Circuit Malfunction
+P1475	Fan Relay (Low) Circuit Malfunction
+P1476	Fan Relay (High) Circuit Malfunction
+P1477	Additional Fan Relay Circuit Malfunction
+P1478	Cooling Fan Driver Fault
+P1479	High Fan Control Primary Circuit Malfunction
+P1480	Fan Secondary Low with Low Fan On
+P1481	Fan Secondary Low With High Fan On
+P1482	SCP
+P1483	Power To Fan Circuit Overcurrent
+P1484	Open Power To Ground VCRM
+P1485	EGRV Circuit Malfunction
+P1486	EGRA Circuit Malfunction
+P1487	EGRCHK Solenoid Circuit Malfunction
+P1490	Secondary Air Relief Solenoid Circuit Malfunction
+P1491	Secondary Switch Solenoid Circuit Malfunction
+P1492	APLSOL Solenoid Circuit Malfunction
+P1493	RCNT Solenoid Circuit Malfunction
+P1494	SPCUT Solenoid Circuit Malfunction
+P1495	TCSPL Solenoid Circuit Malfunction
+P1500	Vehicle Speed Sensor Intermittent
+P1501	Vehicle Speed Sensor Out Of Self Test Range
+P1502	Vehicle Speed Sensor Intermittent Malfunction
+P1503	Auxillary Speed Sensor Fault
+P1504	Idle Air Control Circuit Malfunction
+P1505	Idle Air Control System At Adaptive Clip
+P1506	Idle Air Control Overspeed Error
+P1507	Idle Air Control Underspeed Error
+P1508	Idle Control System Circuit Open
+P1509	Idle Control System Circuit Shorted
+P1510	Idle Signal Circuit Malfunction
+P1511	Idle Switch (Electric Control Throttle) Circuit Malfunction
+P1512	Intake Manifold Runner Control (Bank 1) Stuck Closed
+P1513	Intake Manifold Runner Control (Bank 2) Stuck Closed
+P1514	High Load Neutral/Drive Fault
+P1515	Electric Current Circuit Malfunction
+P1516	IMRC Input Error (Bank 1)
+P1517	IMRC Input Error (Bank 2)
+P1518	Intake Manifold Runner Control (Stuck Open)
+P1519	Intake Manifold Runner Control (Stuck Closed)
+P1520	Intake Manifold Runner Control Circuit Malfunction
+P1521	Variable Intake Solenoid #1 Circuit Malfunction
+P1522	Variable Intake Solenoid #2 Circuit Malfunction
+P1523	IVC Solenoid Circuit Malfunction
+P1524	Variable Intake Solenoid System
+P1525	Air Bypass Valve System
+P1526	Air Bypass System
+P1527	Accelerate Warmup Solenoid Circuit Malfunction
+P1528	Subsidiary Throttle Valve Solenoid Circuit Malfunction
+P1529	SCAIR Solenoid Circuit Malfunction
+P1530	A/C Clutch Circuit Malfunction
+P1531	Invalid Test - Accelerator Pedal Movement
+P1532	IMCC Circuit Malfunction, Bank B
+P1533	AAI Circuit Malfunction
+P1534	Inertia Switch Activated
+P1535	Blower Fan Speed Circuit Range/Performance
+P1536	Parking Brake Switch Circuit Failure
+P1537	Intake Manifold Runner Control (Bank 1) Stuck Open
+P1538	Intake Manifold Runner Control (Bank 2) Stuck Open
+P1539	Power To A/C Clutch Circuit Overcurrent
+P1540	Air Bypass Valve Circuit Malfunction
+P1549	IMCC Circuit Malfunction, Bank B
+P1550	PSPS Out Of Self Test Range
+P1565	Speed Control Command Switch Out of Range High
+P1566	Speed Control Command Switch Out of Range Low
+P1567	Speed Control Output Circuit Continuity
+P1568	Speed Control Unable to Hold Speed
+P1571	Brake Switch Malfunction
+P1572	Brake Pedal Switch Circuit Malfunction
+P1573	Throttle Position Not Available
+P1574	Throttle Position Sensor Disagreement btwn Sensors
+P1575	Pedal Position Out of Self Test Range
+P1576	Pedal Position Not Available
+P1577	Pedal Position Sensor Disagreement btwn Sensors
+P1578	ETC Power Less Than Demand
+P1579	ETC In Power Limiting Mode
+P1580	Electronic Throttle Monitor PCM Override
+P1581	Electronic Throttle Monitor Malfunction
+P1582	Electronic Throttle Monitor Data Available
+P1583	Electronic Throttle Monitor Cruise Disable
+P1584	TCU Detected IPE Circuit Malfunction
+P1585	Throttle Control Unit Malfunction
+P1586	Throttle Control Unit Throttle Position Malfunction
+P1587	Throttle Control Unit Modulated Command Malfunction
+P1588	Throttle Control Unit Detected Loss of Return Spring
+P1589	TCU Unable To Control Desired Throttle Angle
+P1600	Loss of KAM Power; Open Circuit
+P1601	ECM/TCM Serial Communication Error
+P1602	Immobilizer/ECM Communication Error
+P1603	EEPROM Malfunction
+P1604	Code Word Unregestered
+P1605	Keep Alive Memory Test Failure
+P1606	ECM Control Relay O/P Circuit Malfunction
+P1607	MIL O/P Circuit Malfunction
+P1608	Internal ECM Malfunction
+P1609	Diagnostic Lamp Driver Fault
+P1610	SBDS Interactive Codes
+P1611	SBDS Interactive Codes
+P1612	SBDS Interactive Codes
+P1613	SBDS Interactive Codes
+P1614	SBDS Interactive Codes
+P1615	SBDS Interactive Codes
+P1616	SBDS Interactive Codes
+P1617	SBDS Interactive Codes
+P1618	SBDS Interactive Codes
+P1619	SBDS Interactive Codes
+P1620	SBDS Interactive Codes
+P1621	Control Module Long Term Memory Performance/ Immobilizer Code Words Do Not Match
+P1622	Immobilizer ID Does Not Match
+P1623	Immobilizer Code Word/ID Number Write Failure
+P1624	Anti Theft System
+P1625	B+ Supply To VCRM Fan Circuit Malfunction
+P1626	Theft Deterrent Fuel Enable Signal Not Received/ B+ Supply To VCRM A/C Circuit Malfunction
+P1627	Module Supply Voltage Out Of Range
+P1628	Module Ignition Supply Input Malfunction
+P1629	Internal Voltage Regulator Malfunction
+P1630	Internal Vref Malfunction
+P1631	Theft Deterrent Start Enable Signal Not Correct/ Main Relay Malfunction (Power Hold)
+P1632	Smart Alternator Faults Sensor/Circuit Malfunction
+P1633	KAM Voltage Too Low
+P1634	Data Output Link Circuit Failure
+P1635	Tire / Axle Ratio Out of Acceptable Range
+P1636	Inductive Signature Chip Communication Error
+P1637	Can Link ECM/ABSCM Circuit / Network Malfunction
+P1638	Can Link ECM/INSTM Circuit / Network Malfunction
+P1639	Vehicle ID Block Corrupted or Not Programmed
+P1640	Powertrain DTCs Available in Another Module
+P1641	Fuel Pump Primary Circuit Failure
+P1642	Fuel Pump Monitor Circuit High Input
+P1643	Fuel Pump Monitor Circuit Low Input
+P1644	Fuel Pump Speed Control Circuit Malfunction
+P1645	Fuel Pump Resistor Switch Circuit Malfunction
+P1650	PSP Switch Out of Self Test Range
+P1651	PSP Switch Input Malfunction
+P1652	IAC Monitor Disabled by PSP Switch Failed On
+P1653	Power Steering Output Circuit Malfunction
+P1654	Recirculation Override Circuit Malfunction
+P1655	Starter Disable Circuit Malfunction
+P1660	Output Circuit Check Signal High
+P1661	Output Circuit Check Signal Low
+P1662	IDM_EN Circuit Failure
+P1663	Fuel Demand Command Signal Circuit Malfunction
+P1667	CI Circuit Malfunction
+P1668	PCM - IDM Communications Error
+P1670	Electronic Feedback Signal Not Detected
+P1680	Metering Oil Pump Malfunction
+P1681	Metering Oil Pump Malfunction
+P1682	Metering Oil Pump Malfunction
+P1683	Metering Oil Pump Temperature Sensor Circuit Malfunction
+P1684	Metering Oil Pump Position Sensor Circuit Malfunction
+P1685	Metering Oil Pump Stepping Motor Circuit Malfunction
+P1686	Metering Oil Pump Stepping Motor Circuit Malfunction
+P1687	Metering Oil Pump Stepping Motor Circuit Malfunction
+P1688	Metering Oil Pump Stepping Motor Circuit Malfunction
+P1689	Oil Pressure Control Solenoid Circuit Malfunction
+P1690	Wastegate Solenoid Circuit Malfunction
+P1691	Turbo Pressure Control Solenoid Circuit Malfunction
+P1692	Turbo Control Solenoid Circuit Malfunction
+P1693	Turbo Charge Control Circuit Malfunction
+P1694	Turbo Charge Relief Circuit Malfunction
+P1700	Transmission Indeterminate Failure (Failed to Neutral)
+P1701	Reverse Engagement Error
+P1702	TRS Circuit Intermittent Malfunction
+P1703	Brake Switch Out Of Self Test Range
+P1704	Digital TRS Failed to Transition States in KOEO / KOER
+P1705	Not in P or N During KOEO / KOER
+P1706	High Vehicle Speed Observed in Park
+P1707	Transfer Case Neutral Indicator Hard Fault Present
+P1708	Clutch Switch Circuit Malfunction
+P1709	PNP Switch Out Of Self Test Range
+P1711	TFT Sensor Out Of Self Test Range
+P1712	Trans Torque Reduction Request Signal Malfunction
+P1713	TFT Sensor In Range Failure Low Value
+P1714	SSA Inductive Signature Malfunction
+P1715	SSB Inductive Signature Malfunction
+P1716	SSC Inductive Signature Malfunction
+P1717	SSD Inductive Signature Malfunction
+P1718	TFT Sensor In Range Failure High
+P1720	Vehicle Speed (Meter) Circuit Malfunction
+P1721	Gear 1 Incorrect Ratio
+P1722	Gear 2 Incorrect Ratio
+P1723	Gear 3 incorrect Ratio
+P1724	Gear 4 Incorrect Ratio
+P1725	Insufficient Engine Speed Increase During Self Test
+P1726	Insufficient Engine Speed Decrease During Self Test
+P1727	Coast Clutch Solenoid Inductive Signature Malfunction
+P1728	Transmission Slip Error
+P1729	4x4 Low Switch Error
+P1730	Gear Control Malfunction 2,3,5
+P1731	1-2 Shift Malfunction
+P1732	2-3 Shift Malfunction
+P1733	3-4 Shift Malfunction
+P1734	Gear Control Malfunction
+P1735	First Gear Switch Circuit Malfunction
+P1736	Second Gear Switch Circuit Malfunction
+P1737	Lockup Solenoid System
+P1738	Shift Time Error
+P1739	Slip Solenoid System
+P1740	Torque Converter Clutch Inductive Signature Malfunction
+P1741	Torque Converter Clutch Control Error
+P1742	Torque Converter Clutch Solenoid Failed On
+P1743	Torque Converter Clutch Solenoid Failied On
+P1744	Torque Converter Clutch System Performance
+P1745	Line Pressure Solenoid System
+P1746	Pressure Control Solenoid "A" Open Circuit
+P1747	Pressure Control Solenoid "A" Short Circuit
+P1748	EPC Malfunction
+P1749	Pressure Control Solenoid Failed Low
+P1751	Shift Solenoid A Performance
+P1754	Coast Clutch Solenoid Circuit Malfunction
+P1755	Intermediate Speed Sensor (ISS) Malfunction
+P1756	Shift Solenoid B Performance
+P1760	Pressure Control Solenoid "A" Short Circuit
+P1761	Shift Solenoid C Performance
+P1762	Overdrive Band Failed Off
+P1765	Timing Solenoid Circuit Malfunction
+P1767	Torque Converter Clutch Circuit Malfunction
+P1768	Performance / Normal / Winter Mode Input Malfunction
+P1769	AG4 Transmission Torque Modulation Fault
+P1770	Clutch Solenoid Circuit Malfunction
+P1775	Transmission System MIL Fault
+P1776	Ignition Retard Request Duration Fault
+P1777	Ignition Retard Request Circuit Fault
+P1778	Transmission Reverse I/P Circuit Malfunction
+P1779	TCIL Circuit Malfunction
+P1780	Trans Control Switch (O/D Cancel) Out of Self Test Range
+P1781	4X4 Switch Out of Self Test Range
+P1782	P/ES Circuit Out Of Self Test Range
+P1783	Transmission Overtemperature Condition
+P1784	Transmission Mechanical Failure - First And Reverse
+P1785	Transmission Mechanical Failure - First And Second
+P1786	3-2 Downshift Error
+P1787	2-1 Downshift Error
+P1788	Pressure Control Solenoid "B" Open Circuit
+P1789	Pressure Control Solenoid "B" Short Circuit
+P1790	TP (Mechanical) Circuit Malfunction
+P1791	TP (Electric) Circuit Malfunction
+P1792	Barometer Pressure Circuit Malfunction
+P1793	Intake Air Volume Circuit Malfunction
+P1794	Battery Voltage Circuit Malfunction
+P1795	Idle Switch Circuit Malfunction
+P1796	Kick Down Switch Circuit Malfunction
+P1797	Neutral Switch Circuit Malfunction
+P1798	Coolant Temperature Circuit Malfunction
+P1799	Hold Switch Circuit Malfunction
+P1800	Transmission Clutch Interlock Safety Switch Circuit Failure
+P1801	Transmission Clutch Interlock Safety Switch Open Circuit
+P1802	Transmission Clutch Interlock Safety Switch Short Circuit To Battery
+P1803	Transmission Clutch Interlock Safety Switch Short Circuit To Ground
+P1804	Transmission 4-Wheel Drive High Indicator Circuit Failure
+P1805	Transmission 4-Wheel Drive High Indicator Open Circuit
+P1806	Transmission 4-Wheel Drive High Indicator Short Circuit To Battery
+P1807	Transmission 4-Wheel Drive High Indicator Short Circuit To Ground
+P1808	Transmission 4-Wheel Drive Low Indicator Circuit Failure
+P1809	Transmission 4-Wheel Drive Low Indicator Open Circuit
+P1810	TFP Valve Position Switch Circuit/ Transmission 4-Wheel Drive Low Indicator Short Circuit To Battery
+P1811	Transmission 4-Wheel Drive Low Indicator Short Circuit To Ground
+P1812	Transmission 4-Wheel Drive Mode Select Circuit Failure
+P1813	Transmission 4-Wheel Drive Mode Select Open Circuit
+P1814	Transmission 4-Wheel Drive Mode Select Short Circuit To Battery
+P1815	Transmission 4-Wheel Drive Mode Select Short Circuit To Ground
+P1816	Transmission Neutral Safety Switch Circuit Failure
+P1817	Transmission Neutral Safety Switch Open Circuit
+P1818	Transmission Neutral Safety Switch Short Circuit To Battery
+P1819	Transmission Neutral Safety Switch Short Circuit To Ground
+P1820	Transmission Transfer Case Clockwise Shift Relay Coil Circuit Failure
+P1821	Transmission Transfer Case Clockwise Shift Relay Coil Open Circuit
+P1822	Transmission Transfer Case Clockwise Shift Relay Coil Short Circuit To Battery
+P1823	Transmission Transfer Case Clockwise Shift Relay Coil Short Circuit To Ground
+P1824	Transmission 4-Wheel Drive Clutch Relay Circuit Failure
+P1825	Transmission 4-Wheel Drive Clutch Relay Open Circuit
+P1826	Transmission 4-Wheel Drive Low Clutch Relay Circuit To Battery
+P1827	Transmission 4-Wheel Drive Low Clutch Relay Circuit To Ground
+P1828	Transmission Transfer Case Counter Clockwise Shift Relay Coil Circuit Failure
+P1829	Transmission Transfer Case Counter Clockwise Shift Relay Coil Open Circuit
+P1830	Transmission Transfer Case Counter Clockwise Shift Relay Coil Short Circuit To Battery
+P1831	Transmission Transfer Case Counter Clockwise Shift Relay Coil Short Circuit To Ground
+P1832	Transmission Transfer Case Differential Lock-Up Solenoid Circuit Failure
+P1833	Transmission Transfer Case Differential Lock-Up Solenoid Open Circuit
+P1834	Transmission Transfer Case Differential Lock-Up Solenoid Short Circuit To Battery
+P1835	Transmission Transfer Case Differential Lock-Up Solenoid Short Circuit To Ground
+P1836	Transmission Transfer Case Front Shaft Speed Sensor Circuit Failure
+P1837	Transmission Transfer Case Rear Shaft Speed Sensor Circuit Failure
+P1838	Transmission Transfer Case Shift Motor Circuit Failure
+P1839	Transmission Transfer Case Shift Motor Open Circuit
+P1840	Transmission Transfer Case Shift Motor Short Circuit To Battery
+P1841	Transmission Transfer Case Shift Motor Short Circuit To Ground
+P1842	Transmission Transfer Case Differential Lock-Up Feedback Switch Circuit Failure
+P1843	Transmission Transfer Case Differential Lock-Up Feedback Switch Open Circuit
+P1844	Transmission Transfer Case Differential Lock-Up Feedback Switch Short Circuit To Battery
+P1845	Transmission Transfer Case Differential Lock-Up Feedback Switch Short Circuit To Ground
+P1846	Transmission Transfer Case Contact Plate 'A' Circuit Failure
+P1847	Transmission Transfer Case Contact Plate 'A' Open Circuit
+P1848	Transmission Transfer Case Contact Plate 'A' Short Circuit To Battery
+P1849	Transmission Transfer Case Contact Plate 'A' Short Circuit To Ground
+P1850	Transmission Transfer Case Contact Plate 'B' Circuit Failure
+P1851	Transmission Transfer Case Contact Plate 'B' Open Circuit
+P1852	Transmission Transfer Case Contact Plate 'B' Short Circuit To Battery
+P1853	Transmission Transfer Case Contact Plate 'B' Short Circuit To Ground
+P1854	Transmission Transfer Case Contact Plate 'C' Circuit Failure
+P1855	Transmission Transfer Case Contact Plate 'C' Open Circuit
+P1856	Transmission Transfer Case Contact Plate 'C' Short Circuit To Battery
+P1857	Transmission Transfer Case Contact Plate 'C' Short Circuit To Ground
+P1858	Transmission Transfer Case Contact Plate 'D' Circuit Failure
+P1859	Transmission Transfer Case Contact Plate 'D' Open Circuit
+P1860	TCC PWM Solenoid Circuit Electrical/ Transmission Transfer Case Contact Plate 'D' Short Circuit To Battery
+P1861	Transmission Transfer Case Contact Plate 'D' Short Circuit To Ground
+P1862	Transmission Transfer Case Contact Plate Power Circuit Failure
+P1863	Transmission Transfer Case Contact Plate Power Open Circuit
+P1864	Transmission Transfer Case Contact Plate Power Short To Battery
+P1865	Transmission Transfer Case Contact Plate Power Short To Ground
+P1866	Transmission Transfer Case System Concern - Servicing Required
+P1867	Transmission Transfer Case Contact Plate General Circuit Failure
+P1868	Transmission Automatic 4-Wheel Drive Indicator (Lamp) Circuit Failure
+P1869	Transmission Automatic 4-Wheel Drive Indicator (Lamp) Circuit Short To Battery
+P1870	Transmission Component Slipping/ Transmission Mechanical Transfer Case 4x4 Switch Circuit Failure
+P1871	Transmission Mechanical Transfer Case 4x4 Switch Circuit Short To Battery
+P1872	Transmission Mechanical 4-Wheel Drive Axle Lock Lamp Circuit Failure
+P1873	Transmission Mechanical 4-Wheel Drive Axle Lock Lamp Circuit Short To Battery
+P1874	Transmission Automatic Hall Effect Sensor Power Circuit Failure
+P1875	Transmission Automatic Hall Effect Sensor Power Circuit Short To Battery / 4WD Low Switch Circuit Electrical
+P1876	Transmission Transfer Case 2-Wheel Drive Solenoid Circuit Failure
+P1877	Transmission Transfer Case 2-Wheel Drive Solenoid Circuit Short To Battery
+P1878	Transmission Transfer Case Disengaged Solenoid Circuit Failure
+P1879	Transmission Transfer Case Disengaged Solenoid Open Circuit
+P1880	Transmission Transfer Case Disengaged Solenoid Short to Battery
+P1881	Engine Coolant Level Switch Circuit Failure, GEM
+P1882	Engine Coolant Level Switch Circuit Short to Ground
+P1883	Engine Coolant Level Switch Circuit Failure, GEM
+P1884	Engine Coolant Level Lamp Circuit Short to Ground
+P1885	Transmission Transfer Case Disengaged Solenoid Short to Ground
+P1886	4X4 Initialization Failure
+P1890	Transmission 4WD Mode Select Return Input Circuit Failure
+P1891	Transmission Transfer Case Contact Plate Ground Return Open Circuit
+P1900	OSS Circuit Intermittent Malfunction
+P1901	TSS Circuit Intermittent Malfunction
+P1902	Pressure Control Solenoid "B" Intermittent Short
+P1903	Pressure Control Solenoid "C" Short Circuit
+P1904	Pressure Control Solenoid "C" Open Circuit
+P1905	Pressure Control Solenoid "C" Intermittent Short
+P1906	Kickdown Pull Relay Open or Short Circuit to Ground
+P1907	Kickdown Hold Relay Open or Short Circuit to Ground
+P1908	Transmission Pressure Circuit Solenoid Open or Short to Ground
+P1909	Trans Temp Sensor Circuit Open or Shorted to Pwr or Gnd
+P1910	VFS A Pressure Output Failed Low
+P1911	VFS B Pressure Output Failed Low
+P1912	VFS C Pressure Output Failed Low
+P1913	Pressure Switch A Circuit Malfunction
+P1914	Manually Shifted Automatic (MSA) Sw Circuit Malf
+P1915	Reverse Switch Circuit Malfunction
+P1916	High Clutch Drum Speed Sensor Malfunction
+P1917	High Clutch Drum Speed Sensor Intermittent
+P1918	Transmission Range Display Circuit Malfunction

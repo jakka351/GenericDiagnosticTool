@@ -1,0 +1,74 @@
+P1106	Barometric Pressure Circuit Range/Performance
+P1107	Barometric Pressure Circuit Low Input
+P1108	Barometric Pressure Circuit High Input
+P1121	Throttle Position Lower Than Expected
+P1122	Throttle Position Higher Than Expected
+P1128	MAP Lower Than Expected
+P1129	MAP Higher Than Expected
+P1149	Primary HO2S (Sensor 1) Circuit Range/Performance Problem
+P1162	Primary HO2S (No. 1) Circuit Malfunction
+P1163	Primary HO2S (No. 1) Circuit Slow Response
+P1164	Primary HO2S (No. 1) Circuit Range/Performance
+P1165	Primary HO2S (No. 1) Circuit Range/Performance
+P1166	Primary HO2S (No. 1) Heater System Electrical
+P1167	Primary HO2S (No. 1) Heater System
+P1168	Primary HO2S (No. 1) LABEL Low Input
+P1169	Primary HO2S (No. 1) LABEL High Input
+P1253	VTEC System Malfunction
+P1257	VTEC System Malfunction
+P1258	VTEC System Malfunction
+P1259	VTEC System Malfunction
+P1297	Electrical Load Detector Circuit Low Input
+P1298	Electrical Load Detector Circuit High Input
+P1300	Multiple Cylinder Misfire Detected
+P1336	CSF Sensor Intermittent Interruption
+P1337	CSF Sensor No Signal
+P1359	CKP/TDC Sensor Connector Disconnection
+P1361	Intermittent Interruption In TDC 1 Sensor Circuit
+P1362	No Signal In TDC 1 Sensor Circuit
+P1366	Intermittent Interruption In TDC 2 Sensor Circuit
+P1367	No Signal In TDC 2 Sensor Circuit
+P1381	Cylinder Position Sensor Intermittent Interruption
+P1382	Cylinder Position Sensor No Signal
+P1456	EVAP Emission Control System Leak Detected (Fuel Tank System)
+P1457	EVAP Emission Control System Leak Detected (Control Canister System)
+P1459	EVAP Emission Purge Flow Switch Malfunction
+P1486	Thermostat Range/Performance Problem
+P1491	EGR Valve Lift Insufficient Detected
+P1498	EGR Valve Lift Sensor High Voltage
+P1508	IAC Valve Circuit Failure
+P1509	IAC Valve Circuit Failure
+P1519	Idle Air Control Valve Circuit Failure
+P1607	ECM/PCM Internal Circuit Failure A
+P1655	SEAF/SEFA/TMA/TMB Signal Line Failure
+P1656	Automatic Transaxle
+P1660	Automatic Transaxle FI Signal A Circuit Failure
+P1676	FPTDR Signal Line Failure
+P1678	FPTDR Signal Line Failure
+P1681	Automatic Transaxle FI Signal A Low Input
+P1682	Automatic Transaxle FI Signal A High Input
+P1686	Automatic Transaxle FI Signal B Low Input
+P1687	Automatic Transaxle FI Signal B High Input
+P1705	Automatic Transaxle Concerns
+P1706	Automatic Transaxle Concerns
+P1738	Automatic Transaxle Concerns
+P1739	Automatic Transaxle Concerns
+P1753	Automatic Transaxle Concerns
+P1758	Automatic Transaxle Concerns
+P1768	Automatic Transaxle Concerns
+P1773	Automatic Transaxle Concerns
+P1785	Automatic Transaxle Concerns
+P1786	Automatic Transaxle Concerns
+P1790	Automatic Transaxle Concerns
+P1791	Automatic Transaxle Concerns
+P1792	Automatic Transaxle Concerns
+P1793	Automatic Transaxle Concerns
+P1794	Automatic Transaxle Concerns
+P1870	Automatic Transaxle Concerns
+P1873	Automatic Transaxle Concerns
+P1879	Automatic Transaxle Concerns
+P1885	Automatic Transaxle Concerns
+P1886	Automatic Transaxle Concerns
+P1888	Automatic Transaxle Concerns
+P1890	Automatic Transaxle Concerns
+P1891	Automatic Transaxle Concerns

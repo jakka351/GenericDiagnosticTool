@@ -1,0 +1,176 @@
+"U1159": "Lost Communication With Automatic Sway Bar System",
+"U1158": "Lost Communication With Satellite Video Receiver",
+"U1148": "Additional CAN-C ECU Detected",
+"U1147": "Additional CAN Interior ECU Detected",
+"U1145": "Lost Communication With Keyless Go Security Module",
+"U1144": "Lost Communication With Power Sliding Door Module - Right",
+"U1143": "Lost Communication With Power Sliding Door Module - Left",
+"U0293": "Lost Communication with Hybrid Control Module",
+"U0259": "Lost Communication With Wheel Chair Ramp Module",
+"U0255": "Lost Communication With Front Display Interface Module",
+"U0252": "Lost Communication With Trailer Lighting Module",
+"U0250": "Lost Communication with Electronic Pedestrian Protection Module (EPPM)",
+"U0249": "Lost Communication With Vehicle Entertainment Control Module - Last Row",
+"U0246": "Lost Communication With Power Folding Seat Module",
+"U0241": "Lost Communication With Auto Highbeam Headlamp Control Module",
+"U0232": "Lost Communication with Blind Spot Detection Module",
+"U0230": "Lost Communication With Power Liftgate Module",
+"U0209": "Lost Communication With Memory Seat Control Module",
+"U0208": "Lost Communication With Heated Seat Control Module",
+"U0204": "Lost Communication With Door Module Front Right",
+"U0203": "Lost Communication With Door Module Front Left",
+"U0202": "Lost Communication With Right Rear Door Module",
+"U0201": "Lost Communication With Left Rear Door Module",
+"U0198": "Lost Communication with PASS",
+"U0197": "Lost Communication With Hands Free Phone Module",
+"U0196": "Lost Communication With Vehicle Entertainment Control Module - First Row",
+"U0187": "Lost Communication With DVD Player",
+"U0186": "Lost Communication With Audio Amplifier",
+"U0184": "Lost Communication With Radio",
+"U0181": "Lost Communication With Headlamp Leveling Translator",
+"U0169": "Lost Communication With Sunroof Control Module",
+"U0168": "Lost Communication With Vehicle Security Control Module",
+"U0167": "Lost Communication With Intrusion Transceiver Control Module",
+"U0164": "Lost Communication With HVAC Control Module",
+"U0163": "Lost Communication With Navigation Control Module",
+"U0159": "Lost Communication With Parking Assist Control Module",
+"U0155": "Lost Communication With Cluster/CCN",
+"U0154": "Lost Communication With Occupant Classification Module",
+"U0151": "Lost Communication with Occupant Restraint Controller (ORC)",
+"U0143": "Lost Communication with Multi-Purpose Module",
+"U0136": "Lost Communication with ELSD",
+"U0127": "Lost Communication With Tire Pressure Monitor Module",
+"U0121": "Lost Communication With Anti-Lock Brake Module",
+"U0114": "Lost Communication With Final Drive Control Module",
+"U0103": "Lost Communication With Electric Gear Shift Module",
+"U0101": "Lost Communication with TCM",
+"U0100": "Lost Communication With ECM/PCM",
+"U0010": "CAN Interior Bus",
+"U0001": "CAN C Bus",
+
+
+"P2068": "Fuel Level Sensor 2 Circuit High",
+"P2067": "Fuel Level Sensor 2 Circuit Low",
+"P1275": "A/C Control Circuit 2 Overcurrent",
+"P1273": "A/C Control Circuit 2 High",
+"P0694": "Cooling Fan 2 Control Circuit High",
+"P0693": "Cooling Fan 2 Control  Circuit Low",
+"P0692": "Cooling Fan 1 Control Circuit High",
+"P0691": "Cooling Fan 1 Control Circuit Low",
+"P0463": "Fuel Level Sensor 1 Circuit High",
+"P0462": "Fuel Level Sensor 1 Circuit Low",
+"P129E": "Inverter Control Circuit Overcurrent",
+"P129C": "Inverter Control Circuit High",
+"P0073": "Ambient Air Temperature Sensor Circuit High",
+"P0072": "Ambient Air Temperature Sensor Circuit Low",
+
+
+"C1470": "Transfer Case Motor Unable to Reach 4WD",
+"C1418": "Front Differential Control Circuit High",
+"C1417": "Front Differential Control Circuit Low",
+"C1408": "Transfer Case Brake Control Circuit High",
+"C1405": "Transfer Case Range Position Sensor Circuit High",
+"C1404": "Transfer Case Range Position Sensor Circuit Low",
+"C1008": "Brake Fluid Level Circuit High",
+"C146F": "Transfer Case Motor Unable to Reach 2WD",
+"C141E": "Rear Differential Control Circuit High",
+"C141D": "Rear Differential Control Circuit Low",
+"C102C": "Right Rear Wheel Speed Sensor Circuit Performance",
+
+
+"B2324": "Headlamp Washer Motor Control Circuit High"
+"B2323": "Headlamp Washer Motor Control Circuit Low"
+"B2305": "Wiper Park Switch Input Circuit High (Stuck High)"
+"B2304": "Wiper Park Switch Input Circuit Low (Stuck Low)"
+"B2215": "FCM Internal"
+"B2206": "Current VIN Missing / Mismatch"
+"B2142": "Ignition Off Draw (IOD) Fuse Not Present"
+"B2102": "Ignition Run/Start Input Circuit High"
+"B2101": "Ignition Run/Start Input Circuit Low"
+"B1988": "Right Power Sliding Door Switch Stuck"
+"B1987": "Left Power Sliding Door Switch Stuck"
+"B1940": "Right Power Sliding Door Switch Circuit High"
+"B1935": "Passenger Door Lock/Unlock Switch Circuit Stuck"
+"B1934": "Driver Door Lock/Unlock Switch Circuit Stuck"
+"B1870": "All Door Secondary Lock Control Circuit High"
+"B1851": "Flipper Glass Switch Stuck"
+"B1820": "Hood Ajar Input Circuit High"
+"B1806": "Passenger Door Lock/Unlock Switch Circuit Low"
+"B1801": "Driver Door Lock/Unlock Switch Circuit Low"
+"B1670": "Right Trailer Tow Lamp Control Circuit High"
+"B1664": "Rear Fog Lamp Control Circuit High"
+"B1663": "Rear Fog Lamp Control Circuit Low"
+"B1659": "Front Fog Lamp Control Circuit Low"
+"B1648": "Rear Right Turn Lamp Control Circuit High"
+"B1647": "Rear Right Turn Lamp Control Circuit Low"
+"B1644": "Rear Left Turn Control Circuit High"
+"B1643": "Rear Left Turn Lamp Control Circuit Low"
+"B1640": "Front Right Turn Lamp Control Circuit High"
+"B1638": "Right Hi Beam Control Circuit High"
+"B1637": "Right Hi Beam Control Circuit Low"
+"B1634": "Left Hi Beam Control Circuit High"
+"B1633": "Left Hi Beam Control Circuit Low"
+"B1630": "Right Low Beam Control Circuit High"
+"B1139": "Cabin Heater 3 Control Circuit High"
+"B1138": "Cabin Heater 3 Control Circuit Low"
+"B230E": "Rear Wiper Park Switch Input Circuit High (Stuck High)"
+"B230D": "Rear Wiper Park Switch Input Circuit Low (Stuck Low)"
+"B222C": "Vehicle Configuration Not Programmed"
+"B219F": "Ignition Off Draw (IOD) Fuse Blown"
+"B219A": "Ignition Unlock Run/Start Control Circuit Overcurrent"
+"B210E": "Battery Voltage High"
+"B210D": "Battery Voltage Low"
+"B198B": "All Door Secondary Unlock Control Circuit High"
+"B198A": "All Door Secondary Unlock Control Circuit Low"
+"B193F": "Right Power Sliding Door Switch Circuit Low"
+"B193C": "Left Power Sliding Door Switch Circuit High"
+"B193B": "Left Power Sliding Door Switch Circuit Low"
+"B186F": "All Door Secondary Lock Control Circuit Low"
+"B184F": "Flipper Glass Control Circuit High"
+"B184E": "Flipper Glass Control Circuit Low"
+"B166C": "Left Trailer Tow Lamp Control Circuit High"
+"B163F": "Front Right Turn Lamp Control Circuit Low"
+"B163C": "Front Left Turn Lamp Control Circuit High"
+"B163B": "Front Left Turn Lamp Control Circuit Low"
+"B162F": "Right Low Beam Control Circuit Low"
+"B162C": "Left Low Beam Control Circuit High"
+"B162B": "Left Low Beam Control Circuit Low"
+"B17C4": "Right Sidemarker Lamp Control Circuit Overcurrent"
+"B17BF": "Left Sidemarker Lamp Control Circuit Overcurrent"
+"B17B9": "Right Stop Lamp Control Circuit Overcurrent"
+"B17B8": "Left Stop Lamp Control Circuit Overcurrent"
+"B17B2": "Rear Right Trailer Turn Lamp Control Circuit Low"
+"B17AE": "Rear Left Trailer Turn Lamp Control Circuit Low"
+"B16FD": "Front Right Fog Lamp Control Circuit High"
+"B16FC": "Front Right Fog Lamp Control Circuit Low"
+"B16F9": "Front Left Fog Lamp Control Circuit High"
+"B16F8": "Front Left Fog Lamp Control Circuit Low"
+"B16B5": "Right Stop Lamp Control Circuit High"
+"B16B1": "Left Stop Lamp Control Circuit High"
+"B10EC": "Blower Motor Control Circuit Overcurrent"
+"B10B9": "Cabin Heater 2 Control Circuit High"
+"B10B8": "Cabin Heater 2 Control Circuit Low"
+"B10B5": "Cabin Heater 1 Control Circuit High"
+"B10B4": "Cabin Heater 1 Control Circuit Low"
+"B1D4F": "Adjustable Pedal Inhibit Circuit Low"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
