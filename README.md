@@ -15,20 +15,34 @@ Generic Diagnostic Tool is an open source, free J2534 PassThru software tool for
 This is general purpose diagnostic software that allows you to control individual diagnostic services. Have not seen any open source generic diagnostic software for J2534 devices so I thought I would make some. Currently for use on vehicles with ECUs on a typical High Speed CAN and Medium Speed CAN, aiming for it to work with Ford, Mazda, JLR, Volvo and anything OBD2 compliant. Allows you to set the ECU RX & TX Address (ie 7E0, 7E8 for a Powertrain Control Module) and connect to that ECU, and perform basic diagnostic functions using both KWP2000 protocol or UDS protocol. This is a work in progress... 
 
 ## Latest Update in Releases
-Update 04/12/2024:    
+<details >
+<summary>Update 04/12/2024</summary>
+<br>
 Scaling and Resolution issue has been fixed. Added more to Security Access & DMR Tabs, CAN Sniffer should be working now, VIN grabber and decoder should be working, OBD2 should be working. Tested with an OBDXPro FT and a Ford VCM2, other interfaces should work now as well, this has come at the cost of having MidSpeed CAN access for the time being.   
-  
-Update 08/12/2024:  
-Diagnostic Fault Codes can now be read out in their own tab, codes can be read and cleared. No Definitions as of yet.
-  
-Update 11/12/2024:  
+</details>
+<details>
+<summary>Update 08/12/2024</summary>  
+<br>
+Diagnostic Fault Codes can now be read out in their own tab, codes can be read and cleared. No Definitions as of yet.  
+</details>
+<details>
+<summary>Update 11/12/2024</summary>
+<br>
 Added another 400 secret keys to the bruteforcer, taken from JLR SDD and thanks to https://github.com/smartgauges/exml so now the Bruteforcer will be able to unlock JLR ECUs up until 2016. Also adeed PSA Security Access Algo.
+</details>
 
-Update 13/12/2024:  
-Started work on a nicely formatted DTC table to replace the single listBox currently being used to display DTC, as well as fully parsing out each fault code to display the type, sub type and definition of each DTC in the table. Collected various definitions and dictionaries with a view to creating a mega DTC definition dictionary that can cover all bases.
-
-Update 24/12/2024:  
-Started the code to use 29 BIT CAN Identifiers for the ECU RX and TX Address.
+<details>
+<summary>Update 13/12/2024</summary>
+<br>
+Started work on a nicely formatted DTC table to replace the single listBox currently being used to display DTC, as well as fully parsing out each fault code to display the type, sub type and definition of each DTC in the table. Collected various definitions and dictionaries with a view to creating a mega DTC definition dictionary that can cover all bases.  
+</details>
+  
+<details>
+<summary>Update 24/12/2024</summary>
+<br>
+Started the code to use 29 BIT CAN Identifiers for the ECU RX and TX Address.  
+</details>
+  
 ![image](https://github.com/user-attachments/assets/f25639d4-8942-4e41-bc26-7130dd33a0fb)
 
 ![image](https://github.com/user-attachments/assets/375d5be0-9f75-4e11-b00e-bbe185f020af)
