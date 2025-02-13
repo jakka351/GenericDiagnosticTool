@@ -113,7 +113,11 @@ The software can be run as x64, if you are using the OBDxPro FT J2534 Interface,
 ## J2534 Interface
 This implementation currently only works with an OBDXPro FT J2534 interface(https://obdxpro.com). Hoping to troubleshoot it such that it is compliant with all J2534 interfaces, ie VCM2, VCM3, Tactrix Openport, Mongoose Pro. Feel free to fork and modify it to work with your devices.
 
-Update 07/12/2024: Minor modifications to the J2534 code have proven successful and I have tested the software with a Ford VCM2 and Tactrix Openport successfully. Looking for more interfaces to be tested.
+<details>
+<summary>Update 07/12/2024</summary>
+<br>
+Minor modifications to the J2534 code have proven successful and I have tested the software with a Ford VCM2, Tactrix Openport and Mongoose Pro successfully. Still have to look into using PassThruIoctl for connecting to MidSpeed CANbuses. Looking for more interfaces to be tested.  
+</details>
 
 ## Technical Support
 If you are using this software and require techncial support, Tester Present Specialist Automotive solutions provides technical support for $150 AUD per hour. Feel free to get in touch if you require support. https://testerpresent.com.au
