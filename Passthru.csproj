@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{008A8478-3E37-4A9D-AF1C-B845730A7337}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PassThruJ2534</RootNamespace>
+    <AssemblyName>Generic Diagnostic Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>PassThruJ2534.Program</StartupObject>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gdt.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DarkUI, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DarkUIReborn.1.0.0.1\lib\net40-client\DarkUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lib\Decoder\VIN_DECODER.cs" />
+    <Compile Include="lib\Forms\Hex2Dec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Forms\Hex2Dec.Designer.cs">
+      <DependentUpon>Hex2Dec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lib\Forms\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Forms\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lib\Forms\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Forms\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lib\Interface\connectSelectedJ2534Device.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Interface\J2534.cs" />
+    <Compile Include="lib\Interface\J2534DeviceFinder.cs" />
+    <Compile Include="lib\Interface\J2534Devices.cs" />
+    <Compile Include="lib\Algorithms\SecurityAlgorithms.cs" />
+    <Compile Include="lib\Algorithms\SecurityKeys.cs" />
+    <Compile Include="lib\Interface\J2534_Struct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Interface\CanSniffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Interface\receivePassThruMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Interface\sendPassThruMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Main\addTxtCan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Main\HexToASCII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Main\log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Main\StringToByteArray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x85  controlDtcSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x10 diagnosticSessionControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x18 diagnosticTroubleCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x22 DID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x11 ecuReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x7F negativeResponseCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x01 OBDII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\Protocol.cs" />
+    <Compile Include="lib\Protocol\0x23 readMemoryByAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x27 requestSecurityAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x31 startRoutineByLocalIdentifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Protocol\0x3E testerPresent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlphaRomeoFifteen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlphaRomeoFifteen.Designer.cs">
+      <DependentUpon>AlphaRomeoFifteen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="lib\Forms\Hex2Dec.resx">
+      <DependentUpon>Hex2Dec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lib\Forms\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lib\Forms\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlphaRomeoFifteen.resx">
+      <DependentUpon>AlphaRomeoFifteen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="lib\Protocol\DTC\Generic_Codes.csv" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\Media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gdt.ico" />
+    <Content Include="lib\Algorithms\Security.xml" />
+    <Content Include="lib\Protocol\DTC\codes-Acura.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Audi.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Bmw.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Chrysler.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Dodge.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Ford.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Generic.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Honda.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Hyundai.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Infiniti.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Isuzu.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Jaguar.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Kia.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Landrover.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Lexus.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Mazda.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Mitsubishi.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Nissan.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Subaru.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Toyota.txt" />
+    <Content Include="lib\Protocol\DTC\codes-Volkswagen.txt" />
+    <Content Include="lib\Protocol\DTC\Generic_DTC.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
