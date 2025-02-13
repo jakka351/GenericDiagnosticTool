@@ -14,7 +14,13 @@ Generic Diagnostic Tool is an open source, free J2534 PassThru software tool for
 
 This is general purpose diagnostic software that allows you to control individual diagnostic services. Have not seen any open source generic diagnostic software for J2534 devices so I thought I would make some. Currently for use on vehicles with ECUs on a typical High Speed CAN and Medium Speed CAN, aiming for it to work with Ford, Mazda, JLR, Volvo and anything OBD2 compliant. Allows you to set the ECU RX & TX Address (ie 7E0, 7E8 for a Powertrain Control Module) and connect to that ECU, and perform basic diagnostic functions using both KWP2000 protocol or UDS protocol. This is a work in progress... 
 
-## Latest Update in Releases
+## Latest Update Announcements
+<details >
+<summary>Update 13/02/2025</summary>
+<br>
+Have uploaded the current code base as it is, and released the latest version in the releases tab. Still lots of bugs around the place, and many features yet to be implemented, but progress is progress!
+</details>
+
 <details >
 <summary>Update 04/12/2024</summary>
 <br>
