@@ -125,5 +125,5 @@ If you are using this software and require techncial support, Tester Present Spe
 ## Executable Download
 See the Releases Page.
 
-![image](https://github.com/user-attachments/assets/5d286541-9565-4ab7-8677-83823695f371)
+![TesterPresentNewBusinessCard](https://github.com/user-attachments/assets/e02fb18b-9eef-4764-a2be-81e060dc8bb3)
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
