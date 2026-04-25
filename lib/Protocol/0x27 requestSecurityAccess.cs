@@ -1042,14 +1042,7 @@ namespace PassThruJ2534
 				return;
 			}
 		}
-        /* Bruteforce All Possible Keys
-		 * Waiting to see if time out conditions come into play and prevent the ecu from sending a seed to a security risk due to too many security attempts
-		 * will have to figure out the time it takes for ECU to reset before attempts can resume. at least 3000 attempts can be made before a timeout hapens
-		 * Garbage Collector implemented to clear memory, clear text box every 3000 iterations
-		 * reconnect J2534 every 3000 iterations, ECU reset and restart diagnostics session every 3000 iterations
-		 */
-        bool flagExceededNumberOfAttempts = false;
-        bool flagRequiredTimeDelayNotExpired = false;
+
 		private async Task BruteforceAllAsync()
 		{
 			try
@@ -1264,8 +1257,6 @@ namespace PassThruJ2534
             }
         }
 
-
-        bool flagConditionsNotCorrect = false;
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////
 		/// <summary>
 		/// STANDARD SECURITY ACCESS SERVICE 0x27 BOOLEAN - Mark I Algo "KeyGenMkI(int s, int sknum, int sknum2, 
