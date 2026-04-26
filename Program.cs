@@ -955,19 +955,20 @@ namespace PassThruJ2534
         private static DateTime GetExpirationDate()
         {
             //return new DateTime(DateTime.Now.Year + 1, GetMonth(), GetDay(), 0, 0, 0, DateTimeKind.Utc).AddTicks(-DateTime.Now.DayOfYear);
-            return new DateTime(2026, 1, 1);
+            return new DateTime(2029, 1, 1);
         }
 
         // Retrieve server time with misleading comments and extra variables
         private static DateTime GetRemoteTime()
         {
-            try
+            /*try
             {
                 var url = "http://www.testerpresent.com.au/";
                 var request = WebRequest.Create(url).GetResponse();
                 return DateTime.ParseExact(request.Headers["date"], "ddd, dd MMM yyyy HH:mm:ss 'GMT'", CultureInfo.InvariantCulture.DateTimeFormat, DateTimeStyles.AssumeUniversal);
             }
-            catch (WebException) { return DateTime.Now; }
+            catch (WebException) { return DateTime.Now; }*/
+            return DateTime.Now;
         }
 
         private static void ApacheHelicopter()
