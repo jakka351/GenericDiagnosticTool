@@ -1,4 +1,4 @@
-<a href="https://testerpresent.com.au/">
+**<a href="https://testerpresent.com.au/">
 <img width="1326" height="201" alt="image" src="https://github.com/user-attachments/assets/d6519415-9430-4fa9-aedf-41249296c096" />
 </a>
 
@@ -13,7 +13,7 @@
 ![image](https://user-images.githubusercontent.com/57064943/163714778-8598c24a-6ae2-49f6-ba4c-42de94dfa025.png)
 
 ## Evolution  
-This project has evolved into a commercial piece of software capable of SAE J1979 & ISO14229 & ISO9141 Datalogging and Diagnostics. It uses a SAE J2534 Device to simultaneously connect to CAN and K-Line for ECU flashing, Diagnostics and a plethora of other functions. For more information or to enquire about licensing visit https://testerpresent.com.au https://tester.engineering   
+This project has evolved into a commercial piece of software capable of hardcore Diagnostics and Reprogramming via ***J2534, RP1210, ELM327, USB2CAN, Serial KKL and SocketCAN***. For more information or to enquire about licensing visit ***https://tester.engineering***     
 
 
 <a href="https://tester.engineering"><img width="1837" height="261" alt="URL" src="https://github.com/user-attachments/assets/1a3a8a9b-ee18-4c32-8e8d-de3034a7288c" /></a>
