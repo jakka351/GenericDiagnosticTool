@@ -3,7 +3,6 @@
 </a>
 
 
-# HTTPS://TESTER.ENGINEERING
 
 ![image](https://github.com/user-attachments/assets/7932d065-f401-461b-b10f-054ac3428bf2)
 
