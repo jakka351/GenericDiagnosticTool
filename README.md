@@ -20,7 +20,8 @@ This project has evolved into a commercial piece of software capable of hardcore
 
 
 
-<img width="1918" height="1044" alt="image" src="https://github.com/user-attachments/assets/fbc84fe8-1c45-4592-a065-c1f977a7c9ac" />
+<img width="1200" height="1553" alt="TesterPresent_Brochure_Animated" src="https://github.com/user-attachments/assets/4d8f4bab-e3b4-4625-acd9-58db1bc6aef9" />
+
 
 
 
